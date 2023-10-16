@@ -1,4 +1,3 @@
-from nba_api.stats.endpoints import LeagueGameLog
 import pandas as pd
 import numpy as np
 import os
@@ -10,12 +9,13 @@ def get_season_data(Season, Aggregate = "Total"):
     Data Glossary
     '''
     stats_col = ['PLAYER', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FGM', 'FGA', 'FTM', 'FTA', 'MIN']
-    
-    Game_Log = LeagueGameLog(league_id='00', #nba
-                  player_or_team_abbreviation='P',
-                  season=Season,
-                  season_type_all_star='Regular Season').get_data_frames()[0]
-    
+    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data"  
+
+    if Season == '2021-22':
+        Game_Log = pd.read_csv(os.path.join(appDataPath,'GameLog2021_22.csv'))    
+    else:
+        Game_Log = pd.read_csv(os.path.join(appDataPath,'GameLog2022_23.csv')) 
+
     Game_Log=Game_Log.rename(columns = {'PLAYER_NAME':'PLAYER'})
     
     Game_Played = Game_Log[['PLAYER','MIN']].groupby('PLAYER').count()['MIN']
@@ -35,7 +35,7 @@ def get_season_data(Season, Aggregate = "Total"):
         
 def get_Zscores(Season, Aggregate = "Total"):
 
-    appDataPath = "/Users/yberber/Documents/Projects/yahoo_compare_mantine/data"  
+    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data"  
 
     
     #arrange file name
