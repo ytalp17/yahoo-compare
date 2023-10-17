@@ -6,7 +6,6 @@ from dash import dash_table
 from dash_iconify import DashIconify
 import pandas as pd
 import numpy as np
-import os
 import pathlib
 
 
@@ -534,7 +533,6 @@ app.layout = dmc.MantineProvider(
     dmc.TabsPanel(dmc.Text("In progress...", align="left"), value="Player"),
 
 
-
     ],
     color="violet",
     orientation="horizontal",
@@ -572,9 +570,12 @@ def toggle_modal(n_clicks, opened):
 )
 def update_options(season):
     if season == "2021-22":
+        Season_total_2122 = get_season_data(season, Aggregate = "Total")
         data = [{"label": val, "value": val} for val in Season_total_2122.index.tolist()]
         return data, data
+    
     elif season== "2022-23":
+        Season_total_2223 = get_season_data(season, Aggregate = "Total")
         data = [{"label": val, "value": val} for val in Season_total_2223.index.tolist()]
         return data, data
     
@@ -938,7 +939,7 @@ def update_tables(active, P1, P2, season, stat_type):
     #For left side
 
     P1_total_table = dash_table.DataTable(
-                            columns=[{"name": i, "id": i} for i in sorted(fantasy_stats)],
+                            columns=[{"name": i, "id": i} for i in fantasy_stats],
                             data= season_totalp[season_totalp.index.isin(P1)].reset_index().round(2)[fantasy_stats].to_dict('records'),
                             style_as_list_view=True,
 
