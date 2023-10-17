@@ -20,13 +20,14 @@ nest-asyncio==1.5.8
 numpy==1.26.1
 packaging==23.2
 pandas==2.1.1
+pathlib 
 plotly==5.17.0
 python-dateutil==2.8.2
 pytz==2023.3.post1
 requests==2.31.0
-retrying 
+retrying @ file:///Users/ktietz/demo/mc3/conda-bld/retrying_1629465456590/work
 setuptools==68.0.0
-six 
+six @ file:///tmp/build/80754af9/six_1644875935023/work
 tenacity==8.2.3
 typing_extensions==4.8.0
 tzdata==2023.3

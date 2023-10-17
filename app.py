@@ -7,6 +7,7 @@ from dash_iconify import DashIconify
 import pandas as pd
 import numpy as np
 import os
+import pathlib
 
 
 
@@ -30,12 +31,16 @@ def get_season_data(Season, Aggregate = "Total"):
     Data Glossary
     '''
     stats_col = ['PLAYER', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FGM', 'FGA', 'FTM', 'FTA', 'MIN']
-    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data/"  
+    #path
+    BASE_PATH = pathlib.Path(__file__).parent.resolve()
+    DATA_PATH = BASE_PATH.joinpath("data").resolve()
+
 
     if Season == '2021-22':
-        Game_Log = pd.read_csv(os.path.join(appDataPath,'GameLog2021_22.csv'))    
+        Game_Log = pd.read_csv(DATA_PATH.joinpath("GameLog2021_22.csv")
+)    
     else:
-        Game_Log = pd.read_csv(os.path.join(appDataPath,'GameLog2022_23.csv')) 
+        Game_Log = pd.read_csv(DATA_PATH.joinpath("GameLog2022_23.csv")) 
 
     Game_Log=Game_Log.rename(columns = {'PLAYER_NAME':'PLAYER'})
     
@@ -55,9 +60,9 @@ def get_season_data(Season, Aggregate = "Total"):
 
         
 def get_Zscores(Season, Aggregate = "Total"):
-
-    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data"  
-
+    #path
+    BASE_PATH = pathlib.Path(__file__).parent.resolve()
+    DATA_PATH = BASE_PATH.joinpath("data").resolve()
     
     #arrange file name
     S_temp = Season.split('-')
@@ -66,13 +71,14 @@ def get_Zscores(Season, Aggregate = "Total"):
     Previous_Season = S1 + '-' + S2
     
     df = get_season_data(Season, Aggregate)
+
     
     if Aggregate == 'Total':
-        ps_df = pd.read_excel(os.path.join(appDataPath,f'BBM_PlayerRankings{Previous_Season}T.xls')) #only top ranked players
+        ps_df = pd.read_excel(DATA_PATH.joinpath(f'BBM_PlayerRankings{Previous_Season}T.xls')) #only top ranked players
         cols = [ 'p', '3', 'r', 'a', 's', 'b', 'to', 'fg%', 'fga', 'ft%', 'fta', 'm', 'g']
 
     else:
-        ps_df = pd.read_excel(os.path.join(appDataPath,f'BBM_PlayerRankings{Previous_Season}A.xls')) #only top ranked players
+        ps_df = pd.read_excel(DATA_PATH.joinpath(f'BBM_PlayerRankings{Previous_Season}A.xls')) #only top ranked players
         cols = [ 'p/g', '3/g', 'r/g', 'a/g', 's/g', 'b/g', 'to/g', 'fg%', 'fga/g', 'ft%', 'fta/g', 'm/g', 'g']
 
             
