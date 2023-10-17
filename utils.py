@@ -9,7 +9,7 @@ def get_season_data(Season, Aggregate = "Total"):
     Data Glossary
     '''
     stats_col = ['PLAYER', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FGM', 'FGA', 'FTM', 'FTA', 'MIN']
-    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data"  
+    appDataPath = "/Users/yberber/Documents/Projects/yahoo_mantine/data/"  
 
     if Season == '2021-22':
         Game_Log = pd.read_csv(os.path.join(appDataPath,'GameLog2021_22.csv'))    

@@ -17,7 +17,6 @@ app = Dash(__name__,
 )
 
 server = app.server  # Needed for gunicorn
-app.config.suppress_callback_exceptions = True  # Dash assumes that the input is present in the app layout when the app is initialized.
 
 
 ########################### Data Part ######################################
