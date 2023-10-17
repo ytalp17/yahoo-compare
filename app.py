@@ -11,8 +11,6 @@ import pathlib
 
 
 
-
-
 app = Dash(__name__,
     external_stylesheets=[
     # include google fonts

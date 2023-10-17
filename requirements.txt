@@ -25,9 +25,9 @@ plotly==5.17.0
 python-dateutil==2.8.2
 pytz==2023.3.post1
 requests==2.31.0
-retrying @ file:///Users/ktietz/demo/mc3/conda-bld/retrying_1629465456590/work
+retrying 
 setuptools==68.0.0
-six @ file:///tmp/build/80754af9/six_1644875935023/work
+six 
 tenacity==8.2.3
 typing_extensions==4.8.0
 tzdata==2023.3
