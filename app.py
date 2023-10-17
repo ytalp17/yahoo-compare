@@ -156,7 +156,6 @@ def aggregate_fantasy_stats(df):
     return f_df
 
     
-    
 
 
 
@@ -626,8 +625,8 @@ def update_polargraph(P1, P2, season, stat_type):
                             x=x_ul,
                             y=yl,
                             orientation='h',
-                            marker_color='#ff5d9e', #white
-                            opacity=0.8,
+                            #marker_color='#ff5d9e', #white
+                            opacity=0.65,
                             width = 0.5, 
                         )],
                     )
@@ -675,8 +674,8 @@ def update_polargraph(P1, P2, season, stat_type):
                             x=x_bl,
                             y=yl,
                             orientation='h',
-                            marker_color='#ff5d9e', #white
-                            opacity=0.8,
+                            #marker_color='#ff5d9e', #white#5F3DC4
+                            opacity=0.65,
                             width = 0.5, 
                             showlegend=True,
                         
@@ -727,8 +726,8 @@ def update_polargraph(P1, P2, season, stat_type):
                             x=x_ur,
                             y=yr,
                             orientation='h',
-                            marker_color='#5F3DC4', #violet
-                            opacity=0.8,
+                            #marker_color='#5F3DC4', #violet
+                            opacity=0.65,
                             width = 0.5,                       
                         )]
                     )
@@ -777,8 +776,8 @@ def update_polargraph(P1, P2, season, stat_type):
                             x=x_br,
                             y=yr,
                             orientation='h',
-                            marker_color='#5F3DC4', #violet
-                            opacity=0.8,
+                            #marker_color='#5F3DC4', #violet
+                            opacity=0.65,
                             width = 0.5,
 
                         )]
@@ -847,15 +846,17 @@ def update_polargraph(P1, P2, season, stat_type):
     text_scores_2 = 'Team 2 '
     for i in list_scores:
         text_scores_2 += '<br>' + i
-
+#'#ff5d9e', #white#5F3DC4
 
     fig = go.Figure(
             data=go.Scatterpolar(
             r=P1_for_plot['Score'],
             theta=P1_for_plot.index,
             fill='toself',
-            marker_color='white', 
-            opacity=0.75,
+            #fillcolor='#ff5d9e',
+            #line_color='rgb(40,132,117)',
+            #marker_color='#ff5d9e',
+            #opacity=.65,
             hoverinfo="text",
             name=text_scores_1,
             text=[P1_for_plot.index[i] + ' = ' + str(P1_for_plot['Score'][i]) for i in range(len(P1_for_plot))]
@@ -866,9 +867,11 @@ def update_polargraph(P1, P2, season, stat_type):
             r=P2_for_plot['Score'],
             theta=P2_for_plot.index,
             fill='toself',
-            fillcolor='#5F3DC4',
+            #fillcolor='#5F3DC4',
+            #line_color='rgb(40,132,117)',
+            #marker_color='#5F3DC4',
+            #opacity=.65,
             hoverinfo="text",
-            opacity=0.55,
             name=text_scores_2,
             text=[P2_for_plot.index[i] + ' = ' + str(P2_for_plot['Score'][i]) for i in range(len(P2_for_plot))]
         )
@@ -878,7 +881,7 @@ def update_polargraph(P1, P2, season, stat_type):
     fig.update_layout(
             polar=dict(
                 hole=0.1,
-                bgcolor='rgb(9,65,69)',
+                #bgcolor='rgb(9,65,69)',
                 radialaxis=dict(
                     visible=True,
                     type='linear',
@@ -888,8 +891,8 @@ def update_polargraph(P1, P2, season, stat_type):
                     angle=90,
                     showline=False,
                     showticklabels=False,
-                    ticks='',
-                    gridcolor='rgb(40,132,117)'),
+                    ticks='',),
+                    #gridcolor='rgb(40,132,117)'),
             ),
             showlegend=False,
             template="plotly_dark",
