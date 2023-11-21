@@ -11,3 +11,4 @@ dash_table
 dash-tools
 datetime
 pathlib
+xlrd
