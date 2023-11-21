@@ -1,0 +1,179 @@
+
+
+.Header {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-bottom: 0;
+}
+
+.Left_Card_div {
+margin-top: 1rem;
+margin-right: auto;
+
+}
+
+
+.Right_Card_div {
+margin-top: 1rem;
+margin-left: auto;
+text-align:right;
+}
+
+.right_accordion {
+display: flex;
+text-align:right;
+flex-direction: column;
+}  
+
+.tab2{
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+
+/* Yahoo Logo */
+#logo1 {
+    width: 7vh;
+    height: 7vh;
+    object-fit: cover
+}
+
+
+.Middle {
+    padding: 2rem 3rem;
+}
+
+.Radio_Button {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.Right_Dropdown {
+    /*display: inline-block;*/
+    display: flex; 
+    text-align:right;
+    flex-direction: column;
+
+}
+
+.SelectPlayer_leftdropdown{
+    display:block;
+}
+
+.dash-spreadsheet-container .dash-spreadsheet-inner table {
+    --accent: transparent  !important;
+    --border: transparent !important;
+    --text-color: transparent !important;
+    --hover: transparent !important;
+    --background-color-ellipses: transparent !important;
+    --faded-text: transparent !important;
+    --faded-text-header: transparent !important;
+    --selected-background: transparent !important;
+    --faded-dropdown: transparent !important;
+    --muted: transparent !important;
+}
+
+.Right_Component {
+    text-align:right;
+}
+
+
+
+.drop_down_container {
+    border-radius: 30px;
+}
+
+
+.Lcontainer {
+    display: inline-block;
+    box-sizing: border-box;
+    max-height: 85px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden !important;
+    width: calc(100% - 4rem); 
+    position: absolute;
+    
+  }
+
+.flex-Lcontainer {
+    display: flex;
+    max-height: 85px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden !important;
+    width: calc(100% - 4rem); 
+    position: absolute;
+    
+  }
+
+.flex-Litem {
+    flex: 0 0 auto;
+  }
+
+
+/*style > css */
+
+.mantine-MultiSelect-input:focus-within{
+    border-color: #845EF7 !important; 
+  
+}
+
+.mantine-Select-input:focus-within{
+    border-color: #845EF7 !important; 
+  
+}
+
+
+/*Both for all RadioGroups and SegmentedControl Components*/
+.mantine-SegmentedControl-root{
+    border: 1px solid rgb(55, 58, 64);
+    background-color: #1A1B1E;
+ 
+}
+
+.Grid_Card {
+    height: 450px;
+}
+
+.Card_Header {
+    height: 13%;
+}
+
+.card_header_text{
+    font-size: 2vh;
+}
+.header_title{
+    font-size: 3vh;
+
+}
+.header_subtitle{
+    font-size: 2vh;
+}
+
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
