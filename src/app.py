@@ -1,7 +1,7 @@
 import dash_mantine_components as dmc
 from dash import Dash, html, Input, Output, ALL, callback_context
 import plotly.graph_objects as go
-from dash import dash_table
+import dash_table
 import pandas as pd
 import os
 import re

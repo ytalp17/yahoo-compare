@@ -2,7 +2,7 @@ import dash_mantine_components as dmc
 import dash_core_components as dcc
 from dash import html
 from dash_iconify import DashIconify
-from data_tools import get_markdown, get_season_data
+from src.data_tools import get_markdown, get_season_data
 from datetime import date
 
 
