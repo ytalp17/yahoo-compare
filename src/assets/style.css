@@ -1,5 +1,3 @@
-
-
 .Header {
     margin: 1rem;
     padding: 1rem 2rem;
@@ -11,7 +9,6 @@ margin-top: 1rem;
 margin-right: auto;
 
 }
-
 
 .Right_Card_div {
 margin-top: 1rem;
@@ -30,14 +27,12 @@ margin-left: 2rem;
 margin-right: 2rem;
 }
 
-
 /* Yahoo Logo */
 #logo1 {
     width: 7vh;
     height: 7vh;
     object-fit: cover
 }
-
 
 .Middle {
     padding: 2rem 3rem;
@@ -78,7 +73,6 @@ margin-right: 2rem;
 }
 
 
-
 .drop_down_container {
     border-radius: 30px;
 }
@@ -87,29 +81,27 @@ margin-right: 2rem;
 .Lcontainer {
     display: inline-block;
     box-sizing: border-box;
-    max-height: 85px;
+    max-height:calc(100% - 2rem);
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden !important;
     width: calc(100% - 4rem); 
     position: absolute;
-    
   }
 
 .flex-Lcontainer {
     display: flex;
-    max-height: 85px;
+    max-height: calc(100% - 2rem);
     white-space: nowrap;
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: hidden !important;
     width: calc(100% - 4rem); 
     position: absolute;
-    
   }
 
-.flex-Litem {
-    flex: 0 0 auto;
+.Litem {
+        display: flex;
   }
 
 
@@ -117,20 +109,26 @@ margin-right: 2rem;
 
 .mantine-MultiSelect-input:focus-within{
     border-color: #845EF7 !important; 
-  
 }
 
 .mantine-Select-input:focus-within{
     border-color: #845EF7 !important; 
-  
 }
+
+.mantine-Select-item[data-selected]{
+    background-color: rgb(55, 58, 64);
+}	
+.mantine-Select-item[data-selected]:hover{
+    background-color: rgb(55, 58, 64);
+}	
+
+
 
 
 /*Both for all RadioGroups and SegmentedControl Components*/
 .mantine-SegmentedControl-root{
     border: 1px solid rgb(55, 58, 64);
     background-color: #1A1B1E;
- 
 }
 
 .Grid_Card {
@@ -177,3 +175,4 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+

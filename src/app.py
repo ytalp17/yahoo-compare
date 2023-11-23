@@ -1,15 +1,15 @@
 import dash_mantine_components as dmc
 from dash import Dash, html, Input, Output, ALL, callback_context
 import plotly.graph_objects as go
-import dash_table
-import pandas as pd
+#import dash_table
+from dash import dash_table
 import os
 import re
-import src.viz_tools as viz_tools 
-from src.data_tools import (get_similar_players, get_season_data, get_Zscores, 
+import viz_tools as viz_tools 
+from data_tools import (get_similar_players, get_season_data, get_Zscores, 
                         calculate_percentage_stats, aggregate_fantasy_stats, 
                         get_player_info, get_career_stats, fantasy_stats,
-                        last_seasons_fantasy_stats, rank_stats, datemask_season_data)
+                        rank_stats, datemask_season_data)
                         
                         
 app = Dash(__name__,
@@ -22,17 +22,26 @@ app = Dash(__name__,
 server = app.server  # Needed for gunicorn
 
 ############################ Get Paths ###################################
-import os
 project_path = os.getcwd()
 team_logos_path = os.path.join(project_path, "assets/team_logos")
 
 ########################### Data Part ######################################
 CareerStats = get_career_stats()
-CareerStats202223_std = last_seasons_fantasy_stats(CareerStats)
 PlayerInfo = get_player_info()
-PlayerInfo2023 = get_player_info(still_active = True)
-Season_total_2122 = get_season_data("2021-22", Aggregate = "Total")
+
+GameLog2023_24 = get_season_data("2023-24", Aggregate = "Total", raw = True)
+#Season_total_2122 = get_season_data("2021-22", Aggregate = "Total")
 Season_total_2223 = get_season_data("2022-23", Aggregate = "Total")
+Zscore_total_2223 = get_Zscores(Season_total_2223, "2022-23", Aggregate = "Total")
+
+Season_avg_2223 = get_season_data("2022-23", Aggregate = "Avg")
+Zscore_avg_2223 = get_Zscores(Season_avg_2223, "2022-23", Aggregate = "Total")
+
+Season_total_2324 = get_season_data("2023-24", Aggregate = "Total")
+Zscore_total_2324 = get_Zscores(Season_total_2324, "2023-24", Aggregate = "Total")
+
+Season_avg_2324 = get_season_data("2023-24", Aggregate = "Avg")
+Zscore_avg_2324 = get_Zscores(Season_avg_2324, "2023-24", Aggregate = "Avg")
 
 fantasy_stats_dict = {'PLAYER': 'Player Name',
                       'PTS': 'Points',
@@ -49,13 +58,13 @@ fantasy_stats_dict = {'PLAYER': 'Player Name',
                       'MIN': 'Minutes',
                       'GP': 'Game Plays',
                       }
+
 #Complementary App Layout
 team_logos = dmc.Grid([viz_tools.team_logos(teams, app.get_asset_url(f"team_logos/{teams}")) for teams in os.listdir(team_logos_path)],
-                      style={'width':1800, 'max-height':75, "border": 'rgb(0,0,0)',
+                      style={'width':1800, 'height': 60,'max-height':60, "border": 'rgb(0,0,0)',
                             "background": 'transparent','border-radius':0,})
 
 #########################################
-# "components": {"Text": {"styles": {"root": {"fontSize": "2vh"}}}}
 app.layout = dmc.MantineProvider(
     inherit=True,
     theme={"colorScheme": "dark"},
@@ -95,20 +104,17 @@ app.layout = dmc.MantineProvider(
     ]
 )
 
-
 """ ----------------------------------------------------------------------------
-Callback functions:
+Tab 2 Callback functions:
 
 Overview:
 
-Tab2:
 pop_up_modal: modal-button -> pop-up-modal
 update_player_similarity_table: player-select, chechbox-group -> player-similarity-table
 update_career_graph: player-select, stat_type_graph -> career_graph
 update_player_info_card: player-select -> player_image_src, birthday_text, country_text, school_text, start_year_text, draft_number_text, position_text
  
 ---------------------------------------------------------------------------- """
-
 
 '''----------------Modal Callback functions--------------------'''
 @app.callback(
@@ -127,16 +133,16 @@ def pop_up_modal(n_clicks:int) -> bool:
     Output("games_text", "children")
     ],
     [
-    Input("player-select", "value"),
+    Input("player-select", "value"), 
     Input("ranking_agg_type2", "value"),
     Input("date-range-picker", "value")
     ]
 )
-def update_interval_stats(player,aggregate,interval):   
-    interval_stats = datemask_season_data('2022-23', interval[0], interval[1], player, aggregate)
+def update_interval_stats(player, aggregate, interval):   
+    interval_stats = datemask_season_data(GameLog2023_24, interval[0], interval[1], player, aggregate)
     
     fig = go.Figure(go.Barpolar(
-        r=interval_stats.iloc[:,0].values,
+        r= interval_stats.iloc[:,0].values,
         theta=interval_stats.index[:-1],
         marker_color=["#E4FF87", '#709BFF', '#0451CB', '#FFAA70', '#00AEEF', '#FFDF70', '#B6FFB4','#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf'],
         marker_line_color="black",
@@ -144,7 +150,6 @@ def update_interval_stats(player,aggregate,interval):
         opacity=0.55,
         text=[interval_stats.index[i] + ' = ' + str(interval_stats.iloc[i,0]) for i in range(len(interval_stats))],
         hoverinfo="text",
-
     )
     )
 
@@ -205,10 +210,13 @@ def update_interval_stats(player,aggregate,interval):
 )
 def update_ranking_table(player_name:str, aggregate_type:str) -> dash_table.DataTable:
     
-    rank_stats_df = rank_stats(aggregate_type, player_name)
+    if aggregate_type == 'Total':
+        rank_stats_df = rank_stats(Zscore_total_2324, player_name)
+    else:
+        rank_stats_df = rank_stats(Zscore_avg_2324, player_name)
     
     ranking_table = dash_table.DataTable(
-                        id='similarity_DataTable',
+                        id='ranking_DataTable',
                         columns=[{"name": i, "id": i} for i in rank_stats_df.columns],
                         data= rank_stats_df.to_dict('records'),
                         style_as_list_view=True,
@@ -247,7 +255,6 @@ def update_player_similarity_table(player_name:str, selected_stats:str) -> dash_
                                           'color':'rgb(237, 234, 222)',
                                           'border': 'none',
                                          },
-                            
                             style_data={'backgroundColor': 'rgba(0,0,0,0)',
                                         'color': 'rgb(180,181,185)',
                                         'border': '0.7px solid rgb(55, 58, 64)',},
@@ -268,12 +275,9 @@ def update_player_similarity_table(player_name:str, selected_stats:str) -> dash_
 )
 def update_career_graph(player_name:str, stat:str) -> go.Figure:
     
-    Player_CareerStats = CareerStats[CareerStats['NAME']== player_name]
+    Player_CareerStats = CareerStats[CareerStats['name']== player_name]
     Player_CareerStats_updated = Player_CareerStats.drop(Player_CareerStats[Player_CareerStats['TEAM_ID'] == 0].index).groupby(['SEASON_ID','PLAYER_ID']).sum(numeric_only=True).reset_index()
-    
-    Player_CareerStats_updated['FG_PCT'] =  Player_CareerStats_updated['FGM']/ Player_CareerStats_updated['FGA']
-    Player_CareerStats_updated['FT_PCT'] =  Player_CareerStats_updated['FTM']/ Player_CareerStats_updated ['FTA']   
-    
+        
     career_fig = go.Figure(
         data =[
             go.Scatter(
@@ -335,12 +339,12 @@ def update_career_graph(player_name:str, stat:str) -> go.Figure:
 @app.callback(
         [
         Output("player_image", "src"),
-        Output("birthday_text", "children"),
         Output("country_text", "children"),
         Output("school_text", "children"),
         Output("start_year_text", "children"),
         Output("draft_number_text", "children"),
-        Output("position_text", "children"),
+        Output("position_text", "children"),     
+        Output("birthday_text", "children"),
         ],
 
         [
@@ -353,14 +357,15 @@ def update_player_info_card(player_name:str) -> tuple[str, str, str, str, str, s
     id_for_img1 = int(PlayerInfo[PlayerInfo['name']==player_name].id.values[0])
     src = app.get_asset_url(f"nba_players/{id_for_img1}.png")  
 
-    birthday = pd.to_datetime(PlayerInfo[PlayerInfo['name']==player_name].birthdate).iloc[0].date().strftime('%m-%d-%Y')
+    #birthday = pd.to_datetime(PlayerInfo[PlayerInfo['name']==player_name].birthdate).iloc[0].date().strftime('%m-%d-%Y')
     country = PlayerInfo[PlayerInfo['name']==player_name].country.values[0]
     school = PlayerInfo[PlayerInfo['name']==player_name].school.values[0]
     startyear = int(float(PlayerInfo[PlayerInfo['name']==player_name].start_year.values[0]))
     draftnumber = PlayerInfo[PlayerInfo['name']==player_name]['draft number'].values[0]
     pos = PlayerInfo[PlayerInfo['name']==player_name]['position'].values[0]
+    age= PlayerInfo[PlayerInfo['name']==player_name]['PLAYER_AGE'].values[0]
 
-    return src, birthday, country, school, startyear, draftnumber, pos
+    return src, country, school, startyear, draftnumber, pos, age
 
  
 @app.callback(
@@ -372,12 +377,22 @@ def update_playa_info(ndx:int) -> str:
     ctx = callback_context
     element_id = ctx.triggered[0]['prop_id'].replace(".n_clicks", "")
     team_id = re.findall("\d+", element_id)[0]
-    player_name = PlayerInfo2023[PlayerInfo2023['team_id']==int(team_id)].sample(1).name.values[0]
+    player_name = PlayerInfo[PlayerInfo['team_id']==int(team_id)].sample(1).name.values[0]
 
     return [player_name]
 
 
-'''----------------Tab 1 Callback functions--------------------'''
+""" ----------------------------------------------------------------------------
+Tab 1 Callback functions:
+
+Overview:
+
+update_dropdown_options: radio-select-season -> SelectPlayer_leftdropdown, SelectPlayer_rightdropdown
+update_tab1graphs:SelectPlayer_leftdropdown, SelectPlayer_rightdropdown, season-select, agg_type ->
+polar_graph, upper_left_hbar, bottom_left_hbar, upper_right_hbar, bottom_right_hbar
+table-tabs,SelectPlayer_leftdropdown, SelectPlayer_rightdropdown, season-select, agg_type -> tabs-content,
+right_stat_card, left_stat_card
+---------------------------------------------------------------------------- """
 
 @app.callback(
     [
@@ -387,16 +402,14 @@ def update_playa_info(ndx:int) -> str:
     ],       
     Input("radio-select-season", "value"),
 )
-def update_options(season):
-    if season == "2021-22":
-        Season_total_2122 = get_season_data(season, Aggregate = "Total")
-        data = [{"label": val, "value": val} for val in Season_total_2122.index.tolist()]
-        return data, data
-    
-    elif season== "2022-23":
-        Season_total_2223 = get_season_data(season, Aggregate = "Total")
-        data = [{"label": val, "value": val} for val in Season_total_2223.index.tolist()]
-        return data, data
+def update_dropdown_options(season):
+    if season== "2022-23":
+        dropdown_options = [{"label": val, "value": val} for val in Season_total_2223.index.tolist()]
+        return dropdown_options, dropdown_options
+    else:
+        dropdown_options = [{"label": val, "value": val} for val in Season_total_2324.index.tolist()]
+        return dropdown_options, dropdown_options
+
     
 @app.callback(
     [
@@ -414,43 +427,45 @@ def update_options(season):
     Input("agg_type", "value"),
     ]
 )
-def update_polargraph(P1, P2, season, agg_type):
-    #P1 : left ; P2 : right
+def update_tab1graphs(P1, P2, season, agg_type):
+    #P1 : left dropdown ; P2 : right dropdown
+    
+    if season=='2022-23':
+        if agg_type== 'Total':
+            df = calculate_percentage_stats(Season_total_2223)
+            df['FT%'] = 100*df['FT%']
+            df['FG%'] = 100*df['FG%']
+        else:
+            df = calculate_percentage_stats(Season_avg_2223)
 
-    if agg_type== 'Total':
-        season_total = get_season_data(season, Aggregate = "Total")
-        season_totalp = calculate_percentage_stats(season_total)
-        season_totalp['FT%'] = 100*season_totalp['FT%']
-        season_totalp['FG%'] = 100*season_totalp['FG%']
+    else: #season==2023-24
+        if agg_type== 'Total':
+            df = calculate_percentage_stats(Season_total_2324)
+            df['FT%'] = 100*df['FT%']
+            df['FG%'] = 100*df['FG%']
+        else:
+            df = calculate_percentage_stats(Season_avg_2324)
+            
+    game_stat = df['G'].median().round(2)
+    min_stat =df['MIN'].median().round(2)
         
-
-    else:
-        season_total = get_season_data(season, Aggregate = "Average")
-        season_totalp = calculate_percentage_stats(season_total)
-        season_totalp['FT%'] = season_totalp['FT%']
-        season_totalp['FG%'] = season_totalp['FG%']
-
-    avg_min = season_totalp['MIN'].median().round(1)
-    avg_game = season_totalp['G'].median().round(0)
-
-    #Horizontal plots################ü
+    #Horizontal plots################
     #upper_left
-    x_ul = season_total[season_total.index.isin(P1)]['G'].values
-    yl = season_total[season_total.index.isin(P1)].index.values
+    x_uleft = df[df.index.isin(P1)]['G'].values
+    yleft= P1
 
     fig_upper_left = go.Figure(data=[
                         go.Bar(
-                            x=x_ul,
-                            y=yl,
+                            x=x_uleft,
+                            y=yleft,
                             orientation='h',
                             opacity=0.45,
                             width = 0.5, 
                         )],
                     )
-    
-    fig_upper_left.update_layout(transition_duration=500)
-    
+        
     fig_upper_left.update_layout(
+        transition_duration=500,
         yaxis=dict(
             showgrid=False,
             showline=False,
@@ -463,9 +478,9 @@ def update_polargraph(P1, P2, season, agg_type):
             showgrid=False,
             showticklabels=True,
             tickmode = 'array',
-            tickvals = [0, 25, avg_game, 65, 82],
+            tickvals = [df['G'].min(), game_stat, df['G'].max()],
             domain=[0, 0.90],
-            range=[0, 82],
+            range=[0, df['G'].max()],
             title="Total Game Played",
             titlefont={"color": "white"},
         ),
@@ -481,27 +496,25 @@ def update_polargraph(P1, P2, season, agg_type):
         font={"color": "darkgray"},
     )
 
-    fig_upper_left.add_vline(x=avg_game, line_width=2, line_dash="dash")
+    fig_upper_left.add_vline(x=game_stat, line_width=2, line_dash="dash")
 
     #bottom_left
-    x_bl = season_total[season_total.index.isin(P1)]['MIN'].values
+    x_bleft = df[df.index.isin(P1)]['MIN'].values
 
     fig_bottom_left = go.Figure(data=[
                         go.Bar(
-                            x=x_bl,
-                            y=yl,
+                            x=x_bleft,
+                            y=yleft,
                             orientation='h',
-                            #marker_color='#ff5d9e', #white#5F3DC4
                             opacity=0.45,
                             width = 0.5, 
                             showlegend=True,
                         
                         )],
                     )
-    
-    fig_bottom_left.update_layout(transition_duration=500)
-    
+        
     fig_bottom_left.update_layout(
+        transition_duration=500,
         yaxis=dict(
             showgrid=False,
             showline=False,
@@ -513,10 +526,10 @@ def update_polargraph(P1, P2, season, agg_type):
             showline=False,
             showgrid=False,
             tickmode = 'array',
-            tickvals = [0, 750, avg_min, 2000, 2800],
+            tickvals = [df['MIN'].min(), min_stat, df['MIN'].max()],
             showticklabels=True,
             domain=[0, 0.95],
-            range=[0, 2800],
+            range=[0, df['MIN'].max()],
             title="Total Minutes Played",
             titlefont={"color": "white"},
         ),
@@ -530,30 +543,28 @@ def update_polargraph(P1, P2, season, agg_type):
         plot_bgcolor='rgba(0,0,0,0)',
         legend={"font": {"color": "darkgray"}, "orientation": "h", "x": 0, "y": 1.1},
         font={"color": "darkgray"},
-
     )
 
-    fig_bottom_left.add_vline(x=avg_min, line_width=2, line_dash="dash")
+    fig_bottom_left.add_vline(x=min_stat, line_width=2, line_dash="dash")
 
 
     #upper right
-    x_ur = season_total[season_total.index.isin(P2)]['G'].values
-    yr = season_total[season_total.index.isin(P2)].index.values
+    x_uright = df[df.index.isin(P2)]['G'].values
+    yright= P2
 
     fig_upper_right = go.Figure(data=[
                         go.Bar(
-                            x=x_ur,
-                            y=yr,
+                            x=x_uright,
+                            y=yright,
                             orientation='h',
                             marker_color='#EF553B',
-                            opacity=0.70,
+                            opacity=0.5,
                             width = 0.5,                       
                         )]
                     )
     
-    fig_upper_right.update_layout(transition_duration=500)
-
     fig_upper_right.update_layout(
+        transition_duration=500,
         yaxis=dict(
             showgrid=False,
             showline=False,
@@ -565,10 +576,10 @@ def update_polargraph(P1, P2, season, agg_type):
             showline=False,
             showticklabels=True,
             tickmode = 'array',
-            tickvals = [0, 25, avg_game, 65, 82],
+            tickvals =  [df['G'].min(), game_stat, df['G'].max()],
             showgrid=False,
             domain=[0.1, 0.95],
-            range=[0, 82],
+            range=[0, df['G'].max()],
             autorange="reversed",
             title="Total Game Played",
             titlefont={"color": "white"},
@@ -585,28 +596,25 @@ def update_polargraph(P1, P2, season, agg_type):
         plot_bgcolor='rgba(0,0,0,0)',
     )
 
-    fig_upper_right.add_vline(x=avg_game, line_width=2, line_dash="dash")
+    fig_upper_right.add_vline(x=game_stat, line_width=2, line_dash="dash")
 
 
     #bottom right
-    x_br = season_total[season_total.index.isin(P2)]['MIN'].values
+    x_bright = df[df.index.isin(P2)]['MIN'].values
 
     fig_bottom_right = go.Figure(data=[
                         go.Bar(
-                            x=x_br,
-                            y=yr,
+                            x=x_bright,
+                            y=yright,
                             orientation='h',
                             marker_color='#EF553B',
-                            opacity=0.70,
+                            opacity=0.5,
                             width = 0.5,
-
                         )]
                     )
     
-    fig_bottom_right.update_layout(transition_duration=500)
-    
     fig_bottom_right.update_layout(
-
+        transition_duration=500,
         yaxis=dict(
             showgrid=False,
             showline=False,
@@ -618,10 +626,10 @@ def update_polargraph(P1, P2, season, agg_type):
             showline=False,
             showticklabels=True,
             tickmode = 'array',
-            tickvals = [0, 750, avg_min, 2000, 2800],
+            tickvals = [df['MIN'].min(), min_stat, df['MIN'].max()],
             showgrid=False,
             domain=[0.1, 0.95],
-            range=[0, 2800],
+            range=[0,  df['MIN'].max()],
             autorange="reversed",
             title="Game Played-Previous Season",
             titlefont={"color": "white"},
@@ -638,33 +646,32 @@ def update_polargraph(P1, P2, season, agg_type):
         plot_bgcolor='rgba(0,0,0,0)',
     )
 
-    fig_bottom_right.add_vline(x=avg_min, line_width=2, line_dash="dash")
+    fig_bottom_right.add_vline(x=min_stat, line_width=2, line_dash="dash")
 
-
-    #########Polar Plot    ############
+    ###################################
+    ########    Polar Plot    #########
+    ###################################
     
     #P1 (right dropdown)
-    P1_for_plot = aggregate_fantasy_stats(season_totalp[season_totalp.index.isin(P1)][fantasy_stats]).T.round(2)
+    P1_for_plot = aggregate_fantasy_stats(df[df.index.isin(P1)][fantasy_stats]).T.round(2)
     P1_for_plot.columns = ['Score']
 
     #P2 (right dropdown)
-    P2_for_plot = aggregate_fantasy_stats(season_totalp[season_totalp.index.isin(P2)][fantasy_stats]).T.round(2)
+    P2_for_plot = aggregate_fantasy_stats(df[df.index.isin(P2)][fantasy_stats]).T.round(2)
     P2_for_plot.columns = ['Score']
     
     #P1 (left dropdown)
     fig = go.Figure(
             data=go.Scatterpolar(
-            r=P1_for_plot['Score'],
-            theta=P1_for_plot.index,
-            fill='toself',
-            #fillcolor='#ff5d9e',
-            #line_color='rgb(40,132,117)',
-            #marker_color='#ff5d9e',
-            #opacity=.65,
-            hoverinfo="text",
-            name="",
-            text=[P1_for_plot.index[i] + ' = ' + str(P1_for_plot['Score'][i]) for i in range(len(P1_for_plot))]
-        )   )
+                r=P1_for_plot['Score'],
+                theta=P1_for_plot.index,
+                fill='toself',
+                opacity=.90,
+                hoverinfo="text",
+                name="",
+                text=[P1_for_plot.index[i] + ' = ' + str(P1_for_plot['Score'][i]) for i in range(len(P1_for_plot))]
+            )   
+        )
     
     #P2 (right dropdown)
     fig.add_trace(
@@ -672,45 +679,40 @@ def update_polargraph(P1, P2, season, agg_type):
             r=P2_for_plot['Score'],
             theta=P2_for_plot.index,
             fill='toself',
-            #fillcolor='#5F3DC4',
-            #line_color='rgb(40,132,117)',
-            #marker_color='#5F3DC4',
-            #opacity=.65,
+            opacity=.85,
             hoverinfo="text",
             name="",
             text=[P2_for_plot.index[i] + ' = ' + str(P2_for_plot['Score'][i]) for i in range(len(P2_for_plot))]
+            )
         )
-        )
-    
     
     fig.update_layout(
-            polar=dict(
-                hole=0.1,
-                radialaxis=dict(
-                    visible=True,
-                    type='linear',
-                    autotypenumbers='strict',
-                    autorange=True,
-                    range=[0, 500],
-                    angle=90,
-                    showline=False,
-                    showticklabels=False,
-                    ticks='',),
-                    #gridcolor='rgb(40,132,117)'),
-            ),
-            showlegend=False,
-            template="plotly_dark",
-            paper_bgcolor='rgba(0,0,0,0)',
-            plot_bgcolor='rgba(0,0,0,0)',
-            font_color='white',
-            font_size=14
-        )
-    
-    fig.update_layout(transition_duration=500)
-    
+        polar=dict(
+            hole=0.1,
+            radialaxis=dict(
+                visible=True,
+                type='linear',
+                autotypenumbers='strict',
+                autorange=True,
+                range=[0, 500],
+                angle=90,
+                showline=False,
+                showticklabels=False,
+                ticks='',),
+                #gridcolor='rgb(40,132,117)'),
+        ),
+        transition_duration=500,
+        showlegend=False,
+        template="plotly_dark",
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        font_color='white',
+        font_size=14
+    )
+        
     return fig, fig_upper_left, fig_bottom_left, fig_upper_right, fig_bottom_right
 
-
+#Update Tables
 @app.callback(
         [
         Output("tabs-content", "children"), 
@@ -725,73 +727,67 @@ def update_polargraph(P1, P2, season, agg_type):
         Input('radio-select-season', 'value'),
         Input("agg_type", "value"),
         ]
-        
         )
 def update_tables(active, P1, P2, season, agg_type):
     fantasy_stats = ['PLAYER','PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FG%', 'FT%']
     aggregate_stats = fantasy_stats[1:]
+    
+    if season=='2022-23':
+        if agg_type== 'Total':
+            season_totalp = calculate_percentage_stats(Season_total_2223) #calculates percentage stats
+            Zscores = Zscore_total_2223
+        else:
+            season_totalp = calculate_percentage_stats(Season_avg_2223)
+            Zscores = Zscore_avg_2223
+            
+    else: #season==2023-24
+        if agg_type== 'Total':
+            season_totalp = calculate_percentage_stats(Season_total_2324)
+            Zscores = Zscore_total_2324
+        else:
+            season_totalp = calculate_percentage_stats(Season_avg_2324)
+            Zscores = Zscore_avg_2324
 
-
-    if agg_type== 'Total':
-        season_total = get_season_data(season, Aggregate = "Total")
-        season_totalp = calculate_percentage_stats(season_total)
-        Zscores = get_Zscores(season, Aggregate = "Total")
-
-    else:
-        season_total = get_season_data(season, Aggregate = "Average")
-        season_totalp = calculate_percentage_stats(season_total)
-        Zscores = get_Zscores(season, Aggregate = "Average")
-
-
-    #For left side
+    style_header_midtables = {'backgroundColor': 'rgb(28,28,33)',
+                                'color':'rgb(237, 234, 222)',
+                                'border': 'none',
+                                }
+    style_data_midtables = {'backgroundColor': '#212529',
+                                'color': 'rgb(180,181,185)',
+                                'border': '0.7px solid rgb(55, 58, 64)',
+                                }
+    style_cell_midtables = {'textAlign': 'center', 'minWidth': '80px', 'width': '80px', 'maxWidth': '80px',
+                                'whiteSpace': 'normal', 'fontSize':13, 'font-family':'Roboto, sans-serif',
+                                'backgroundColor': 'rgb(28, 28,33)',
+                                'border': 'thin solid #FFFFFF',
+                                }
+    style_midtable = {'borderRadius': '4px', 'overflowX': 'scroll', 
+                        'border': '1px solid rgb(55, 58, 64)',
+                        }
+    
+    ######Tables under tabs in the MIDDLE section.
+    ##Top table is P1 table 
     P1_total_table = dash_table.DataTable(
                             columns=[{"name": i, "id": i} for i in fantasy_stats],
                             data= season_totalp[season_totalp.index.isin(P1)].reset_index().round(2)[fantasy_stats].to_dict('records'),
                             style_as_list_view=True,
-
-                            style_header={'backgroundColor': 'rgb(28,28,33)',
-                                          'color':'rgb(237, 234, 222)',
-                                          'border': 'none',
-                                          },
-                            style_data={'backgroundColor': '#212529',
-                                        'color': 'rgb(180,181,185)',
-                                        'border': '0.7px solid rgb(55, 58, 64)',
-                                        },
-                            style_cell={'textAlign': 'center', 'minWidth': '80px', 'width': '80px', 'maxWidth': '80px',
-                                        'whiteSpace': 'normal', 'fontSize':13, 'font-family':'Roboto, sans-serif',
-                                        'backgroundColor': 'rgb(28, 28,33)',
-                                        'border': 'thin solid #FFFFFF',
-                                        },
-                            style_table={'borderRadius': '4px', 'overflowX': 'scroll', 
-                                         'border': '1px solid rgb(55, 58, 64)',
-                                         },
+                            style_header= style_header_midtables,
+                            style_data= style_data_midtables,
+                            style_cell= style_cell_midtables,
+                            style_table=style_midtable
                             )
         
-    
     P1_Zscore_table = dash_table.DataTable(
                             columns=[{"name": i, "id": i} for i in ['PLAYER'] + Zscores.columns.values.tolist()], 
                             data=Zscores[Zscores.index.isin(P1)].reset_index().round(2).to_dict('records'),
                             style_as_list_view=True,
-
-                            style_header={'backgroundColor': 'rgb(28,28,33)',
-                                          'color':'rgb(180,181,185)',
-                                          'border': 'none',
-                                          },
-                            style_data={'backgroundColor': '#212529',
-                                        'color': 'rgb(180,181,185)',
-                                        'border': '0.7px solid rgb(55, 58, 64)',
-                                        },
-                            style_cell={'textAlign': 'center', 'minWidth': '80px', 'width': '80px', 'maxWidth': '80px',
-                                        'whiteSpace': 'normal', 'fontSize':13, 'font-family':'Roboto, sans-serif',
-                                        'backgroundColor': 'rgb(28, 28,33)',
-                                        'border': 'thin solid #FFFFFF',
-                                        },
-                            style_table={'borderRadius': '4px', 'overflowX': 'scroll', 
-                                         'border': '1px solid rgb(55, 58, 64)',
-                                         },
+                            style_header= style_header_midtables,
+                            style_data= style_data_midtables,
+                            style_cell= style_cell_midtables,
+                            style_table= style_midtable,
                             )
     
-
+    #Left aggregate table
     P1_aggregate_data = aggregate_fantasy_stats(season_totalp[season_totalp.index.isin(P1)][aggregate_stats]).T.round(2).reset_index()
     P1_aggregate_data.columns = ['STATS', 'SCORES'] #go around
 
@@ -799,7 +795,6 @@ def update_tables(active, P1, P2, season, agg_type):
                             columns=[{"name": i, "id": i} for i in P1_aggregate_data.columns],
                             data= P1_aggregate_data.to_dict('records'),
                             style_as_list_view=True,
-                            
                             style_header={'backgroundColor': 'rgba(0,0,0,0)' ,
                                           'color':'rgb(237, 234, 222)',
                                           'border': 'none',
@@ -810,22 +805,18 @@ def update_tables(active, P1, P2, season, agg_type):
                             style_cell={'textAlign': 'left', 'minWidth': '40px', 'width': '100px', 'maxWidth': '100x',
                                         'whiteSpace': 'normal', 'fontSize':14, 'font-family':'Roboto, sans-serif',
                                         'backgroundColor': 'rgba(0,0,0,0)'},     
-                                        
                             fill_width=False,
                             )
-    
-    season_totalp[season_totalp.index.isin(P1)].reset_index().round(2)[fantasy_stats].to_dict('records')
-    
-    #For Right Side
+        
+    ##Bottom table is P2 table 
     P2_total_table = dash_table.DataTable(
                             columns=[{"name": i, "id": i} for i in fantasy_stats],
                             data= season_totalp[season_totalp.index.isin(P2)].reset_index().round(2)[fantasy_stats].to_dict('records'),
                             style_as_list_view=True,
-
-                            style_header={'backgroundColor': 'rgb(28,28,33)',
-                                          'color':'rgb(180,181,185)',
+                            style_header={'backgroundColor': 'rgba(0,0,0,0)' ,
+                                          'color':'rgb(237, 234, 222)',
                                           'border': 'none',
-                                          },
+                                         },
                             style_data={'backgroundColor': '#212529',
                                         'color': 'rgb(180,181,185)',
                                         'border': '0.7px solid rgb(55, 58, 64)',
@@ -844,11 +835,7 @@ def update_tables(active, P1, P2, season, agg_type):
                             columns=[{"name": i, "id": i} for i in ['PLAYER'] + Zscores.columns.values.tolist()], 
                             data=Zscores[Zscores.index.isin(P2)].reset_index().round(2).to_dict('records'),
                             style_as_list_view=True,
-
-                            style_header={'backgroundColor': 'rgb(28,28,33)',
-                                          'color':'rgb(180,181,185)',
-                                          'border': 'none',
-                                          },
+                            style_header=style_header_midtables,
                             style_data={'backgroundColor': '#212529',
                                         'color': 'rgb(180,181,185)',
                                         'border': '0.7px solid rgb(55, 58, 64)',
@@ -885,7 +872,6 @@ def update_tables(active, P1, P2, season, agg_type):
                             fill_width=False,
                             )
 
-
     if active == "Main Stats":
         return [dmc.Text("Home Team", style={'padding-bottom':'10px'}), P1_total_table, dmc.Text("Away Team", style={'padding-top':'25px','padding-bottom':'10px'}), P2_total_table], [P1_aggregate_total_table], [P2_aggregate_total_table]
     else:
@@ -894,4 +880,3 @@ def update_tables(active, P1, P2, season, agg_type):
 
 if __name__ == '__main__':
     app.run(debug=True)
-

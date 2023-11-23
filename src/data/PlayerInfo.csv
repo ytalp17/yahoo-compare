@@ -1,436 +1,534 @@
-id,team_abb,jersey_no,position,school,country,start_year,draft number,name,team,birthdate,team_id
-1630173,TOR,5.0,F,Memphis,Nigeria,2020.0,20,Precious Achiuwa,Toronto Raptors,1999-09-19T00:00:00,1610612761
-203500,MEM,4.0,C,Pittsburgh,New Zealand,2013.0,12,Steven Adams,Memphis Grizzlies,1993-07-20T00:00:00,1610612763
-1628389,MIA,13.0,C-F,Kentucky,USA,2017.0,14,Bam Adebayo,Miami Heat,1997-07-18T00:00:00,1610612748
-1630534,UTA,30.0,G,Kansas,USA,2022.0,14,Ochai Agbaji,Utah Jazz,2000-04-20T00:00:00,1610612762
-1630583,MEM,7.0,F-C,Loyola-Maryland,Spain,2021.0,30,Santi Aldama,Memphis Grizzlies,2001-01-10T00:00:00,1610612763
-1629638,MIN,9.0,G,Virginia Tech,Canada,2019.0,17,Nickeil Alexander-Walker,Minnesota Timberwolves,1998-09-02T00:00:00,1610612750
-1628960,PHX,8.0,G,Duke,USA,2018.0,21,Grayson Allen,Phoenix Suns,1995-10-08T00:00:00,1610612756
-1628386,CLE,31.0,C,Texas,USA,2017.0,22,Jarrett Allen,Cleveland Cavaliers,1998-04-21T00:00:00,1610612739
-1630631,NOP,15.0,G,Georgia Tech,USA,2021.0,Undrafted,Jose Alvarado,New Orleans Pelicans,1998-04-12T00:00:00,1610612740
-203937,MIN,1.0,F-G,UCLA,USA,2014.0,30,Kyle Anderson,Minnesota Timberwolves,1993-09-20T00:00:00,1610612750
-203507,MIL,34.0,F,Filathlitikos,Greece,2013.0,15,Giannis Antetokounmpo,Milwaukee Bucks,1994-12-06T00:00:00,1610612749
-203648,MIL,43.0,F,Panathinaikos,Greece,2014.0,51,Thanasis Antetokounmpo,Milwaukee Bucks,1992-07-18T00:00:00,1610612749
-1630175,ORL,50.0,G,North Carolina,USA,2020.0,15,Cole Anthony,Orlando Magic,2000-05-15T00:00:00,1610612753
-1628384,TOR,3.0,F,Indiana,United Kingdom,2017.0,23,O.G. Anunoby,Toronto Raptors,1997-07-17T00:00:00,1610612761
-1627853,NYK,51.0,G,Villanova,USA,2017.0,Undrafted,Ryan Arcidiacono,New York Knicks,1994-03-26T00:00:00,1610612752
-1630166,WAS,8.0,F,Maccabi Tel Aviv,Israel,2020.0,9,Deni Avdija,Washington Wizards,2001-01-03T00:00:00,1610612764
-1629028,POR,22.0,C,Arizona,Bahamas,2018.0,1,Deandre Ayton,Portland Trail Blazers,1998-07-23T00:00:00,1610612757
-1628962,PHX,20.0,C-F,Kansas,Nigeria,2020.0,27,Udoka Azubuike,Phoenix Suns,1999-09-17T00:00:00,1610612756
-1630641,POR,41.0,C,FC Barcelona,Senegal,2022.0,Undrafted,Ibou Badji,Portland Trail Blazers,2002-10-13T00:00:00,1610612757
-1628963,DET,35.0,F,Duke,USA,2018.0,2,Marvin Bagley III,Detroit Pistons,1999-03-14T00:00:00,1610612765
-1631116,WAS,7.0,F,Wisconsin-Milwaukee,USA,2022.0,28,Patrick Baldwin,Washington Wizards,2002-11-18T00:00:00,1610612764
-1630163,CHA,1.0,G,Illawarra,USA,2020.0,3,LaMelo Ball,Charlotte Hornets,2001-08-22T00:00:00,1610612766
-1628366,CHI,2.0,G,UCLA,USA,2017.0,2,Lonzo Ball,Chicago Bulls,1997-10-27T00:00:00,1610612741
-1628964,PHI,7.0,C,Texas,USA,2018.0,6,Mo Bamba,Philadelphia 76ers,1998-05-12T00:00:00,1610612755
-1631094,ORL,5.0,F,Duke,USA,2022.0,1,Paolo Banchero,Orlando Magic,2002-11-12T00:00:00,1610612753
-1630217,MEM,22.0,G,TCU,USA,2020.0,30,Desmond Bane,Memphis Grizzlies,1998-06-25T00:00:00,1610612763
-1630625,BOS,45.0,F,Nebraska,Canada,2021.0,46,Dalano Banton,Boston Celtics,1999-11-07T00:00:00,1610612738
-1631230,SAS,26.0,F,                                   ,USA,2022.0,Undrafted,Dominick Barlow,San Antonio Spurs,2003-05-26T00:00:00,1610612759
-203084,SAC,40.0,F,North Carolina,USA,2012.0,7,Harrison Barnes,Sacramento Kings,1992-05-30T00:00:00,1610612758
-1630567,TOR,4.0,F,Florida State,USA,2021.0,4,Scottie Barnes,Toronto Raptors,2001-08-01T00:00:00,1610612761
-1629628,NYK,9.0,F-G,Duke,Canada,2019.0,3,RJ Barrett,New York Knicks,2000-06-14T00:00:00,1610612752
-1629646,SAS,28.0,C-F,Western Kentucky,Nigeria,2021.0,53,Charles Bassey,San Antonio Spurs,2000-10-28T00:00:00,1610612759
-1628966,PHX,21.0,F,Ohio State,USA,2018.0,48,Keita Bates-Diop,Phoenix Suns,1996-01-23T00:00:00,1610612756
-201587,LAC,33.0,G-F,Le Mans,France,2008.0,25,Nicolas Batum,LA Clippers,1988-12-14T00:00:00,1610612746
-203078,PHX,3.0,G,Florida,USA,2012.0,3,Bradley Beal,Phoenix Suns,1993-06-28T00:00:00,1610612756
-1627736,MIL,5.0,G,Florida State,USA,2016.0,19,Malik Beasley,Milwaukee Bucks,1996-11-26T00:00:00,1610612749
-1630699,MIL,0.0,F,NBA G League Ignite,USA,2022.0,24,MarJon Beauchamp,Milwaukee Bucks,2000-10-12T00:00:00,1610612749
-202722,OKC,9.0,F,Baskonia,Latvia,2011.0,42,Davis Bertans,Oklahoma City Thunder,1992-11-12T00:00:00,1610612760
-201976,PHI,22.0,G,Arkansas,USA,2009.0,42,Patrick Beverley,Philadelphia 76ers,1988-07-12T00:00:00,1610612755
-1630180,ATL,41.0,F,Villanova,USA,2020.0,19,Saddiq Bey,Atlanta Hawks,1999-04-09T00:00:00,1610612737
-1629048,ORL,35.0,C-F,Mega Basket,Georgia,2019.0,18,Goga Bitadze,Orlando Magic,1999-07-20T00:00:00,1610612753
-203992,ATL,13.0,G,Fenerbahce,Serbia,2014.0,27,Bogdan Bogdanovic,Atlanta Hawks,1992-08-18T00:00:00,1610612737
-202711,DET,44.0,F,Fenerbahce,Croatia,2011.0,31,Bojan Bogdanovic,Detroit Pistons,1989-04-18T00:00:00,1610612765
-1629626,PHX,11.0,C-F,Oregon,Sudan,2019.0,44,Bol Bol,Phoenix Suns,1999-11-16T00:00:00,1610612756
-1626164,PHX,1.0,G,Kentucky,USA,2015.0,13,Devin Booker,Phoenix Suns,1996-10-30T00:00:00,1610612756
-1630527,LAC,4.0,G,Kentucky,USA,2021.0,51,Brandon Boston Jr.,LA Clippers,2001-11-28T00:00:00,1610612746
-1628449,TOR,25.0,F-C,Oregon,Saint Lucia,2017.0,Undrafted,Chris Boucher,Toronto Raptors,1993-01-11T00:00:00,1610612761
-1630547,CHA,2.0,G,Connecticut,USA,2021.0,11,James Bouknight,Charlotte Hornets,2000-09-18T00:00:00,1610612766
-1631103,SAS,22.0,F,Ohio State,USA,2022.0,20,Malaki Branham,San Antonio Spurs,2003-05-12T00:00:00,1610612759
-1631128,DEN,0.0,G,Kansas,USA,2022.0,21,Christian Braun,Denver Nuggets,2001-04-17T00:00:00,1610612743
-1628969,BKN,1.0,G-F,Villanova,USA,2018.0,10,Mikal Bridges,Brooklyn Nets,1996-08-30T00:00:00,1610612751
-1629052,BOS,12.0,F-G,Syracuse,Canada,2019.0,Undrafted,Oshae Brissett,Boston Celtics,1998-06-20T00:00:00,1610612738
-1627763,POR,13.0,G,Virginia,USA,2016.0,36,Malcolm Brogdon,Portland Trail Blazers,1992-12-11T00:00:00,1610612757
-1628415,HOU,24.0,G-F,Oregon,Canada,2017.0,45,Dillon Brooks,Houston Rockets,1996-01-22T00:00:00,1610612745
-1628971,IND,11.0,G-F,Miami,USA,2018.0,42,Bruce Brown,Indiana Pacers,1996-08-15T00:00:00,1610612754
-1627759,BOS,7.0,G-F,California,USA,2016.0,3,Jaylen Brown,Boston Celtics,1996-10-24T00:00:00,1610612738
-1631112,IND,10.0,G,Baylor,USA,2022.0,48,Kendall Brown,Indiana Pacers,2003-05-11T00:00:00,1610612754
-1629650,POR,0.0,C,UCLA,USA,2019.0,Undrafted,Moses Brown,Portland Trail Blazers,1999-10-13T00:00:00,1610612757
-1630535,DAL,36.0,F,Texas,USA,2021.0,43,Greg Brown III,Dallas Mavericks,2001-09-01T00:00:00,1610612742
-1628972,MIN,7.0,G-F,Oregon,USA,2018.0,15,Troy Brown Jr.,Minnesota Timberwolves,1999-07-28T00:00:00,1610612750
-1628973,NYK,11.0,G,Villanova,USA,2018.0,33,Jalen Brunson,New York Knicks,1996-08-31T00:00:00,1610612752
-1628418,MIA,13.0,C-F,Indiana,USA,2017.0,42,Thomas Bryant,Miami Heat,1997-07-31T00:00:00,1610612748
-203493,HOU,25.0,G-F,North Carolina,USA,2013.0,25,Reggie Bullock Jr.,Houston Rockets,1991-03-16T00:00:00,1610612745
-202692,DET,14.0,G,Colorado,USA,2011.0,12,Alec Burks,Detroit Pistons,1991-07-20T00:00:00,1610612765
-1630215,WAS,14.0,G,Baylor,USA,2021.0,40,Jared Butler,Washington Wizards,2000-08-25T00:00:00,1610612764
-202710,MIA,22.0,F,Marquette,USA,2011.0,30,Jimmy Butler,Miami Heat,1989-09-14T00:00:00,1610612748
-1631288,MIA,8.0,F,Oakland,USA,2022.0,Undrafted,Jamal Cain,Miami Heat,1999-03-20T00:00:00,1610612748
-203484,DEN,5.0,G,Georgia,USA,2013.0,8,Kentavious Caldwell-Pope,Denver Nuggets,1993-02-18T00:00:00,1610612743
-1628427,DEN,31.0,F,San Pablo Burgos,Slovenia,2017.0,49,Vlatko Cancar,Denver Nuggets,1997-04-10T00:00:00,1610612743
-203991,ATL,15.0,C,Elan Chalon,Switzerland,2014.0,25,Clint Capela,Atlanta Hawks,1994-05-18T00:00:00,1610612737
-1628975,CHI,5.0,G,West Virginia,USA,2018.0,32,Jevon Carter,Chicago Bulls,1995-09-14T00:00:00,1610612741
-1628976,ORL,34.0,C-F,Duke,USA,2018.0,7,Wendell Carter Jr.,Orlando Magic,1999-04-16T00:00:00,1610612753
-1627936,CHI,6.0,G,Texas A&M,USA,2017.0,Undrafted,Alex Caruso,Chicago Bulls,1994-02-28T00:00:00,1610612741
-1630577,SAS,30.0,F,St. John's,USA,2022.0,Undrafted,Julian Champagnie,San Antonio Spurs,2001-06-29T00:00:00,1610612759
-1631108,LAL,10.0,G,Michigan State,USA,2022.0,35,Max Christie,Los Angeles Lakers,2003-02-10T00:00:00,1610612747
-1630528,UTA,9.0,G,Arizona State,USA,2021.0,24,Josh Christopher,Utah Jazz,2001-12-08T00:00:00,1610612762
-1629634,MEM,15.0,F,Gonzaga,Canada,2019.0,21,Brandon Clarke,Memphis Grizzlies,1996-09-19T00:00:00,1610612763
-203903,UTA,0.0,G,Missouri,USA,2014.0,46,Jordan Clarkson,Utah Jazz,1992-06-07T00:00:00,1610612762
-1629651,BKN,33.0,C,Georgia,USA,2019.0,31,Nic Claxton,Brooklyn Nets,1999-04-17T00:00:00,1610612751
-1629599,LAC,7.0,G-F,Minnesota,USA,2019.0,Undrafted,Amir Coffey,LA Clippers,1997-06-17T00:00:00,1610612746
-1628381,UTA,20.0,F-C,Wake Forest,USA,2017.0,19,John Collins,Utah Jazz,1997-09-23T00:00:00,1610612762
-1628380,SAS,23.0,F-C,Gonzaga,USA,2017.0,10,Zach Collins,San Antonio Spurs,1997-11-19T00:00:00,1610612759
-201144,MIN,10.0,G,Ohio State,USA,2007.0,4,Mike Conley,Minnesota Timberwolves,1987-10-11T00:00:00,1610612750
-1626192,MIL,24.0,G,Notre Dame,USA,2015.0,41,Pat Connaughton,Milwaukee Bucks,1993-01-06T00:00:00,1610612749
-1641645,WAS,12.0,F,Winthrop,Australia,2022.0,Undrafted,Xavier Cooks,Washington Wizards,1995-08-19T00:00:00,1610612764
-203496,LAC,23.0,F,Tennessee State,USA,2013.0,Undrafted,Robert Covington,LA Clippers,1990-12-14T00:00:00,1610612746
-1628470,CHI,0.0,F,South Carolina Upstate,USA,2017.0,Undrafted,Torrey Craig,Chicago Bulls,1990-12-19T00:00:00,1610612741
-203109,MIL,99.0,F,Marquette,USA,2012.0,34,Jae Crowder,Milwaukee Bucks,1990-07-06T00:00:00,1610612749
-1630595,DET,2.0,G,Oklahoma State,USA,2021.0,1,Cade Cunningham,Detroit Pistons,2001-09-25T00:00:00,1610612765
-203552,DAL,30.0,G,Duke,USA,2013.0,Undrafted,Seth Curry,Dallas Mavericks,1990-08-23T00:00:00,1610612742
-201939,GSW,30.0,G,Davidson,USA,2009.0,7,Stephen Curry,Golden State Warriors,1988-03-14T00:00:00,1610612744
-1630700,NOP,11.0,G,NBA G League Ignite,Australia,2022.0,8,Dyson Daniels,New Orleans Pelicans,2003-03-17T00:00:00,1610612740
-203076,LAL,3.0,F-C,Kentucky,USA,2012.0,1,Anthony Davis,Los Angeles Lakers,1993-03-11T00:00:00,1610612747
-1631098,WAS,1.0,G,Wisconsin,USA,2022.0,10,Johnny Davis,Washington Wizards,2002-02-27T00:00:00,1610612764
-1631120,BOS,20.0,G,Alabama,USA,2022.0,53,JD Davison,Boston Celtics,2002-10-03T00:00:00,1610612738
-1630620,HOU,5.0,F,Louisiana State,USA,2022.0,Undrafted,Darius Days,Houston Rockets,1999-10-20T00:00:00,1610612745
-201942,CHI,11.0,G-F,Southern California,USA,2009.0,9,DeMar DeRozan,Chicago Bulls,1989-08-07T00:00:00,1610612741
-1628978,NYK,0.0,G,Villanova,USA,2018.0,17,Donte DiVincenzo,New York Knicks,1997-01-31T00:00:00,1610612752
-1631217,LAC,25.0,F,Michigan,France,2022.0,43,Moussa Diabate,LA Clippers,2002-01-21T00:00:00,1610612746
-1631172,OKC,13.0,F,New Zealand Breakers,France,2022.0,11,Ousmane Dieng,Oklahoma City Thunder,2003-05-21T00:00:00,1610612760
-203915,BKN,26.0,G,Colorado,USA,2014.0,38,Spencer Dinwiddie,Brooklyn Nets,1993-04-06T00:00:00,1610612751
-1629029,DAL,77.0,F-G,Real Madrid,Slovenia,2018.0,3,Luka Doncic,Dallas Mavericks,1999-02-28T00:00:00,1610612742
-1629652,OKC,5.0,G,Arizona State,Canada,2019.0,Undrafted,Luguentz Dort,Oklahoma City Thunder,1999-04-19T00:00:00,1610612760
-1630245,CHI,12.0,G,Illinois,USA,2021.0,38,Ayo Dosunmu,Chicago Bulls,2000-01-17T00:00:00,1610612741
-203083,CHI,3.0,C,Connecticut,USA,2012.0,9,Andre Drummond,Chicago Bulls,1993-08-10T00:00:00,1610612741
-1630537,SAC,3.0,G,Oregon,Dominican Republic,2021.0,13,Chris Duarte,Sacramento Kings,1997-06-13T00:00:00,1610612758
-1627739,UTA,11.0,G,Providence,USA,2016.0,5,Kris Dunn,Utah Jazz,1994-03-18T00:00:00,1610612762
-201142,PHX,35.0,F,Texas,USA,2007.0,2,Kevin Durant,Phoenix Suns,1988-09-29T00:00:00,1610612756
-1631105,DET,0.0,C,Memphis,USA,2022.0,13,Jalen Duren,Detroit Pistons,2003-11-18T00:00:00,1610612765
-1631106,HOU,17.0,F,Louisiana State,USA,2022.0,17,Tari Eason,Houston Rockets,2001-05-10T00:00:00,1610612745
-1630162,MIN,5.0,G,Georgia,USA,2020.0,1,Anthony Edwards,Minnesota Timberwolves,2001-08-05T00:00:00,1610612750
-1630556,SAC,17.0,F,Pepperdine,USA,2021.0,44,Kessler Edwards,Sacramento Kings,2000-08-09T00:00:00,1610612758
-1631165,SAC,23.0,G,Alabama,USA,2022.0,Undrafted,Keon Ellis,Sacramento Kings,2000-01-08T00:00:00,1610612758
-203954,PHI,21.0,C-F,Kansas,Cameroon,2014.0,3,Joel Embiid,Philadelphia 76ers,1994-03-16T00:00:00,1610612755
-1629234,PHX,14.0,F-C,Oregon State,USA,2018.0,Undrafted,Drew Eubanks,Phoenix Suns,1997-02-01T00:00:00,1610612756
-1628981,ATL,0.0,F-C,Maryland,Angola,2019.0,34,Bruno Fernando,Atlanta Hawks,1998-08-15T00:00:00,1610612737
-1627827,BKN,28.0,F,Florida,USA,2016.0,Undrafted,Dorian Finney-Smith,Brooklyn Nets,1993-05-04T00:00:00,1610612751
-1630201,TOR,22.0,G,San Diego State,USA,2020.0,29,Malachi Flynn,Toronto Raptors,1998-05-09T00:00:00,1610612761
-1631323,UTA,16.0,F,Baskonia,Italy,2022.0,Undrafted,Simone Fontecchio,Utah Jazz,1995-12-09T00:00:00,1610612762
-1630235,ATL,2.0,G,Florida State,USA,2020.0,Undrafted,Trent Forrest,Atlanta Hawks,1998-06-12T00:00:00,1610612737
-203095,NYK,13.0,G-F,Poitiers Basket 86,France,2012.0,20,Evan Fournier,New York Knicks,1992-10-29T00:00:00,1610612752
-1628368,SAC,5.0,G,Kentucky,USA,2017.0,5,De'Aaron Fox,Sacramento Kings,1997-12-20T00:00:00,1610612758
-1628365,ORL,20.0,G,Washington,USA,2017.0,1,Markelle Fultz,Orlando Magic,1998-05-29T00:00:00,1610612753
-1629655,WAS,21.0,F-C,Arkansas,USA,2019.0,38,Daniel Gafford,Washington Wizards,1998-10-01T00:00:00,1610612764
-201568,WAS,88.0,F,Olimpia Milano,Italy,2008.0,6,Danilo Gallinari,Washington Wizards,1988-08-08T00:00:00,1610612764
-1629636,CLE,10.0,G,Vanderbilt,USA,2019.0,5,Darius Garland,Cleveland Cavaliers,2000-01-26T00:00:00,1610612739
-1630586,GSW,12.0,F,Real Madrid,Spain,2021.0,23,Usman Garuba,Golden State Warriors,2002-03-09T00:00:00,1610612744
-1630568,MIN,55.0,C,Iowa,USA,2021.0,52,Luka Garza,Minnesota Timberwolves,1998-12-27T00:00:00,1610612750
-202331,LAC,13.0,F,Fresno State,USA,2010.0,10,Paul George,LA Clippers,1990-05-02T00:00:00,1610612746
-201959,WAS,67.0,F,Southern California,USA,2009.0,26,Taj Gibson,Washington Wizards,1985-06-24T00:00:00,1610612764
-1630581,OKC,3.0,G,NBA Global Academy,Australia,2021.0,6,Josh Giddey,Oklahoma City Thunder,2002-10-10T00:00:00,1610612760
-1628983,OKC,2.0,G,Kentucky,Canada,2018.0,11,Shai Gilgeous-Alexander,Oklahoma City Thunder,1998-07-12T00:00:00,1610612760
-1630264,WAS,16.0,F,Virginia,USA,2020.0,Undrafted,Anthony Gill,Washington Wizards,1992-10-17T00:00:00,1610612764
-1631221,DEN,21.0,G,Villanova,USA,2022.0,Undrafted,Collin Gillespie,Denver Nuggets,1999-06-25T00:00:00,1610612743
-203497,MIN,27.0,C,Cholet,France,2013.0,27,Rudy Gobert,Minnesota Timberwolves,1992-06-26T00:00:00,1610612750
-1630692,PHX,0.0,G,St. Louis,USA,2021.0,Undrafted,Jordan Goodwin,Phoenix Suns,1998-10-23T00:00:00,1610612756
-203932,DEN,50.0,F,Arizona,USA,2014.0,4,Aaron Gordon,Denver Nuggets,1995-09-16T00:00:00,1610612743
-201569,PHX,23.0,G,Indiana,USA,2008.0,7,Eric Gordon,Phoenix Suns,1988-12-25T00:00:00,1610612756
-1628984,SAS,4.0,G,Kansas,USA,2018.0,34,Devonte' Graham,San Antonio Spurs,1995-02-22T00:00:00,1610612759
-203924,POR,9.0,F,Syracuse,USA,2014.0,39,Jerami Grant,Portland Trail Blazers,1994-03-12T00:00:00,1610612757
-1631260,MIL,20.0,G,Northern Iowa,USA,2022.0,Undrafted,AJ Green,Milwaukee Bucks,1999-09-27T00:00:00,1610612749
-201980,PHI,14.0,G,North Carolina,USA,2009.0,46,Danny Green,Philadelphia 76ers,1987-06-22T00:00:00,1610612755
-203110,GSW,23.0,F,Michigan State,USA,2012.0,35,Draymond Green,Golden State Warriors,1990-03-04T00:00:00,1610612744
-1630224,HOU,4.0,G,NBA G League Ignite,USA,2021.0,2,Jalen Green,Houston Rockets,2002-02-09T00:00:00,1610612745
-201145,HOU,32.0,F,Georgetown,USA,2007.0,5,Jeff Green,Houston Rockets,1986-08-28T00:00:00,1610612745
-1630182,DAL,8.0,G,Arizona,Australia,2020.0,18,Josh Green,Dallas Mavericks,2000-11-16T00:00:00,1610612742
-1631100,ATL,14.0,F,Duke,USA,2022.0,16,AJ Griffin,Atlanta Hawks,2003-08-25T00:00:00,1610612737
-1629656,NYK,6.0,G,Houston,USA,2021.0,25,Quentin Grimes,New York Knicks,2000-05-08T00:00:00,1610612752
-1629060,LAL,28.0,F,Gonzaga,Japan,2019.0,9,Rui Hachimura,Los Angeles Lakers,1998-02-08T00:00:00,1610612747
-1630169,IND,0.0,G,Iowa State,USA,2020.0,12,Tyrese Haliburton,Indiana Pacers,2000-02-29T00:00:00,1610612754
-1630181,MIA,14.0,G,New Zealand Breakers,USA,2020.0,24,R.J. Hampton,Miami Heat,2001-02-07T00:00:00,1610612748
-203501,DAL,11.0,G-F,Michigan,USA,2013.0,24,Tim Hardaway Jr.,Dallas Mavericks,1992-03-16T00:00:00,1610612742
-201935,PHI,1.0,G,Arizona State,USA,2009.0,3,James Harden,Philadelphia 76ers,1989-08-26T00:00:00,1610612755
-1630702,DAL,1.0,G,NBA G League Ignite,USA,2022.0,37,Jaden Hardy,Dallas Mavericks,2002-07-05T00:00:00,1610612742
-1631199,TOR,8.0,F,Rutgers,USA,2022.0,Undrafted,Ron Harper Jr.,Toronto Raptors,2000-04-12T00:00:00,1610612761
-1626149,PHI,5.0,F-C,Louisville,USA,2015.0,32,Montrezl Harrell,Philadelphia 76ers,1994-01-26T00:00:00,1610612755
-203914,ORL,14.0,G,Michigan State,USA,2014.0,19,Gary Harris,Orlando Magic,1994-09-14T00:00:00,1610612753
-203925,DET,31.0,G-F,Virginia,USA,2014.0,33,Joe Harris,Detroit Pistons,1991-09-06T00:00:00,1610612765
-1630284,ORL,8.0,G,Stephen F. Austin,USA,2022.0,Undrafted,Kevon Harris,Orlando Magic,1997-06-24T00:00:00,1610612753
-202699,PHI,12.0,F,Tennessee,USA,2011.0,19,Tobias Harris,Philadelphia 76ers,1992-07-15T00:00:00,1610612755
-1628404,NYK,3.0,G,Villanova,USA,2017.0,30,Josh Hart,New York Knicks,1995-03-06T00:00:00,1610612752
-1628392,NYK,55.0,C-F,Zalgiris,Germany,2017.0,43,Isaiah Hartenstein,New York Knicks,1998-05-05T00:00:00,1610612752
-1630573,BOS,30.0,F,Virginia,USA,2021.0,Undrafted,Sam Hauser,Boston Celtics,1997-12-08T00:00:00,1610612738
-1629637,LAL,11.0,C-F,Texas,USA,2019.0,8,Jaxson Hayes,Los Angeles Lakers,2000-05-23T00:00:00,1610612747
-1630165,DET,7.0,G,Ratiopharm Ulm,France,2020.0,7,Killian Hayes,Detroit Pistons,2001-07-27T00:00:00,1610612765
-202330,CHA,20.0,F,Butler,USA,2010.0,9,Gordon Hayward,Charlotte Hornets,1990-03-23T00:00:00,1610612766
-1629639,MIA,14.0,G,Kentucky,USA,2019.0,13,Tyler Herro,Miami Heat,2000-01-20T00:00:00,1610612748
-1627741,IND,7.0,G,Oklahoma,Bahamas,2016.0,6,Buddy Hield,Indiana Pacers,1992-12-17T00:00:00,1610612754
-1629312,MIA,24.0,F,Wheeling Jesuit,USA,2018.0,Undrafted,Haywood Highsmith,Miami Heat,1996-12-09T00:00:00,1610612748
-1628988,HOU,3.0,G,UCLA,USA,2018.0,23,Aaron Holiday,Houston Rockets,1996-09-30T00:00:00,1610612745
-201950,BOS,4.0,G,UCLA,USA,2009.0,17,Jrue Holiday,Boston Celtics,1990-06-12T00:00:00,1610612738
-203200,DEN,9.0,F-G,Washington,USA,2012.0,Undrafted,Justin Holiday,Denver Nuggets,1989-04-05T00:00:00,1610612743
-1626158,DAL,20.0,F,Bowling Green,USA,2015.0,37,Richaun Holmes,Dallas Mavericks,1993-10-15T00:00:00,1610612742
-1631096,OKC,7.0,C-F,Gonzaga,USA,2022.0,2,Chet Holmgren,Oklahoma City Thunder,2002-05-01T00:00:00,1610612760
-201143,BOS,42.0,C-F,Florida,Dominican Republic,2007.0,3,Al Horford,Boston Celtics,1986-06-03T00:00:00,1610612738
-1629659,UTA,5.0,G,Iowa State,USA,2019.0,46,Talen Horton-Tucker,Utah Jazz,2000-11-25T00:00:00,1610612762
-1627863,PHI,25.0,F-G,Texas A&M,USA,2016.0,Undrafted,Danuel House Jr.,Philadelphia 76ers,1993-06-07T00:00:00,1610612755
-1631216,ORL,2.0,G,Michigan,Canada,2022.0,32,Caleb Houstan,Orlando Magic,2003-01-09T00:00:00,1610612753
-1631309,HOU,12.0,G,Northwest Missouri State,USA,2022.0,Undrafted,Trevor Hudgins,Houston Rockets,1999-03-23T00:00:00,1610612745
-1628989,SAC,9.0,G-F,Maryland,USA,2018.0,19,Kevin Huerter,Sacramento Kings,1998-08-27T00:00:00,1610612758
-1630643,DEN,34.0,C,Virginia,USA,2021.0,Undrafted,Jay Huff,Denver Nuggets,1997-08-25T00:00:00,1610612743
-1629631,ATL,12.0,F-G,Virginia,USA,2019.0,4,De'Andre Hunter,Atlanta Hawks,1997-12-02T00:00:00,1610612737
-1630538,LAC,5.0,G,Virginia Commonwealth,USA,2021.0,26,Bones Hyland,LA Clippers,2000-09-14T00:00:00,1610612746
-204060,ORL,7.0,F-G,Maccabi Tel Aviv,Australia,2014.0,Undrafted,Joe Ingles,Orlando Magic,1987-10-02T00:00:00,1610612753
-1627742,NOP,14.0,F,Duke,USA,2016.0,2,Brandon Ingram,New Orleans Pelicans,1997-09-02T00:00:00,1610612740
-202681,DAL,2.0,G,Duke,Australia,2011.0,1,Kyrie Irving,Dallas Mavericks,1992-03-23T00:00:00,1610612742
-1628371,ORL,1.0,F,Florida State,USA,2017.0,6,Jonathan Isaac,Orlando Magic,1997-10-03T00:00:00,1610612753
-1631093,DET,23.0,G,Purdue,USA,2022.0,5,Jaden Ivey,Detroit Pistons,2002-02-13T00:00:00,1610612765
-1630543,IND,22.0,F,Kentucky,USA,2021.0,22,Isaiah Jackson,Indiana Pacers,2002-01-10T00:00:00,1610612754
-202704,DEN,7.0,G,Boston College,USA,2011.0,24,Reggie Jackson,Denver Nuggets,1990-04-16T00:00:00,1610612743
-1628991,MEM,13.0,F-C,Michigan State,USA,2018.0,4,Jaren Jackson Jr.,Memphis Grizzlies,1999-09-15T00:00:00,1610612763
-2544,LAL,23.0,F,St. Vincent-St. Mary HS (OH),USA,2003.0,1,LeBron James,Los Angeles Lakers,1984-12-30T00:00:00,1610612747
-1629610,NYK,8.0,G-F,Tulsa,USA,2019.0,Undrafted,DaQuan Jeffries,New York Knicks,1997-08-30T00:00:00,1610612752
-1629660,CLE,2.0,G-F,Virginia,USA,2019.0,24,Ty Jerome,Cleveland Cavaliers,1997-07-08T00:00:00,1610612739
-1630198,OKC,11.0,G,Arkansas,USA,2020.0,49,Isaiah Joe,Oklahoma City Thunder,1999-07-02T00:00:00,1610612760
-1629661,BKN,2.0,F,North Carolina,USA,2019.0,11,Cameron Johnson,Brooklyn Nets,1996-03-03T00:00:00,1610612751
-1630552,ATL,1.0,F,Duke,USA,2021.0,20,Jalen Johnson,Atlanta Hawks,2001-12-18T00:00:00,1610612737
-1629640,SAS,3.0,F-G,Kentucky,USA,2019.0,29,Keldon Johnson,San Antonio Spurs,1999-10-11T00:00:00,1610612759
-1630553,PHX,6.0,G,Tennessee,USA,2021.0,21,Keon Johnson,Phoenix Suns,2002-03-10T00:00:00,1610612756
-203999,DEN,15.0,C,Mega Basket,Serbia,2014.0,41,Nikola Jokic,Denver Nuggets,1995-02-19T00:00:00,1610612743
-1627745,CLE,30.0,C,Vanderbilt,USA,2016.0,30,Damian Jones,Cleveland Cavaliers,1995-06-30T00:00:00,1610612739
-1630529,NOP,5.0,F,Alabama,USA,2021.0,35,Herbert Jones,New Orleans Pelicans,1998-10-06T00:00:00,1610612740
-1630200,SAS,33.0,G,Duke,USA,2020.0,41,Tre Jones,San Antonio Spurs,2000-01-08T00:00:00,1610612759
-1626145,WAS,5.0,G,Duke,USA,2015.0,24,Tyus Jones,Washington Wizards,1996-05-10T00:00:00,1610612764
-1627884,DAL,55.0,F,UNLV,USA,2016.0,Undrafted,Derrick Jones Jr.,Dallas Mavericks,1997-02-15T00:00:00,1610612742
-201599,DEN,6.0,C,Texas A&M,USA,2008.0,35,DeAndre Jordan,Denver Nuggets,1988-07-21T00:00:00,1610612743
-202709,GSW,1.0,G,Texas,Canada,2011.0,29,Cory Joseph,Golden State Warriors,1991-08-20T00:00:00,1610612744
-1631107,MIA,5.0,F,                                   ,Serbia,2022.0,27,Nikola Jovic,Miami Heat,2003-06-09T00:00:00,1610612748
-1630548,UTA,33.0,G,UCLA,USA,2022.0,Undrafted,Johnny Juzang,Utah Jazz,2001-03-17T00:00:00,1610612762
-1628379,MEM,10.0,G,Duke,USA,2017.0,12,Luke Kennard,Memphis Grizzlies,1996-06-24T00:00:00,1610612763
-1631117,UTA,24.0,C,Auburn,USA,2022.0,22,Walker Kessler,Utah Jazz,2001-07-26T00:00:00,1610612762
-1630296,DEN,11.0,F,Virginia,USA,2021.0,Undrafted,Braxton Key,Denver Nuggets,1997-02-14T00:00:00,1610612743
-1630557,WAS,24.0,F,Gonzaga,USA,2021.0,15,Corey Kispert,Washington Wizards,1999-03-03T00:00:00,1610612764
-1628467,DAL,42.0,F,Bayern Munich,Germany,2017.0,Undrafted,Maxi Kleber,Dallas Mavericks,1992-01-29T00:00:00,1610612742
-1631132,TOR,35.0,C,Arizona,Cameroon,2022.0,33,Christian Koloko,Toronto Raptors,2000-06-20T00:00:00,1610612761
-1629723,MEM,46.0,G,Indiana-Purdue Fort Wayne,USA,2019.0,Undrafted,John Konchar,Memphis Grizzlies,1996-03-22T00:00:00,1610612763
-1627788,PHI,30.0,G-F,Anadolu Efes,Turkey,2016.0,26,Furkan Korkmaz,Philadelphia 76ers,1997-07-24T00:00:00,1610612755
-1628436,BOS,40.0,C-F,Vanderbilt,USA,2017.0,Undrafted,Luke Kornet,Boston Celtics,1995-07-15T00:00:00,1610612738
-1630228,GSW,0.0,F,NBA G League Ignite,DRC,2021.0,7,Jonathan Kuminga,Golden State Warriors,2002-10-06T00:00:00,1610612744
-1628398,WAS,33.0,F,Utah,USA,2017.0,27,Kyle Kuzma,Washington Wizards,1995-07-24T00:00:00,1610612764
-1631222,MEM,3.0,F,Wake Forest,USA,2022.0,19,Jake LaRavia,Memphis Grizzlies,2001-11-03T00:00:00,1610612763
-203897,CHI,8.0,G,UCLA,USA,2014.0,13,Zach LaVine,Chicago Bulls,1995-03-10T00:00:00,1610612741
-1629111,HOU,11.0,C,St. Mary's,Australia,2021.0,Undrafted,Jock Landale,Houston Rockets,1995-10-25T00:00:00,1610612745
-1630639,DAL,9.0,G,South Carolina,Canada,2022.0,Undrafted,A.J. Lawson,Dallas Mavericks,2000-07-15T00:00:00,1610612742
-1627747,CLE,3.0,G,Michigan,USA,2016.0,20,Caris LeVert,Cleveland Cavaliers,1994-08-25T00:00:00,1610612739
-1627814,PHX,10.0,G-F,Drexel,USA,2017.0,Undrafted,Damion Lee,Phoenix Suns,1992-10-21T00:00:00,1610612756
-1630240,PHX,38.0,G,Vanderbilt,USA,2020.0,38,Saben Lee,Phoenix Suns,1999-06-23T00:00:00,1610612756
-203458,SAC,25.0,C,Maryland,Ukraine,2013.0,5,Alex Len,Sacramento Kings,1993-06-16T00:00:00,1610612758
-202695,LAC,2.0,F,San Diego State,USA,2011.0,15,Kawhi Leonard,LA Clippers,1991-06-29T00:00:00,1610612746
-1631171,CHI,34.0,F,Marquette,USA,2022.0,Undrafted,Justin Lewis,Chicago Bulls,2002-04-12T00:00:00,1610612741
-1630184,NOP,13.0,G,Alabama,USA,2020.0,13,Kira Lewis Jr.,New Orleans Pelicans,2001-04-06T00:00:00,1610612740
-1630604,NOP,32.0,F,Ohio State,USA,2022.0,41,E.J. Liddell,New Orleans Pelicans,2000-12-18T00:00:00,1610612740
-203081,MIL,0.0,G,Weber State,USA,2012.0,6,Damian Lillard,Milwaukee Bucks,1990-07-15T00:00:00,1610612749
-1629642,PHX,25.0,F-G,North Carolina,USA,2019.0,25,Nassir Little,Phoenix Suns,2000-02-11T00:00:00,1610612756
-1630587,DET,12.0,F,Michigan,USA,2021.0,42,Isaiah Livers,Detroit Pistons,1998-07-28T00:00:00,1610612765
-1631254,MEM,6.0,F,Louisiana Tech,USA,2022.0,Undrafted,Kenneth Lofton Jr.,Memphis Grizzlies,2002-08-14T00:00:00,1610612763
-1626172,GSW,5.0,F,UCLA,USA,2015.0,30,Kevon Looney,Golden State Warriors,1996-02-06T00:00:00,1610612744
-201572,MIL,11.0,C,Stanford,USA,2008.0,10,Brook Lopez,Milwaukee Bucks,1988-04-01T00:00:00,1610612749
-201577,MIL,33.0,C,Stanford,USA,2008.0,15,Robin Lopez,Milwaukee Bucks,1988-04-01T00:00:00,1610612749
-201567,MIA,0.0,F-C,UCLA,USA,2008.0,5,Kevin Love,Miami Heat,1988-09-07T00:00:00,1610612748
-200768,MIA,7.0,G,Villanova,USA,2006.0,24,Kyle Lowry,Miami Heat,1986-03-25T00:00:00,1610612748
-1626168,SAC,41.0,F,Kentucky,Canada,2015.0,12,Trey Lyles,Sacramento Kings,1995-11-05T00:00:00,1610612758
-1630177,CHA,9.0,G,Asvel,France,2020.0,34,Theo Maledon,Charlotte Hornets,2001-06-12T00:00:00,1610612766
-1630572,SAS,54.0,F-C,Seton Hall,Georgia,2021.0,54,Sandro Mamukelashvili,San Antonio Spurs,1999-05-23T00:00:00,1610612759
-1629611,LAC,14.0,G-F,Florida State,USA,2019.0,48,Terance Mann,LA Clippers,1996-10-18T00:00:00,1610612746
-1630544,OKC,23.0,G,Florida,USA,2021.0,18,Tre Mann,Oklahoma City Thunder,2001-02-03T00:00:00,1610612760
-1626246,HOU,51.0,C,Crvena zvezda,Serbia,2015.0,Undrafted,Boban Marjanovic,Houston Rockets,1988-08-15T00:00:00,1610612745
-1628374,UTA,23.0,F-C,Arizona,Finland,2017.0,7,Lauri Markkanen,Utah Jazz,1997-05-22T00:00:00,1610612762
-1630230,NOP,8.0,F,Xavier,USA,2020.0,Undrafted,Naji Marshall,New Orleans Pelicans,1998-01-24T00:00:00,1610612740
-1628997,MIA,16.0,F,Nevada,USA,2019.0,Undrafted,Caleb Martin,Miami Heat,1995-09-28T00:00:00,1610612748
-1628998,CHA,11.0,F,Nevada,USA,2019.0,36,Cody Martin,Charlotte Hornets,1995-09-28T00:00:00,1610612766
-1630231,LAC,6.0,F,IMG Academy (FL),USA,2020.0,52,Kenyon Martin Jr.,LA Clippers,2001-01-06T00:00:00,1610612746
-1629726,ATL,25.0,G,Lipscomb,USA,2019.0,Undrafted,Garrison Mathews,Atlanta Hawks,1996-10-24T00:00:00,1610612737
-1631097,IND,0.0,G-F,Arizona,Canada,2022.0,6,Bennedict Mathurin,Indiana Pacers,2002-06-19T00:00:00,1610612754
-202083,ATL,23.0,G,Marquette,USA,2009.0,Undrafted,Wesley Matthews,Atlanta Hawks,1986-10-14T00:00:00,1610612737
-1630178,PHI,0.0,G,Kentucky,USA,2020.0,21,Tyrese Maxey,Philadelphia 76ers,2000-11-04T00:00:00,1610612755
-1630540,NYK,2.0,G,West Virginia,USA,2021.0,36,Miles McBride,New York Knicks,2000-09-08T00:00:00,1610612752
-203468,NOP,3.0,G,Lehigh,USA,2013.0,10,CJ McCollum,New Orleans Pelicans,1991-09-19T00:00:00,1610612740
-204456,IND,9.0,G,Arizona,USA,2015.0,Undrafted,T.J. McConnell,Indiana Pacers,1992-03-25T00:00:00,1610612754
-1630183,MIN,3.0,F,Washington,USA,2020.0,28,Jaden McDaniels,Minnesota Timberwolves,2000-09-29T00:00:00,1610612750
-1629667,TOR,2.0,F-C,San Diego State,USA,2019.0,52,Jalen McDaniels,Toronto Raptors,1998-01-31T00:00:00,1610612761
-203926,SAS,17.0,F,Creighton,USA,2014.0,11,Doug McDermott,San Antonio Spurs,1992-01-03T00:00:00,1610612759
-201580,SAC,0.0,C-F,Nevada,USA,2008.0,18,JaVale McGee,Sacramento Kings,1988-01-19T00:00:00,1610612758
-1631121,CHA,7.0,G,Nebraska,USA,2022.0,40,Bryce McGowens,Charlotte Hornets,2002-11-08T00:00:00,1610612766
-1629162,MIN,6.0,G,Southern California,USA,2019.0,Undrafted,Jordan McLaughlin,Minnesota Timberwolves,1996-04-09T00:00:00,1610612750
-1629001,PHI,8.0,G,Southern California,USA,2018.0,46,De'Anthony Melton,Philadelphia 76ers,1998-05-28T00:00:00,1610612755
-1630241,CLE,5.0,G,Utah State,USA,2020.0,60,Sam Merrill,Cleveland Cavaliers,1996-05-15T00:00:00,1610612739
-1629002,PHX,4.0,F-C,Southern California,USA,2018.0,49,Chimezie Metu,Phoenix Suns,1997-03-22T00:00:00,1610612756
-203114,MIL,22.0,F,Texas A&M,USA,2012.0,39,Khris Middleton,Milwaukee Bucks,1991-08-12T00:00:00,1610612749
-201988,ATL,8.0,G,St. Mary's,Australia,2009.0,55,Patty Mills,Atlanta Hawks,1988-08-11T00:00:00,1610612737
-1629003,MIN,18.0,G-F,Southern Methodist,USA,2018.0,54,Shake Milton,Minnesota Timberwolves,1996-09-26T00:00:00,1610612750
-1631169,MIN,8.0,F,Memphis,USA,2022.0,45,Josh Minott,Minnesota Timberwolves,2002-11-25T00:00:00,1610612750
-1630558,SAC,15.0,G,Baylor,USA,2021.0,9,Davion Mitchell,Sacramento Kings,1998-09-05T00:00:00,1610612758
-1628378,CLE,45.0,G,Louisville,USA,2017.0,13,Donovan Mitchell,Cleveland Cavaliers,1996-09-07T00:00:00,1610612739
-1630596,CLE,4.0,C,Southern California,USA,2021.0,3,Evan Mobley,Cleveland Cavaliers,2001-06-18T00:00:00,1610612739
-1630600,CLE,15.0,F,Southern California,USA,2022.0,49,Isaiah Mobley,Cleveland Cavaliers,1999-09-24T00:00:00,1610612739
-1628370,SAC,0.0,G,Kentucky,USA,2017.0,11,Malik Monk,Sacramento Kings,1998-02-04T00:00:00,1610612758
-1630541,GSW,4.0,G,Arkansas,USA,2021.0,14,Moses Moody,Golden State Warriors,2002-05-31T00:00:00,1610612744
-1631111,MIN,7.0,G,Duke,USA,2022.0,26,Wendell Moore Jr.,Minnesota Timberwolves,2001-09-18T00:00:00,1610612750
-1629630,MEM,12.0,G,Murray State,USA,2019.0,2,Ja Morant,Memphis Grizzlies,1999-08-10T00:00:00,1610612763
-202693,DAL,88.0,F,Kansas,USA,2011.0,13,Markieff Morris,Dallas Mavericks,1989-09-02T00:00:00,1610612742
-1628420,DET,5.0,G,Iowa State,USA,2017.0,51,Monte Morris,Detroit Pistons,1995-06-27T00:00:00,1610612765
-202694,LAC,8.0,F,Kansas,USA,2011.0,14,Marcus Morris Sr.,LA Clippers,1989-09-02T00:00:00,1610612746
-1630530,NOP,25.0,F,Virginia,USA,2021.0,17,Trey Murphy III,New Orleans Pelicans,2000-06-18T00:00:00,1610612740
-1627749,ATL,5.0,G,Washington,USA,2016.0,29,Dejounte Murray,Atlanta Hawks,1996-09-19T00:00:00,1610612737
-1627750,DEN,27.0,G,Kentucky,Canada,2016.0,7,Jamal Murray,Denver Nuggets,1997-02-23T00:00:00,1610612743
-1631099,SAC,13.0,F,Iowa,USA,2022.0,4,Keegan Murray,Sacramento Kings,2000-08-19T00:00:00,1610612758
-203488,WAS,35.0,F-C,Bucknell,USA,2013.0,44,Mike Muscala,Washington Wizards,1991-07-01T00:00:00,1610612764
-1629004,BOS,50.0,G-F,Kansas,Ukraine,2018.0,47,Svi Mykhailiuk,Boston Celtics,1997-06-10T00:00:00,1610612738
-1626204,NOP,22.0,F-C,Wyoming,USA,2015.0,27,Larry Nance Jr.,New Orleans Pelicans,1993-01-01T00:00:00,1610612740
-1629614,IND,2.0,G-F,Gonzaga,Canada,2022.0,31,Andrew Nembhard,Indiana Pacers,2000-01-16T00:00:00,1610612754
-1630174,IND,23.0,G-F,Vanderbilt,USA,2020.0,14,Aaron Nesmith,Indiana Pacers,1999-10-16T00:00:00,1610612754
-1627777,CLE,20.0,F,Iowa State,USA,2016.0,50,Georges Niang,Cleveland Cavaliers,1993-06-17T00:00:00,1610612739
-1630227,MIN,15.0,G,NBA G League Ignite,USA,2021.0,Undrafted,Daishen Nix,Minnesota Timberwolves,2002-02-13T00:00:00,1610612750
-1630192,DEN,22.0,F-C,Arizona,USA,2020.0,22,Zeke Nnaji,Denver Nuggets,2001-01-09T00:00:00,1610612743
-1628373,CHA,21.0,G,Strasbourg IG,France,2017.0,8,Frank Ntilikina,Charlotte Hornets,1998-07-28T00:00:00,1610612766
-203994,PHX,27.0,C,Cedevita,Bosnia and Herzegovina,2014.0,16,Jusuf Nurkic,Phoenix Suns,1994-08-23T00:00:00,1610612756
-1629670,IND,13.0,F,Louisville,USA,2020.0,45,Jordan Nwora,Indiana Pacers,1998-09-09T00:00:00,1610612754
-1626220,BKN,0.0,F,Baylor,USA,2017.0,Undrafted,Royce O'Neale,Brooklyn Nets,1993-06-05T00:00:00,1610612751
-1629643,ORL,3.0,F,Auburn,USA,2019.0,16,Chuma Okeke,Orlando Magic,1998-08-18T00:00:00,1610612753
-1629006,PHX,2.0,G,Georgia Tech,Nigeria,2018.0,20,Josh Okogie,Phoenix Suns,1998-09-01T00:00:00,1610612756
-1630168,ATL,17.0,F-C,Southern California,USA,2020.0,6,Onyeka Okongwu,Atlanta Hawks,2000-12-11T00:00:00,1610612737
-1630171,CLE,35.0,F-G,Auburn,USA,2020.0,5,Isaac Okoro,Cleveland Cavaliers,2001-01-26T00:00:00,1610612739
-203506,HOU,3.0,G,Indiana,USA,2013.0,2,Victor Oladipo,Houston Rockets,1992-05-04T00:00:00,1610612745
-203482,UTA,41.0,F-C,Gonzaga,Canada,2013.0,13,Kelly Olynyk,Utah Jazz,1991-04-19T00:00:00,1610612762
-1630647,WAS,97.0,F,Oregon,Nigeria,2021.0,Undrafted,Eugene Omoruyi,Washington Wizards,1997-02-14T00:00:00,1610612764
-1626224,SAS,16.0,F,Anadolu Efes,Turkey,2015.0,31,Cedi Osman,San Antonio Spurs,1995-04-08T00:00:00,1610612759
-1626162,PHI,9.0,F-G,Kansas,USA,2015.0,15,Kelly Oubre Jr.,Philadelphia 76ers,1995-12-09T00:00:00,1610612755
-101108,GSW,3.0,G,Wake Forest,USA,2005.0,4,Chris Paul,Golden State Warriors,1985-05-06T00:00:00,1610612744
-1626166,MIL,15.0,G,Murray State,USA,2015.0,14,Cameron Payne,Milwaukee Bucks,1994-08-08T00:00:00,1610612749
-1627780,GSW,0.0,G,Oregon State,USA,2016.0,Undrafted,Gary Payton II,Golden State Warriors,1992-12-01T00:00:00,1610612744
-203486,LAC,44.0,F-C,Duke,USA,2013.0,22,Mason Plumlee,LA Clippers,1990-03-05T00:00:00,1610612746
-1627751,TOR,19.0,C,Utah,Austria,2016.0,9,Jakob Poeltl,Toronto Raptors,1995-10-15T00:00:00,1610612761
-1630197,OKC,17.0,F,Olympiacos,Serbia,2020.0,17,Aleksej Pokusevski,Oklahoma City Thunder,2001-12-26T00:00:00,1610612760
-1629673,WAS,13.0,G,Michigan,USA,2019.0,28,Jordan Poole,Washington Wizards,1999-06-19T00:00:00,1610612764
-1629008,DEN,1.0,F,Missouri,USA,2018.0,14,Michael Porter Jr.,Denver Nuggets,1998-06-29T00:00:00,1610612743
-203490,TOR,32.0,F,Georgetown,USA,2013.0,3,Otto Porter Jr.,Toronto Raptors,1993-06-03T00:00:00,1610612761
-1626171,MIL,9.0,F,Arkansas,USA,2015.0,22,Bobby Portis,Milwaukee Bucks,1995-02-10T00:00:00,1610612749
-204001,BOS,8.0,F-C,Cajasol Sevilla,Latvia,2015.0,4,Kristaps Porzingis,Boston Celtics,1995-08-02T00:00:00,1610612738
-1630695,UTA,25.0,C,Wisconsin,USA,2021.0,Undrafted,Micah Potter,Utah Jazz,1998-04-06T00:00:00,1610612762
-203939,DAL,7.0,F-C,Stanford,Canada,2014.0,45,Dwight Powell,Dallas Mavericks,1991-07-20T00:00:00,1610612742
-1626181,LAC,24.0,G,UCLA,USA,2015.0,46,Norman Powell,LA Clippers,1993-05-25T00:00:00,1610612746
-1630563,LAC,11.0,G,Alabama,Canada,2021.0,12,Joshua Primo,LA Clippers,2002-12-24T00:00:00,1610612746
-1627752,LAL,12.0,F,Baylor,USA,2016.0,12,Taurean Prince,Los Angeles Lakers,1994-03-22T00:00:00,1610612747
-1630202,BOS,11.0,G,Oregon,USA,2020.0,26,Payton Pritchard,Boston Celtics,1998-01-28T00:00:00,1610612738
-1630243,ORL,12.0,G,New Mexico State,USA,2021.0,Undrafted,Trevelin Queen,Orlando Magic,1997-02-25T00:00:00,1610612753
-1629674,BOS,88.0,C,Utah State,Portugal,2021.0,39,Neemias Queta,Boston Celtics,1999-07-13T00:00:00,1610612738
-1630193,NYK,5.0,G,Kentucky,USA,2020.0,25,Immanuel Quickley,New York Knicks,1999-06-17T00:00:00,1610612752
-1631311,GSW,25.0,G,Memphis,USA,2022.0,Undrafted,Lester Quinones,Golden State Warriors,2000-11-16T00:00:00,1610612744
-203944,NYK,30.0,F-C,Kentucky,USA,2014.0,7,Julius Randle,New York Knicks,1994-11-29T00:00:00,1610612752
-1630559,LAL,15.0,G,Oklahoma,USA,2021.0,Undrafted,Austin Reaves,Los Angeles Lakers,1998-05-29T00:00:00,1610612747
-1629629,LAL,5.0,F-G,Duke,USA,2019.0,10,Cam Reddish,Los Angeles Lakers,1999-09-01T00:00:00,1610612747
-1630194,PHI,44.0,F,DePaul,USA,2020.0,58,Paul Reed,Philadelphia 76ers,1999-06-14T00:00:00,1610612755
-1629675,MIN,11.0,C-F,Louisiana State,USA,2019.0,Undrafted,Naz Reid,Minnesota Timberwolves,1999-08-26T00:00:00,1610612750
-1631197,DET,8.0,G,Seton Hall,USA,2022.0,Undrafted,Jared Rhoden,Detroit Pistons,1999-08-27T00:00:00,1610612765
-1630208,CHA,4.0,C,Kentucky,Jamaica,2020.0,42,Nick Richards,Charlotte Hornets,1997-11-29T00:00:00,1610612766
-1626196,MIA,0.0,G,Tennessee,USA,2015.0,40,Josh Richardson,Miami Heat,1993-09-15T00:00:00,1610612748
-1629130,MIA,55.0,F,Michigan,USA,2018.0,Undrafted,Duncan Robinson,Miami Heat,1994-04-22T00:00:00,1610612748
-1629011,NYK,23.0,C-F,Western Kentucky,USA,2018.0,36,Mitchell Robinson,New York Knicks,1998-04-01T00:00:00,1610612752
-1631115,MIA,25.0,C,Fresno State,USA,2022.0,Undrafted,Orlando Robinson,Miami Heat,2000-07-10T00:00:00,1610612748
-1630526,HOU,50.0,F,Villanova,USA,2021.0,32,Jeremiah Robinson-Earl,Houston Rockets,2000-11-03T00:00:00,1610612745
-1631223,MEM,27.0,F,Colorado State,USA,2022.0,23,David Roddy,Memphis Grizzlies,2001-03-27T00:00:00,1610612763
-1631157,WAS,9.0,G,Toledo,USA,2022.0,44,Ryan Rollins,Washington Wizards,2002-07-03T00:00:00,1610612764
-201565,MEM,4.0,G,Memphis,USA,2008.0,1,Derrick Rose,Memphis Grizzlies,1988-10-04T00:00:00,1610612763
-1626179,CHA,3.0,G,Louisville,USA,2015.0,16,Terry Rozier,Charlotte Hornets,1994-03-17T00:00:00,1610612766
-201937,CLE,13.0,G,FC Barcelona,Spain,2009.0,5,Ricky Rubio,Cleveland Cavaliers,1990-10-21T00:00:00,1610612739
-1626156,LAL,1.0,G,Ohio State,USA,2015.0,2,D'Angelo Russell,Los Angeles Lakers,1996-02-23T00:00:00,1610612747
-1630346,MIN,37.0,F,Tennessee-Chattanooga,USA,2021.0,Undrafted,Matt Ryan,Minnesota Timberwolves,1997-04-17T00:00:00,1610612740
-1627734,SAC,10.0,F-C,Gonzaga,Lithuania,2016.0,11,Domantas Sabonis,Sacramento Kings,1996-05-03T00:00:00,1610612758
-203967,GSW,20.0,F-C,Anadolu Efes,Croatia,2014.0,12,Dario Saric,Golden State Warriors,1994-04-08T00:00:00,1610612744
-1630846,OKC,30.0,C,Kentucky,France,2021.0,Undrafted,Olivier Sarr,Oklahoma City Thunder,1999-02-20T00:00:00,1610612760
-1629678,ORL,25.0,F,Tennessee,United Kingdom,2019.0,42,Admiral Schofield,Orlando Magic,1997-03-30T00:00:00,1610612753
-203471,TOR,17.0,G,Braunschweig,Germany,2013.0,17,Dennis Schroder,Toronto Raptors,1993-09-15T00:00:00,1610612761
-1631220,NOP,0.0,G,North Carolina State,USA,2022.0,Undrafted,Dereon Seabron,New Orleans Pelicans,2000-05-26T00:00:00,1610612740
-1630578,HOU,28.0,C,Besiktas,Turkey,2021.0,16,Alperen Sengun,Houston Rockets,2002-07-25T00:00:00,1610612745
-1629012,UTA,2.0,G,Alabama,USA,2018.0,8,Collin Sexton,Utah Jazz,1999-01-04T00:00:00,1610612762
-1629013,WAS,20.0,G,Wichita State,USA,2018.0,26,Landry Shamet,Washington Wizards,1997-03-13T00:00:00,1610612764
-1630549,BKN,20.0,C,North Carolina,USA,2021.0,29,Day'Ron Sharpe,Brooklyn Nets,2001-11-06T00:00:00,1610612751
-1631101,POR,17.0,G,Kentucky,Canada,2022.0,7,Shaedon Sharpe,Portland Trail Blazers,2003-05-30T00:00:00,1610612757
-1627783,TOR,43.0,F,New Mexico State,Cameroon,2016.0,27,Pascal Siakam,Toronto Raptors,1994-04-02T00:00:00,1610612761
-1627732,BKN,10.0,G-F,Louisiana State,Australia,2016.0,1,Ben Simmons,Brooklyn Nets,1996-07-20T00:00:00,1610612751
-1629014,POR,1.0,G,Edgewater HS (FL),USA,2018.0,24,Anfernee Simons,Portland Trail Blazers,1999-06-08T00:00:00,1610612757
-1630579,NYK,45.0,C,Texas,USA,2021.0,58,Jericho Sims,New York Knicks,1998-10-20T00:00:00,1610612752
-203935,MEM,36.0,G,Oklahoma State,USA,2014.0,6,Marcus Smart,Memphis Grizzlies,1994-03-06T00:00:00,1610612763
-1630696,MIA,9.0,G,Missouri,USA,2022.0,Undrafted,Dru Smith,Miami Heat,1997-12-30T00:00:00,1610612748
-1630188,IND,25.0,F-C,Maryland,USA,2020.0,10,Jalen Smith,Indiana Pacers,2000-03-16T00:00:00,1610612754
-1628372,BKN,4.0,G,North Carolina State,USA,2017.0,9,Dennis Smith Jr.,Brooklyn Nets,1997-11-25T00:00:00,1610612751
-1631095,HOU,1.0,F,Auburn,USA,2022.0,3,Jabari Smith Jr.,Houston Rockets,2003-05-13T00:00:00,1610612745
-1631110,SAS,10.0,F,Baylor,Poland,2022.0,9,Jeremy Sochan,San Antonio Spurs,2003-05-20T00:00:00,1610612759
-1630531,PHI,11.0,G,Tennessee,USA,2021.0,28,Jaden Springer,Philadelphia 76ers,2002-09-25T00:00:00,1610612755
-1630205,BOS,77.0,F,Penn State,USA,2020.0,Undrafted,Lamar Stevens,Boston Celtics,1997-07-09T00:00:00,1610612738
-1630191,DET,28.0,F-C,Washington,USA,2020.0,16,Isaiah Stewart,Detroit Pistons,2001-05-22T00:00:00,1610612765
-1629622,CLE,1.0,G-F,DePaul,USA,2019.0,Undrafted,Max Strus,Cleveland Cavaliers,1996-03-28T00:00:00,1610612739
-1630591,ORL,4.0,G,Gonzaga,USA,2021.0,5,Jalen Suggs,Orlando Magic,2001-06-03T00:00:00,1610612753
-1628410,CHA,4.0,G,Xavier,USA,2017.0,52,Edmond Sumner,Charlotte Hornets,1995-12-31T00:00:00,1610612766
-1631306,MIA,20.0,F,Syracuse,USA,2022.0,Undrafted,Cole Swider,Miami Heat,1999-05-08T00:00:00,1610612748
-1630256,HOU,8.0,F,Ohio State,USA,2020.0,Undrafted,Jae'Sean Tate,Houston Rockets,1995-10-28T00:00:00,1610612745
-1628369,BOS,0.0,F-G,Duke,USA,2017.0,3,Jayson Tatum,Boston Celtics,1998-03-03T00:00:00,1610612738
-1630678,CHI,32.0,F,Austin Peay,USA,2021.0,Undrafted,Terry Taylor,Chicago Bulls,1999-09-23T00:00:00,1610612741
-202066,TOR,14.0,G-F,Louisiana State,USA,2009.0,Undrafted,Garrett Temple,Toronto Raptors,1986-05-08T00:00:00,1610612761
-1631207,CHI,25.0,F,Arizona,USA,2022.0,18,Dalen Terry,Chicago Bulls,2002-07-12T00:00:00,1610612741
-1628464,IND,27.0,F-C,Brose Bamberg,Germany,2017.0,Undrafted,Daniel Theis,Indiana Pacers,1992-04-04T00:00:00,1610612754
-1630560,BKN,24.0,G,Louisiana State,Japan,2021.0,27,Cam Thomas,Brooklyn Nets,2001-10-13T00:00:00,1610612751
-202691,GSW,11.0,G,Washington State,USA,2011.0,11,Klay Thompson,Golden State Warriors,1990-02-08T00:00:00,1610612744
-1630550,CHA,21.0,F,Auburn,USA,2021.0,37,JT Thor,Charlotte Hornets,2002-08-26T00:00:00,1610612766
-1629680,POR,4.0,G-F,Washington,USA,2019.0,20,Matisse Thybulle,Portland Trail Blazers,1997-03-04T00:00:00,1610612757
-1630214,MEM,2.0,F,Michigan State,USA,2020.0,35,Xavier Tillman,Memphis Grizzlies,1999-01-12T00:00:00,1610612763
-1630167,IND,1.0,F,Dayton,USA,2020.0,8,Obi Toppin,Indiana Pacers,1998-03-04T00:00:00,1610612754
-1626157,MIN,32.0,C-F,Kentucky,USA,2015.0,1,Karl-Anthony Towns,Minnesota Timberwolves,1995-11-15T00:00:00,1610612750
-1629018,TOR,33.0,G-F,Duke,USA,2018.0,37,Gary Trent Jr.,Toronto Raptors,1999-01-18T00:00:00,1610612761
-200782,PHI,17.0,F,Texas,USA,2006.0,35,P.J. Tucker,Philadelphia 76ers,1985-05-05T00:00:00,1610612755
-1626167,IND,33.0,C-F,Texas,USA,2015.0,11,Myles Turner,Indiana Pacers,1996-03-24T00:00:00,1610612754
-1630649,DET,14.0,G,Arkansas,USA,2022.0,Undrafted,Stanley Umude,Detroit Pistons,1999-04-12T00:00:00,1610612765
-202685,NOP,17.0,C,Lietuvos rytas Vilnius,Lithuania,2011.0,5,Jonas Valanciunas,New Orleans Pelicans,1992-05-06T00:00:00,1610612740
-1627832,HOU,23.0,G,Wichita State,USA,2016.0,Undrafted,Fred VanVleet,Houston Rockets,1994-02-25T00:00:00,1610612745
-1629020,LAL,2.0,F,Kentucky,USA,2018.0,41,Jarred Vanderbilt,Los Angeles Lakers,1999-04-03T00:00:00,1610612747
-1630170,SAS,24.0,G-F,Florida State,USA,2020.0,11,Devin Vassell,San Antonio Spurs,2000-08-23T00:00:00,1610612759
-1629216,LAL,7.0,G,California-Santa Barbara,USA,2019.0,Undrafted,Gabe Vincent,Los Angeles Lakers,1996-06-14T00:00:00,1610612747
-202696,CHI,9.0,C,Southern California,Montenegro,2011.0,16,Nikola Vucevic,Chicago Bulls,1990-10-24T00:00:00,1610612741
-1629731,CLE,32.0,F-C,Kansas State,USA,2019.0,Undrafted,Dean Wade,Cleveland Cavaliers,1996-11-20T00:00:00,1610612739
-1630532,ORL,22.0,F,Michigan,Germany,2021.0,8,Franz Wagner,Orlando Magic,2001-08-27T00:00:00,1610612753
-1629021,ORL,21.0,F-C,Michigan,Germany,2018.0,25,Moritz Wagner,Orlando Magic,1997-04-26T00:00:00,1610612753
-1631133,POR,34.0,F,Colorado,USA,2022.0,57,Jabari Walker,Portland Trail Blazers,2002-07-30T00:00:00,1610612757
-1629022,BKN,8.0,G-F,Miami,USA,2018.0,18,Lonnie Walker IV,Brooklyn Nets,1998-12-14T00:00:00,1610612751
-1629023,CHA,25.0,F,Kentucky,USA,2019.0,12,P.J. Washington,Charlotte Hornets,1998-08-23T00:00:00,1610612766
-1629139,PHX,18.0,G-F,George Washington,Japan,2018.0,Undrafted,Yuta Watanabe,Phoenix Suns,1994-10-13T00:00:00,1610612756
-1630322,OKC,12.0,F,Oklahoma State,USA,2021.0,Undrafted,Lindy Waters III,Oklahoma City Thunder,1997-07-28T00:00:00,1610612760
-1630570,BKN,9.0,F,Louisiana State,USA,2021.0,Undrafted,Trendon Watford,Brooklyn Nets,2000-11-09T00:00:00,1610612751
-1631212,DEN,8.0,G,UCLA,USA,2022.0,30,Peyton Watson,Denver Nuggets,2002-09-11T00:00:00,1610612743
-1631104,SAS,14.0,G,Notre Dame,USA,2022.0,25,Blake Wesley,San Antonio Spurs,2003-03-16T00:00:00,1610612759
-201566,LAC,0.0,G,UCLA,USA,2008.0,4,Russell Westbrook,LA Clippers,1988-11-12T00:00:00,1610612746
-1629632,CHI,0.0,G,North Carolina,USA,2019.0,7,Coby White,Chicago Bulls,2000-02-16T00:00:00,1610612741
-1628401,BOS,9.0,G,Colorado,USA,2017.0,29,Derrick White,Boston Celtics,1994-07-02T00:00:00,1610612738
-1630598,OKC,21.0,G,Maryland,USA,2021.0,55,Aaron Wiggins,Oklahoma City Thunder,1999-01-02T00:00:00,1610612760
-203952,GSW,22.0,F,Kansas,Canada,2014.0,1,Andrew Wiggins,Golden State Warriors,1995-02-23T00:00:00,1610612744
-1629623,MIL,28.0,G,Iowa State,Canada,2019.0,Undrafted,Lindell Wigginton,Milwaukee Bucks,1998-03-28T00:00:00,1610612749
-1629684,DAL,3.0,F,Tennessee,USA,2019.0,22,Grant Williams,Dallas Mavericks,1998-11-30T00:00:00,1610612742
-1631114,OKC,8.0,G-F,Santa Clara,USA,2022.0,12,Jalen Williams,Oklahoma City Thunder,2001-04-14T00:00:00,1610612760
-1631119,OKC,6.0,F,Arkansas,USA,2022.0,34,Jaylin Williams,Oklahoma City Thunder,2002-06-29T00:00:00,1610612760
-1629026,OKC,34.0,G-F,TCU,USA,2018.0,Undrafted,Kenrich Williams,Oklahoma City Thunder,1994-12-02T00:00:00,1610612760
-1631109,CHA,5.0,C,Duke,USA,2022.0,15,Mark Williams,Charlotte Hornets,2001-12-16T00:00:00,1610612766
-1630172,CHI,44.0,F,Florida State,USA,2020.0,4,Patrick Williams,Chicago Bulls,2001-08-26T00:00:00,1610612741
-1630533,MEM,8.0,F,Stanford,USA,2021.0,10,Ziaire Williams,Memphis Grizzlies,2001-09-12T00:00:00,1610612763
-1629057,POR,44.0,C-F,Texas A&M,USA,2018.0,27,Robert Williams III,Portland Trail Blazers,1997-10-17T00:00:00,1610612757
-1631246,MEM,5.0,G,Virginia Commonwealth,USA,2022.0,47,Vince Williams Jr.,Memphis Grizzlies,2000-08-30T00:00:00,1610612763
-1629627,NOP,1.0,F,Duke,USA,2019.0,1,Zion Williamson,New Orleans Pelicans,2000-07-06T00:00:00,1610612740
-1629685,NYK,20.0,G-F,Belmont,USA,2019.0,26,Dylan Windler,New York Knicks,1996-09-22T00:00:00,1610612752
-1630164,DET,13.0,C,Memphis,USA,2020.0,2,James Wiseman,Detroit Pistons,2001-03-31T00:00:00,1610612765
-1626174,LAL,35.0,F,UNLV,USA,2015.0,Undrafted,Christian Wood,Los Angeles Lakers,1995-09-27T00:00:00,1610612747
-1626153,WAS,55.0,G,Utah,USA,2015.0,20,Delon Wright,Washington Wizards,1992-04-26T00:00:00,1610612764
-201152,TOR,21.0,F,Georgia Tech,USA,2007.0,12,Thaddeus Young,Toronto Raptors,1988-06-21T00:00:00,1610612761
-1629027,ATL,11.0,G,Oklahoma,USA,2018.0,5,Trae Young,Atlanta Hawks,1998-09-19T00:00:00,1610612737
-1630209,UTA,77.0,C,Georgetown,Turkey,2020.0,Undrafted,Omer Yurtseven,Utah Jazz,1998-06-19T00:00:00,1610612762
-203469,NOP,40.0,F-C,Indiana,USA,2013.0,4,Cody Zeller,New Orleans Pelicans,1992-10-05T00:00:00,1610612740
-1627826,LAC,40.0,C,Mega Basket,Croatia,2016.0,32,Ivica Zubac,LA Clippers,1997-03-18T00:00:00,1610612746
+id,team_id,position,school,country,start_year,draft number,name,team,PLAYER_AGE
+1630173,1610612761,F,Memphis,Nigeria,2020,20.0,Precious Achiuwa,Toronto Raptors,24.0
+203500,1610612763,C,Pittsburgh,New Zealand,2013,12.0,Steven Adams,Memphis Grizzlies,29.0
+1628389,1610612748,C-F,Kentucky,USA,2017,14.0,Bam Adebayo,Miami Heat,26.0
+1630534,1610612762,G,Kansas,USA,2022,14.0,Ochai Agbaji,Utah Jazz,23.0
+1630583,1610612763,F-C,Loyola-Maryland,Spain,2021,30.0,Santi Aldama,Memphis Grizzlies,22.0
+1629638,1610612750,G,Virginia Tech,Canada,2019,17.0,Nickeil Alexander-Walker,Minnesota Timberwolves,25.0
+1628960,1610612756,G,Duke,USA,2018,21.0,Grayson Allen,Phoenix Suns,28.0
+1628386,1610612739,C,Texas,USA,2017,22.0,Jarrett Allen,Cleveland Cavaliers,25.0
+1630631,1610612740,G,Georgia Tech,USA,2021,0.0,Jose Alvarado,New Orleans Pelicans,25.0
+203937,1610612750,F-G,UCLA,USA,2014,30.0,Kyle Anderson,Minnesota Timberwolves,30.0
+203507,1610612749,F,Filathlitikos,Greece,2013,15.0,Giannis Antetokounmpo,Milwaukee Bucks,28.0
+203648,1610612749,F,Panathinaikos,Greece,2015,51.0,Thanasis Antetokounmpo,Milwaukee Bucks,31.0
+1630175,1610612753,G,North Carolina,USA,2020,15.0,Cole Anthony,Orlando Magic,23.0
+1628384,1610612761,F-G,Indiana,United Kingdom,2017,23.0,OG Anunoby,Toronto Raptors,26.0
+1627853,1610612752,G,Villanova,USA,2017,0.0,Ryan Arcidiacono,New York Knicks,29.0
+1630166,1610612764,F,Maccabi Tel Aviv,Israel,2020,9.0,Deni Avdija,Washington Wizards,22.0
+1629028,1610612757,C,Arizona,Bahamas,2018,1.0,Deandre Ayton,Portland Trail Blazers,25.0
+1628962,1610612756,C-F,Kansas,Nigeria,2020,27.0,Udoka Azubuike,Phoenix Suns,24.0
+1628963,1610612765,F,Duke,USA,2018,2.0,Marvin Bagley III,Detroit Pistons,24.0
+1641735,1610612766,G,UCLA,USA,2023,41.0,Amari Bailey,Charlotte Hornets,19.0
+1631116,1610612764,F,Wisconsin-Milwaukee,USA,2022,28.0,Patrick Baldwin Jr.,Washington Wizards,21.0
+1630163,1610612766,G,Illawarra,USA,2020,3.0,LaMelo Ball,Charlotte Hornets,22.0
+1628366,1610612741,G,UCLA,USA,2017,2.0,Lonzo Ball,Chicago Bulls,24.0
+1628964,1610612755,C,Texas,USA,2018,6.0,Mo Bamba,Philadelphia 76ers,25.0
+1631094,1610612753,F,Duke,USA,2022,1.0,Paolo Banchero,Orlando Magic,21.0
+1630217,1610612763,G,TCU,USA,2020,30.0,Desmond Bane,Memphis Grizzlies,25.0
+1630625,1610612738,F,Nebraska,Canada,2021,46.0,Dalano Banton,Boston Celtics,24.0
+1631230,1610612759,F,                                   ,USA,2022,0.0,Dominick Barlow,San Antonio Spurs,20.0
+203084,1610612758,F,North Carolina,USA,2012,7.0,Harrison Barnes,Sacramento Kings,31.0
+1630567,1610612761,F-G,Florida State,USA,2021,4.0,Scottie Barnes,Toronto Raptors,22.0
+1629628,1610612752,F-G,Duke,Canada,2019,3.0,RJ Barrett,New York Knicks,23.0
+1629646,1610612759,C-F,Western Kentucky,Nigeria,2021,53.0,Charles Bassey,San Antonio Spurs,23.0
+1641734,1610612739,F,Eastern Michigan,USA,2023,49.0,Emoni Bates,Cleveland Cavaliers,19.0
+1628966,1610612756,F,Ohio State,USA,2018,48.0,Keita Bates-Diop,Phoenix Suns,27.0
+201587,1610612755,G-F,Le Mans,France,2008,25.0,Nicolas Batum,Philadelphia 76ers,34.0
+203078,1610612756,G,Florida,USA,2012,3.0,Bradley Beal,Phoenix Suns,30.0
+1627736,1610612749,G,Florida State,USA,2016,19.0,Malik Beasley,Milwaukee Bucks,26.0
+1630699,1610612749,F,NBA G League Ignite,USA,2022,24.0,MarJon Beauchamp,Milwaukee Bucks,23.0
+1641777,1610612759,C,Alabama,Canada,2023,0.0,Charles Bediako,San Antonio Spurs,
+202722,1610612760,F,Baskonia,Latvia,2016,42.0,Davis Bertans,Oklahoma City Thunder,31.0
+201976,1610612755,G,Arkansas,USA,2012,42.0,Patrick Beverley,Philadelphia 76ers,35.0
+1630180,1610612737,G-F,Villanova,USA,2020,19.0,Saddiq Bey,Atlanta Hawks,24.0
+1629048,1610612753,C-F,Mega Basket,Georgia,2019,18.0,Goga Bitadze,Orlando Magic,24.0
+1641931,1610612741,F,                                   ,Turkey,2023,0.0,Onuralp Bitim,Chicago Bulls,24.0
+202687,1610612763,C,Baloncesto Fuenlabrada,DRC,2011,7.0,Bismack Biyombo,Memphis Grizzlies,31.0
+1641710,1610612753,G,Arkansas,USA,2023,6.0,Anthony Black,Orlando Magic,19.0
+1641778,1610612766,F,North Carolina,USA,2023,0.0,Leaky Black,Charlotte Hornets,24.0
+203992,1610612737,G,Fenerbahce,Serbia,2017,27.0,Bogdan Bogdanovic,Atlanta Hawks,31.0
+202711,1610612765,F,Fenerbahce,Croatia,2014,31.0,Bojan Bogdanovic,Detroit Pistons,34.0
+1629626,1610612756,C-F,Oregon,Sudan,2019,44.0,Bol Bol,Phoenix Suns,24.0
+1629716,1610612749,C,Duke,USA,2019,0.0,Marques Bolden,Milwaukee Bucks,25.0
+1626164,1610612756,G,Kentucky,USA,2015,13.0,Devin Booker,Phoenix Suns,27.0
+1630527,1610612746,G,Kentucky,USA,2021,51.0,Brandon Boston Jr.,LA Clippers,21.0
+1628449,1610612761,F,Oregon,Saint Lucia,2017,0.0,Chris Boucher,Toronto Raptors,30.0
+1630547,1610612766,G,Connecticut,USA,2021,11.0,James Bouknight,Charlotte Hornets,22.0
+1631123,1610612757,G,San Francisco,USA,2022,0.0,Jamaree Bouyea,Portland Trail Blazers,24.0
+1631103,1610612759,F,Ohio State,USA,2022,20.0,Malaki Branham,San Antonio Spurs,20.0
+1631128,1610612743,G,Kansas,USA,2022,21.0,Christian Braun,Denver Nuggets,22.0
+1628969,1610612751,G-F,Villanova,USA,2018,10.0,Mikal Bridges,Brooklyn Nets,27.0
+1628970,1610612766,F,Michigan State,USA,2018,12.0,Miles Bridges,Charlotte Hornets,25.0
+1629052,1610612738,F-G,Syracuse,Canada,2019,0.0,Oshae Brissett,Boston Celtics,25.0
+1627763,1610612757,G,Virginia,USA,2016,36.0,Malcolm Brogdon,Portland Trail Blazers,30.0
+1629717,1610612751,G,Houston,USA,2020,0.0,Armoni Brooks,Brooklyn Nets,25.0
+1628415,1610612745,G-F,Oregon,Canada,2017,45.0,Dillon Brooks,Houston Rockets,27.0
+1628971,1610612754,G-F,Miami,USA,2018,42.0,Bruce Brown,Indiana Pacers,27.0
+1627759,1610612738,G-F,California,USA,2016,3.0,Jaylen Brown,Boston Celtics,27.0
+1631112,1610612754,G,Baylor,USA,2022,48.0,Kendall Brown,Indiana Pacers,20.0
+1641738,1610612746,F,Missouri,USA,2023,30.0,Kobe Brown,LA Clippers,23.0
+1629650,1610612757,C,UCLA,USA,2019,0.0,Moses Brown,Portland Trail Blazers,24.0
+1630535,1610612742,F,Texas,USA,2021,43.0,Greg Brown III,Dallas Mavericks,21.0
+1629718,1610612752,G,St. Joseph's (PA),USA,2019,0.0,Charlie Brown Jr.,New York Knicks,25.0
+1628972,1610612750,G-F,Oregon,USA,2018,15.0,Troy Brown Jr.,Minnesota Timberwolves,24.0
+1628973,1610612752,G,Villanova,USA,2018,33.0,Jalen Brunson,New York Knicks,27.0
+1628418,1610612748,C-F,Indiana,USA,2017,42.0,Thomas Bryant,Miami Heat,26.0
+1641723,1610612737,G,Michigan,USA,2023,15.0,Kobe Bufkin,Atlanta Hawks,20.0
+203493,1610612745,G-F,North Carolina,USA,2013,25.0,Reggie Bullock Jr.,Houston Rockets,32.0
+202692,1610612765,G,Colorado,USA,2011,12.0,Alec Burks,Detroit Pistons,32.0
+1630215,1610612764,G,Baylor,USA,2021,40.0,Jared Butler,Washington Wizards,23.0
+202710,1610612748,F,Marquette,USA,2011,30.0,Jimmy Butler,Miami Heat,34.0
+1631219,1610612764,F,Florida State,USA,2022,0.0,John Butler Jr.,Washington Wizards,20.0
+1631288,1610612748,F,Oakland,USA,2022,0.0,Jamal Cain,Miami Heat,24.0
+203484,1610612743,G,Georgia,USA,2013,8.0,Kentavious Caldwell-Pope,Denver Nuggets,30.0
+1641739,1610612757,F,Dayton,Belgium,2023,52.0,Toumani Camara,Portland Trail Blazers,23.0
+1628427,1610612743,F,San Pablo Burgos,Slovenia,2019,49.0,Vlatko Cancar,Denver Nuggets,26.0
+203991,1610612737,C,Elan Chalon,Switzerland,2014,25.0,Clint Capela,Atlanta Hawks,29.0
+1628975,1610612741,G,West Virginia,USA,2018,32.0,Jevon Carter,Chicago Bulls,28.0
+1628976,1610612753,C-F,Duke,USA,2018,7.0,Wendell Carter Jr.,Orlando Magic,24.0
+1627936,1610612741,G,Texas A&M,USA,2017,0.0,Alex Caruso,Chicago Bulls,29.0
+1630658,1610612747,C,Florida,USA,2023,0.0,Colin Castleton,Los Angeles Lakers,23.0
+1630608,1610612765,G,Mega Basket,France,2023,0.0,Malcolm Cazalon,Detroit Pistons,22.0
+1630577,1610612759,F,St. John's,USA,2022,0.0,Julian Champagnie,San Antonio Spurs,22.0
+1631108,1610612747,G,Michigan State,USA,2022,35.0,Max Christie,Los Angeles Lakers,20.0
+1630528,1610612762,G,Arizona State,USA,2021,24.0,Josh Christopher,Utah Jazz,21.0
+1631321,1610612759,G,NBA G League Ignite,France,2023,44.0,Sidy Cissoko,San Antonio Spurs,19.0
+1641740,1610612750,G,UCLA,USA,2023,53.0,Jaylen Clark,Minnesota Timberwolves,
+1629634,1610612763,F,Gonzaga,Canada,2019,21.0,Brandon Clarke,Memphis Grizzlies,26.0
+203903,1610612762,G,Missouri,USA,2014,46.0,Jordan Clarkson,Utah Jazz,31.0
+1629651,1610612751,C,Georgia,USA,2019,31.0,Nic Claxton,Brooklyn Nets,24.0
+1641730,1610612751,F,Alabama,USA,2023,21.0,Noah Clowney,Brooklyn Nets,
+1629599,1610612746,G-F,Minnesota,USA,2019,0.0,Amir Coffey,LA Clippers,26.0
+1628381,1610612762,F-C,Wake Forest,USA,2017,19.0,John Collins,Utah Jazz,26.0
+1628380,1610612759,F-C,Gonzaga,USA,2017,10.0,Zach Collins,San Antonio Spurs,26.0
+201144,1610612750,G,Ohio State,USA,2007,4.0,Mike Conley,Minnesota Timberwolves,36.0
+1626192,1610612749,G,Notre Dame,USA,2015,41.0,Pat Connaughton,Milwaukee Bucks,30.0
+1641731,1610612764,G,Metropolitans 92,France,2023,7.0,Bilal Coulibaly,Washington Wizards,19.0
+1641741,1610612755,G,Arkansas,USA,2023,0.0,Ricky Council IV,Philadelphia 76ers,
+203496,1610612755,F,Tennessee State,USA,2013,0.0,Robert Covington,Philadelphia 76ers,32.0
+1628470,1610612741,F,South Carolina Upstate,USA,2017,0.0,Torrey Craig,Chicago Bulls,32.0
+203109,1610612749,F,Marquette,USA,2012,34.0,Jae Crowder,Milwaukee Bucks,33.0
+1630595,1610612765,G,Oklahoma State,USA,2021,1.0,Cade Cunningham,Detroit Pistons,22.0
+203552,1610612742,G,Duke,USA,2013,0.0,Seth Curry,Dallas Mavericks,33.0
+201939,1610612744,G,Davidson,USA,2009,7.0,Stephen Curry,Golden State Warriors,35.0
+1630700,1610612740,G,NBA G League Ignite,Australia,2022,8.0,Dyson Daniels,New Orleans Pelicans,20.0
+203076,1610612747,F-C,Kentucky,USA,2012,1.0,Anthony Davis,Los Angeles Lakers,30.0
+1631098,1610612764,G,Wisconsin,USA,2022,10.0,Johnny Davis,Washington Wizards,21.0
+1631120,1610612738,G,Alabama,USA,2022,53.0,JD Davison,Boston Celtics,20.0
+201942,1610612741,G-F,Southern California,USA,2009,9.0,DeMar DeRozan,Chicago Bulls,34.0
+1641926,1610612742,G,Texas A&M,USA,2023,0.0,Dexter Dennis,Dallas Mavericks,
+1628978,1610612752,G,Villanova,USA,2018,17.0,Donte DiVincenzo,New York Knicks,26.0
+1631217,1610612746,F,Michigan,France,2022,43.0,Moussa Diabate,LA Clippers,21.0
+1641711,1610612761,G-F,Kansas,USA,2023,13.0,Gradey Dick,Toronto Raptors,20.0
+1631172,1610612760,F,New Zealand Breakers,France,2022,11.0,Ousmane Dieng,Oklahoma City Thunder,20.0
+203915,1610612751,G,Colorado,USA,2014,38.0,Spencer Dinwiddie,Brooklyn Nets,30.0
+1629029,1610612742,F-G,Real Madrid,Slovenia,2018,3.0,Luka Doncic,Dallas Mavericks,24.0
+1629652,1610612760,G,Arizona State,Canada,2019,0.0,Luguentz Dort,Oklahoma City Thunder,24.0
+1630245,1610612741,G,Illinois,USA,2021,38.0,Ayo Dosunmu,Chicago Bulls,23.0
+203083,1610612741,C,Connecticut,USA,2012,9.0,Andre Drummond,Chicago Bulls,30.0
+1630537,1610612758,G,Oregon,Dominican Republic,2021,13.0,Chris Duarte,Sacramento Kings,26.0
+1627739,1610612762,G,Providence,USA,2016,5.0,Kris Dunn,Utah Jazz,29.0
+201142,1610612756,F,Texas,USA,2007,2.0,Kevin Durant,Phoenix Suns,35.0
+1631105,1610612765,C,Memphis,USA,2022,13.0,Jalen Duren,Detroit Pistons,20.0
+1631106,1610612745,F,Louisiana State,USA,2022,17.0,Tari Eason,Houston Rockets,22.0
+1630162,1610612750,G,Georgia,USA,2020,1.0,Anthony Edwards,Minnesota Timberwolves,22.0
+1630556,1610612758,F,Pepperdine,USA,2021,44.0,Kessler Edwards,Sacramento Kings,23.0
+1631165,1610612758,G,Alabama,USA,2022,0.0,Keon Ellis,Sacramento Kings,23.0
+203954,1610612755,C-F,Kansas,Cameroon,2014,3.0,Joel Embiid,Philadelphia 76ers,29.0
+1629234,1610612756,F-C,Oregon State,USA,2018,0.0,Drew Eubanks,Phoenix Suns,26.0
+203957,1610612742,G,Australian Institute of Sport,Australia,2014,5.0,Dante Exum,Dallas Mavericks,28.0
+1628981,1610612737,F-C,Maryland,Angola,2019,34.0,Bruno Fernando,Atlanta Hawks,25.0
+1627827,1610612751,F,Florida,USA,2016,0.0,Dorian Finney-Smith,Brooklyn Nets,30.0
+1630201,1610612761,G,San Diego State,USA,2020,29.0,Malachi Flynn,Toronto Raptors,25.0
+1631323,1610612762,F,Baskonia,Italy,2022,0.0,Simone Fontecchio,Utah Jazz,27.0
+1630259,1610612758,G,St. Mary's College,USA,2023,0.0,Jordan Ford,Sacramento Kings,25.0
+1630235,1610612737,G,Florida State,USA,2020,0.0,Trent Forrest,Atlanta Hawks,25.0
+203095,1610612752,G-F,Poitiers Basket 86,France,2012,20.0,Evan Fournier,New York Knicks,31.0
+1628368,1610612758,G,Kentucky,USA,2017,5.0,De'Aaron Fox,Sacramento Kings,25.0
+1631241,1610612761,G,DePaul,USA,2023,0.0,Javon Freeman-Liberty,Toronto Raptors,
+1641788,1610612747,F,Florida,USA,2023,0.0,Alex Fudge,Los Angeles Lakers,20.0
+1628365,1610612753,G,Washington,USA,2017,1.0,Markelle Fultz,Orlando Magic,25.0
+1629655,1610612764,F-C,Arkansas,USA,2019,38.0,Daniel Gafford,Washington Wizards,25.0
+201568,1610612764,F,Olimpia Milano,Italy,2008,6.0,Danilo Gallinari,Washington Wizards,35.0
+1629636,1610612739,G,Vanderbilt,USA,2019,5.0,Darius Garland,Cleveland Cavaliers,23.0
+1630586,1610612744,F,Real Madrid,Spain,2021,23.0,Usman Garuba,Golden State Warriors,21.0
+1630568,1610612750,C,Iowa,USA,2021,52.0,Luka Garza,Minnesota Timberwolves,24.0
+1629232,0,F,Xavier,USA,2023,0.0,Kaiser Gates,,27.0
+1641718,1610612762,G,Baylor,USA,2023,16.0,Keyonte George,Utah Jazz,20.0
+202331,1610612746,F,Fresno State,USA,2010,10.0,Paul George,LA Clippers,33.0
+1630581,1610612760,G,NBA Global Academy,Australia,2021,6.0,Josh Giddey,Oklahoma City Thunder,21.0
+1628385,1610612751,F-C,Duke,USA,2017,20.0,Harry Giles III,Brooklyn Nets,25.0
+1628983,1610612760,G,Kentucky,Canada,2018,11.0,Shai Gilgeous-Alexander,Oklahoma City Thunder,25.0
+1630264,1610612764,F,Virginia,USA,2020,0.0,Anthony Gill,Washington Wizards,31.0
+1631221,1610612743,G,Villanova,USA,2022,0.0,Collin Gillespie,Denver Nuggets,24.0
+1631367,1610612763,G,Richmond,USA,2022,0.0,Jacob Gilyard,Memphis Grizzlies,25.0
+203497,1610612750,C,Cholet,France,2013,27.0,Rudy Gobert,Minnesota Timberwolves,31.0
+1630692,1610612756,G,St. Louis,USA,2021,0.0,Jordan Goodwin,Phoenix Suns,25.0
+203932,1610612743,F,Arizona,USA,2014,4.0,Aaron Gordon,Denver Nuggets,28.0
+201569,1610612756,G,Indiana,USA,2008,7.0,Eric Gordon,Phoenix Suns,34.0
+1628984,1610612759,G,Kansas,USA,2018,34.0,Devonte' Graham,San Antonio Spurs,28.0
+203924,1610612757,F,Syracuse,USA,2014,39.0,Jerami Grant,Portland Trail Blazers,29.0
+1631260,1610612749,G,Northern Iowa,USA,2022,0.0,AJ Green,Milwaukee Bucks,24.0
+201980,0,G,North Carolina,USA,2009,46.0,Danny Green,,36.0
+203110,1610612744,F,Michigan State,USA,2012,35.0,Draymond Green,Golden State Warriors,33.0
+1630224,1610612745,G,NBA G League Ignite,USA,2021,2.0,Jalen Green,Houston Rockets,21.0
+201145,1610612745,F,Georgetown,USA,2007,5.0,Jeff Green,Houston Rockets,37.0
+1630182,1610612742,G,Arizona,Australia,2020,18.0,Josh Green,Dallas Mavericks,23.0
+1631100,1610612737,F,Duke,USA,2022,16.0,AJ Griffin,Atlanta Hawks,20.0
+1629656,1610612752,G,Houston,USA,2021,25.0,Quentin Grimes,New York Knicks,23.0
+1631243,1610612737,F,Washington State,Senegal,2023,39.0,Mouhamed Gueye,Atlanta Hawks,21.0
+1629060,1610612747,F,Gonzaga,Japan,2019,9.0,Rui Hachimura,Los Angeles Lakers,25.0
+1630169,1610612754,G,Iowa State,USA,2020,12.0,Tyrese Haliburton,Indiana Pacers,23.0
+1630181,1610612748,G,New Zealand Breakers,USA,2020,24.0,R.J. Hampton,Miami Heat,22.0
+203501,1610612742,G-F,Michigan,USA,2013,24.0,Tim Hardaway Jr.,Dallas Mavericks,31.0
+201935,1610612746,G,Arizona State,USA,2009,3.0,James Harden,LA Clippers,34.0
+1630702,1610612742,G,NBA G League Ignite,USA,2022,37.0,Jaden Hardy,Dallas Mavericks,21.0
+1631199,1610612761,G-F,Rutgers,USA,2022,0.0,Ron Harper Jr.,Toronto Raptors,23.0
+203914,1610612753,G,Michigan State,USA,2014,19.0,Gary Harris,Orlando Magic,29.0
+203925,1610612765,G-F,Virginia,USA,2014,33.0,Joe Harris,Detroit Pistons,32.0
+1630284,1610612753,G,Stephen F. Austin,USA,2022,0.0,Kevon Harris,Orlando Magic,26.0
+202699,1610612755,F,Tennessee,USA,2011,19.0,Tobias Harris,Philadelphia 76ers,31.0
+1628404,1610612752,G,Villanova,USA,2017,30.0,Josh Hart,New York Knicks,28.0
+1628392,1610612752,C-F,Zalgiris,Germany,2018,43.0,Isaiah Hartenstein,New York Knicks,25.0
+1630573,1610612738,F,Virginia,USA,2021,0.0,Sam Hauser,Boston Celtics,25.0
+1641722,1610612740,G,Connecticut,USA,2023,14.0,Jordan Hawkins,New Orleans Pelicans,21.0
+1629637,1610612747,C-F,Texas,USA,2019,8.0,Jaxson Hayes,Los Angeles Lakers,23.0
+1630165,1610612765,G,Ratiopharm Ulm,France,2020,7.0,Killian Hayes,Detroit Pistons,22.0
+202330,1610612766,F,Butler,USA,2010,9.0,Gordon Hayward,Charlotte Hornets,33.0
+1630703,1610612757,G,NBA G League Ignite,USA,2023,3.0,Scoot Henderson,Portland Trail Blazers,19.0
+1641707,1610612762,F,Central Florida,USA,2023,9.0,Taylor Hendricks,Utah Jazz,20.0
+1629639,1610612748,G,Kentucky,USA,2019,13.0,Tyler Herro,Miami Heat,23.0
+1627741,1610612754,G,Oklahoma,Bahamas,2016,6.0,Buddy Hield,Indiana Pacers,30.0
+1629312,1610612748,F,Wheeling Jesuit,USA,2018,0.0,Haywood Highsmith,Miami Heat,26.0
+1630207,1610612745,G-F,Houston,USA,2020,0.0,Nate Hinton,Houston Rockets,24.0
+1641793,1610612747,G,Missouri,British Virgin Islands,2023,0.0,D'Moi Hodge,Los Angeles Lakers,24.0
+1628988,1610612745,G,UCLA,USA,2018,23.0,Aaron Holiday,Houston Rockets,27.0
+201950,1610612738,G,UCLA,USA,2009,17.0,Jrue Holiday,Boston Celtics,33.0
+203200,1610612743,F-G,Washington,USA,2012,0.0,Justin Holiday,Denver Nuggets,34.0
+1626158,1610612742,F,Bowling Green,USA,2015,37.0,Richaun Holmes,Dallas Mavericks,30.0
+1631096,1610612760,C-F,Gonzaga,USA,2022,2.0,Chet Holmgren,Oklahoma City Thunder,21.0
+1641720,1610612747,G,Indiana,USA,2023,17.0,Jalen Hood-Schifino,Los Angeles Lakers,
+201143,1610612738,C-F,Florida,Dominican Republic,2007,3.0,Al Horford,Boston Celtics,37.0
+1629659,1610612762,G,Iowa State,USA,2019,46.0,Talen Horton-Tucker,Utah Jazz,22.0
+1627863,1610612755,F-G,Texas A&M,USA,2016,0.0,Danuel House Jr.,Philadelphia 76ers,30.0
+1631216,1610612753,G,Michigan,Canada,2022,32.0,Caleb Houstan,Orlando Magic,20.0
+1641724,1610612753,G,Michigan,USA,2023,11.0,Jett Howard,Orlando Magic,20.0
+1628989,1610612758,G-F,Maryland,USA,2018,19.0,Kevin Huerter,Sacramento Kings,25.0
+1630643,1610612743,C,Virginia,USA,2021,0.0,Jay Huff,Denver Nuggets,25.0
+1629631,1610612737,F-G,Virginia,USA,2019,4.0,De'Andre Hunter,Atlanta Hawks,25.0
+1630538,1610612746,G,Virginia Commonwealth,USA,2021,26.0,Bones Hyland,LA Clippers,23.0
+204060,1610612753,F-G,Maccabi Tel Aviv,Australia,2014,0.0,Joe Ingles,Orlando Magic,36.0
+1627742,1610612740,F,Duke,USA,2016,2.0,Brandon Ingram,New Orleans Pelicans,26.0
+202681,1610612742,G,Duke,Australia,2011,1.0,Kyrie Irving,Dallas Mavericks,31.0
+1628371,1610612753,F,Florida State,USA,2017,6.0,Jonathan Isaac,Orlando Magic,26.0
+1631093,1610612765,G,Purdue,USA,2022,5.0,Jaden Ivey,Detroit Pistons,21.0
+1641713,1610612763,F,South Carolina,USA,2023,45.0,GG Jackson,Memphis Grizzlies,18.0
+1630543,1610612754,F,Kentucky,USA,2021,22.0,Isaiah Jackson,Indiana Pacers,21.0
+202704,1610612743,G,Boston College,USA,2011,24.0,Reggie Jackson,Denver Nuggets,33.0
+1641748,1610612749,G,Connecticut,USA,2023,36.0,Andre Jackson Jr.,Milwaukee Bucks,22.0
+1628991,1610612763,F-C,Michigan State,USA,2018,4.0,Jaren Jackson Jr.,Memphis Grizzlies,24.0
+1631218,1610612744,F,Indiana,USA,2023,57.0,Trayce Jackson-Davis,Golden State Warriors,23.0
+2544,1610612747,F,St. Vincent-St. Mary HS (OH),USA,2003,1.0,LeBron James,Los Angeles Lakers,38.0
+1631170,1610612748,G,UCLA,USA,2023,18.0,Jaime Jaquez Jr.,Miami Heat,22.0
+1629610,1610612752,G-F,Tulsa,USA,2019,0.0,DaQuan Jeffries,New York Knicks,26.0
+1629660,1610612739,G-F,Virginia,USA,2019,24.0,Ty Jerome,Cleveland Cavaliers,26.0
+1630198,1610612760,G,Arkansas,USA,2020,49.0,Isaiah Joe,Oklahoma City Thunder,24.0
+1629661,1610612751,F,North Carolina,USA,2019,11.0,Cameron Johnson,Brooklyn Nets,27.0
+1630552,1610612737,F,Duke,USA,2021,20.0,Jalen Johnson,Atlanta Hawks,21.0
+1629640,1610612759,F-G,Kentucky,USA,2019,29.0,Keldon Johnson,San Antonio Spurs,24.0
+1630553,1610612751,G,Tennessee,USA,2021,21.0,Keon Johnson,Brooklyn Nets,21.0
+1641749,1610612760,F,Kansas State,USA,2023,50.0,Keyontae Johnson,Oklahoma City Thunder,23.0
+203999,1610612743,C,Mega Basket,Serbia,2015,41.0,Nikola Jokic,Denver Nuggets,28.0
+1641732,1610612758,G,Xavier,USA,2023,34.0,Colby Jones,Sacramento Kings,21.0
+1627745,1610612739,C,Vanderbilt,USA,2016,30.0,Damian Jones,Cleveland Cavaliers,28.0
+1630529,1610612740,F,Alabama,USA,2021,35.0,Herbert Jones,New Orleans Pelicans,25.0
+1630200,1610612759,G,Duke,USA,2020,41.0,Tre Jones,San Antonio Spurs,23.0
+1626145,1610612764,G,Duke,USA,2015,24.0,Tyus Jones,Washington Wizards,27.0
+1627884,1610612742,F,UNLV,USA,2016,0.0,Derrick Jones Jr.,Dallas Mavericks,26.0
+201599,1610612743,C,Texas A&M,USA,2008,35.0,DeAndre Jordan,Denver Nuggets,35.0
+202709,1610612744,G,Texas,Canada,2011,29.0,Cory Joseph,Golden State Warriors,32.0
+1631107,1610612748,F,                                   ,Serbia,2022,27.0,Nikola Jovic,Miami Heat,20.0
+1630548,1610612762,G,UCLA,USA,2022,0.0,Johnny Juzang,Utah Jazz,22.0
+1628379,1610612763,G,Duke,USA,2017,12.0,Luke Kennard,Memphis Grizzlies,27.0
+1631117,1610612762,C,Auburn,USA,2022,22.0,Walker Kessler,Utah Jazz,22.0
+1630296,1610612743,F,Virginia,USA,2021,0.0,Braxton Key,Denver Nuggets,26.0
+1630557,1610612764,F,Gonzaga,USA,2021,15.0,Corey Kispert,Washington Wizards,24.0
+1628467,1610612742,F,Bayern Munich,Germany,2017,0.0,Maxi Kleber,Dallas Mavericks,31.0
+1630233,1610612738,F-C,William & Mary,USA,2020,0.0,Nathan Knight,Boston Celtics,25.0
+1628995,1610612765,F,Kentucky,USA,2018,9.0,Kevin Knox II,Detroit Pistons,24.0
+1631132,1610612761,C,Arizona,Cameroon,2022,33.0,Christian Koloko,Toronto Raptors,23.0
+1629723,1610612763,G,Indiana-Purdue Fort Wayne,USA,2019,0.0,John Konchar,Memphis Grizzlies,27.0
+1627788,1610612755,G-F,Anadolu Efes,Turkey,2017,26.0,Furkan Korkmaz,Philadelphia 76ers,26.0
+1628436,1610612738,C-F,Vanderbilt,USA,2017,0.0,Luke Kornet,Boston Celtics,28.0
+1630228,1610612744,F,NBA G League Ignite,DRC,2021,7.0,Jonathan Kuminga,Golden State Warriors,21.0
+1628398,1610612764,F,Utah,USA,2017,27.0,Kyle Kuzma,Washington Wizards,28.0
+1631222,1610612763,F,Wake Forest,USA,2022,19.0,Jake LaRavia,Memphis Grizzlies,22.0
+203897,1610612741,G,UCLA,USA,2014,13.0,Zach LaVine,Chicago Bulls,28.0
+1629111,1610612745,C,St. Mary's,Australia,2021,0.0,Jock Landale,Houston Rockets,28.0
+1630639,1610612742,G,South Carolina,Canada,2022,0.0,A.J. Lawson,Dallas Mavericks,22.0
+1627747,1610612739,G,Michigan,USA,2016,20.0,Caris LeVert,Cleveland Cavaliers,29.0
+1627814,1610612756,G-F,Drexel,USA,2017,0.0,Damion Lee,Phoenix Suns,30.0
+1630240,1610612756,G,Vanderbilt,USA,2020,38.0,Saben Lee,Phoenix Suns,24.0
+203458,1610612758,C,Maryland,Ukraine,2013,5.0,Alex Len,Sacramento Kings,30.0
+202695,1610612746,F,San Diego State,USA,2011,15.0,Kawhi Leonard,LA Clippers,32.0
+1631171,1610612741,F,Marquette,USA,2022,0.0,Justin Lewis,Chicago Bulls,
+1641721,1610612747,F,Pepperdine,USA,2023,40.0,Maxwell Lewis,Los Angeles Lakers,21.0
+1630184,1610612740,G,Alabama,USA,2020,13.0,Kira Lewis Jr.,New Orleans Pelicans,22.0
+1630604,1610612740,F,Ohio State,USA,2022,41.0,E.J. Liddell,New Orleans Pelicans,22.0
+203081,1610612749,G,Weber State,USA,2012,6.0,Damian Lillard,Milwaukee Bucks,33.0
+1629642,1610612756,F-G,North Carolina,USA,2019,25.0,Nassir Little,Phoenix Suns,23.0
+1641726,1610612742,C,Duke,USA,2023,12.0,Dereck Lively II,Dallas Mavericks,19.0
+1630587,1610612765,F,Michigan,USA,2021,42.0,Isaiah Livers,Detroit Pistons,25.0
+1641753,1610612749,F,Kentucky,USA,2023,58.0,Chris Livingston,Milwaukee Bucks,20.0
+1631254,1610612763,F,Louisiana Tech,USA,2022,0.0,Kenneth Lofton Jr.,Memphis Grizzlies,21.0
+1626172,1610612744,F,UCLA,USA,2015,30.0,Kevon Looney,Golden State Warriors,27.0
+201572,1610612749,C,Stanford,USA,2008,10.0,Brook Lopez,Milwaukee Bucks,35.0
+201577,1610612749,C,Stanford,USA,2008,15.0,Robin Lopez,Milwaukee Bucks,35.0
+201567,1610612748,F-C,UCLA,USA,2008,5.0,Kevin Love,Miami Heat,35.0
+200768,1610612748,G,Villanova,USA,2006,24.0,Kyle Lowry,Miami Heat,37.0
+1641754,1610612737,G-F,Penn State,USA,2023,46.0,Seth Lundy,Atlanta Hawks,
+1626168,1610612758,F,Kentucky,Canada,2015,12.0,Trey Lyles,Sacramento Kings,27.0
+1630177,1610612766,G,Asvel,France,2020,34.0,Theo Maledon,Charlotte Hornets,22.0
+1630572,1610612759,F-C,Seton Hall,Georgia,2021,54.0,Sandro Mamukelashvili,San Antonio Spurs,24.0
+1629611,1610612746,G-F,Florida State,USA,2019,48.0,Terance Mann,LA Clippers,27.0
+1630544,1610612760,G,Florida,USA,2021,18.0,Tre Mann,Oklahoma City Thunder,22.0
+1626246,1610612745,C,Crvena zvezda,Serbia,2015,0.0,Boban Marjanovic,Houston Rockets,35.0
+1628374,1610612762,F-C,Arizona,Finland,2017,7.0,Lauri Markkanen,Utah Jazz,26.0
+1630230,1610612740,F,Xavier,USA,2020,0.0,Naji Marshall,New Orleans Pelicans,25.0
+1628997,1610612748,F,Nevada,USA,2019,0.0,Caleb Martin,Miami Heat,28.0
+1628998,1610612766,F,Nevada,USA,2019,36.0,Cody Martin,Charlotte Hornets,27.0
+1630231,1610612755,F,IMG Academy (FL),USA,2020,52.0,KJ Martin,Philadelphia 76ers,22.0
+1629726,1610612737,G,Lipscomb,USA,2019,0.0,Garrison Mathews,Atlanta Hawks,27.0
+1631097,1610612754,G-F,Arizona,Canada,2022,6.0,Bennedict Mathurin,Indiana Pacers,21.0
+202083,1610612737,G,Marquette,USA,2009,0.0,Wesley Matthews,Atlanta Hawks,37.0
+1630178,1610612755,G,Kentucky,USA,2020,21.0,Tyrese Maxey,Philadelphia 76ers,23.0
+1630219,1610612757,G,Louisiana State,USA,2020,50.0,Skylar Mays,Portland Trail Blazers,26.0
+1630540,1610612752,G,West Virginia,USA,2021,36.0,Miles McBride,New York Knicks,23.0
+203468,1610612740,G,Lehigh,USA,2013,10.0,CJ McCollum,New Orleans Pelicans,32.0
+204456,1610612754,G,Arizona,USA,2015,0.0,T.J. McConnell,Indiana Pacers,31.0
+1630183,1610612750,F,Washington,USA,2020,28.0,Jaden McDaniels,Minnesota Timberwolves,23.0
+1629667,1610612761,F,San Diego State,USA,2019,52.0,Jalen McDaniels,Toronto Raptors,25.0
+203926,1610612759,F,Creighton,USA,2014,11.0,Doug McDermott,San Antonio Spurs,31.0
+201580,1610612758,C-F,Nevada,USA,2008,18.0,JaVale McGee,Sacramento Kings,35.0
+1631121,1610612766,G,Nebraska,USA,2022,40.0,Bryce McGowens,Charlotte Hornets,21.0
+1629162,1610612750,G,Southern California,USA,2019,0.0,Jordan McLaughlin,Minnesota Timberwolves,27.0
+1629001,1610612755,G,Southern California,USA,2018,46.0,De'Anthony Melton,Philadelphia 76ers,25.0
+1630241,1610612739,G,Utah State,USA,2020,60.0,Sam Merrill,Cleveland Cavaliers,27.0
+1629002,1610612756,F-C,Southern California,USA,2018,49.0,Chimezie Metu,Phoenix Suns,26.0
+203995,1610612760,G,Serbia,Serbia,2023,52.0,Vasilije Micic,Oklahoma City Thunder,29.0
+203114,1610612749,F,Texas A&M,USA,2012,39.0,Khris Middleton,Milwaukee Bucks,32.0
+1641706,1610612766,F,Alabama,USA,2023,2.0,Brandon Miller,Charlotte Hornets,20.0
+1641757,1610612746,G,Miami,USA,2023,48.0,Jordan Miller,LA Clippers,23.0
+1631159,1610612750,F,NBA G League Ignite,Canada,2023,33.0,Leonard Miller,Minnesota Timberwolves,19.0
+201988,1610612737,G,St. Mary's,Australia,2009,55.0,Patty Mills,Atlanta Hawks,34.0
+1629003,1610612750,G-F,Southern Methodist,USA,2018,54.0,Shake Milton,Minnesota Timberwolves,27.0
+1631303,1610612757,F,Providence,USA,2022,0.0,Justin Minaya,Portland Trail Blazers,24.0
+1631169,1610612750,F,Memphis,USA,2022,45.0,Josh Minott,Minnesota Timberwolves,20.0
+1630558,1610612758,G,Baylor,USA,2021,9.0,Davion Mitchell,Sacramento Kings,25.0
+1628378,1610612739,G,Louisville,USA,2017,13.0,Donovan Mitchell,Cleveland Cavaliers,27.0
+1630596,1610612739,C,Southern California,USA,2021,3.0,Evan Mobley,Cleveland Cavaliers,22.0
+1630600,1610612739,F,Southern California,USA,2022,49.0,Isaiah Mobley,Cleveland Cavaliers,24.0
+1628370,1610612758,G,Kentucky,USA,2017,11.0,Malik Monk,Sacramento Kings,25.0
+1630541,1610612744,G,Arkansas,USA,2021,14.0,Moses Moody,Golden State Warriors,21.0
+1629875,1610612746,G,Morehead State,USA,2021,0.0,Xavier Moon,LA Clippers,28.0
+1631111,1610612750,G,Duke,USA,2022,26.0,Wendell Moore Jr.,Minnesota Timberwolves,21.0
+1629630,1610612763,G,Murray State,USA,2019,2.0,Ja Morant,Memphis Grizzlies,23.0
+202693,1610612742,F,Kansas,USA,2011,13.0,Markieff Morris,Dallas Mavericks,34.0
+1628420,1610612765,G,Iowa State,USA,2017,51.0,Monte Morris,Detroit Pistons,28.0
+202694,1610612755,F,Kansas,USA,2011,14.0,Marcus Morris Sr.,Philadelphia 76ers,34.0
+1630530,1610612740,F,Virginia,USA,2021,17.0,Trey Murphy III,New Orleans Pelicans,23.0
+1627749,1610612737,G,Washington,USA,2016,29.0,Dejounte Murray,Atlanta Hawks,27.0
+1627750,1610612743,G,Kentucky,Canada,2016,7.0,Jamal Murray,Denver Nuggets,26.0
+1631099,1610612758,F,Iowa,USA,2022,4.0,Keegan Murray,Sacramento Kings,23.0
+1631200,1610612757,F,Iowa,USA,2023,23.0,Kris Murray,Portland Trail Blazers,23.0
+203488,1610612764,F-C,Bucknell,USA,2013,44.0,Mike Muscala,Washington Wizards,32.0
+1629004,1610612738,G-F,Kansas,Ukraine,2018,47.0,Svi Mykhailiuk,Boston Celtics,26.0
+1626204,1610612740,F-C,Wyoming,USA,2015,27.0,Larry Nance Jr.,New Orleans Pelicans,30.0
+1629614,1610612754,G-F,Gonzaga,Canada,2022,31.0,Andrew Nembhard,Indiana Pacers,23.0
+1630174,1610612754,G-F,Vanderbilt,USA,2020,14.0,Aaron Nesmith,Indiana Pacers,24.0
+1627777,1610612739,F,Iowa State,USA,2016,50.0,Georges Niang,Cleveland Cavaliers,30.0
+1630227,1610612750,G,NBA G League Ignite,USA,2021,0.0,Daishen Nix,Minnesota Timberwolves,21.0
+1630192,1610612743,F-C,Arizona,USA,2020,22.0,Zeke Nnaji,Denver Nuggets,22.0
+1641936,1610612737,F,California-Santa Barbara,USA,2023,0.0,Miles Norris,Atlanta Hawks,
+1641806,1610612761,G,Kansas State,USA,2023,0.0,Markquis Nowell,Toronto Raptors,23.0
+1628373,1610612766,G,Strasbourg IG,France,2017,8.0,Frank Ntilikina,Charlotte Hornets,24.0
+203994,1610612756,C,Cedevita,Bosnia and Herzegovina,2014,16.0,Jusuf Nurkic,Phoenix Suns,29.0
+1629670,1610612754,F,Louisville,USA,2020,45.0,Jordan Nwora,Indiana Pacers,25.0
+1626220,1610612751,F,Baylor,USA,2017,0.0,Royce O'Neale,Brooklyn Nets,30.0
+1629643,1610612753,F,Auburn,USA,2020,16.0,Chuma Okeke,Orlando Magic,25.0
+1629006,1610612756,G,Georgia Tech,Nigeria,2018,20.0,Josh Okogie,Phoenix Suns,25.0
+1630168,1610612737,F-C,Southern California,USA,2020,6.0,Onyeka Okongwu,Atlanta Hawks,22.0
+1630171,1610612739,F-G,Auburn,USA,2020,5.0,Isaac Okoro,Cleveland Cavaliers,22.0
+203506,1610612745,G,Indiana,USA,2013,2.0,Victor Oladipo,Houston Rockets,31.0
+203482,1610612762,F-C,Gonzaga,Canada,2013,13.0,Kelly Olynyk,Utah Jazz,32.0
+1630647,1610612764,F,Oregon,Nigeria,2021,0.0,Eugene Omoruyi,Washington Wizards,26.0
+1626224,1610612759,F,Anadolu Efes,Turkey,2017,31.0,Cedi Osman,San Antonio Spurs,28.0
+1626162,1610612755,F-G,Kansas,USA,2015,15.0,Kelly Oubre Jr.,Philadelphia 76ers,27.0
+101108,1610612744,G,Wake Forest,USA,2005,4.0,Chris Paul,Golden State Warriors,38.0
+1626166,1610612749,G,Murray State,USA,2015,14.0,Cameron Payne,Milwaukee Bucks,29.0
+1627780,1610612744,G,Oregon State,USA,2016,0.0,Gary Payton II,Golden State Warriors,30.0
+1630196,1610612758,C,Gonzaga,Serbia,2023,50.0,Filip Petrusev,Sacramento Kings,23.0
+1641763,1610612741,F,Tennessee,USA,2023,35.0,Julian Phillips,Chicago Bulls,20.0
+1629618,1610612743,G,Penn State,USA,2023,32.0,Jalen Pickett,Denver Nuggets,24.0
+203486,1610612746,F-C,Duke,USA,2013,22.0,Mason Plumlee,LA Clippers,33.0
+1641764,1610612744,G,Santa Clara,USA,2023,19.0,Brandin Podziemski,Golden State Warriors,20.0
+1627751,1610612761,C,Utah,Austria,2016,9.0,Jakob Poeltl,Toronto Raptors,28.0
+1630197,1610612760,F,Olympiacos,Serbia,2020,17.0,Aleksej Pokusevski,Oklahoma City Thunder,21.0
+1629673,1610612764,G,Michigan,USA,2019,28.0,Jordan Poole,Washington Wizards,24.0
+1641854,1610612739,G,Wichita State,USA,2023,0.0,Craig Porter,Cleveland Cavaliers,23.0
+1629008,1610612743,F,Missouri,USA,2018,14.0,Michael Porter Jr.,Denver Nuggets,25.0
+203490,1610612761,F,Georgetown,USA,2013,3.0,Otto Porter Jr.,Toronto Raptors,30.0
+1626171,1610612749,F,Arkansas,USA,2015,22.0,Bobby Portis,Milwaukee Bucks,28.0
+204001,1610612738,F-C,Cajasol Sevilla,Latvia,2015,4.0,Kristaps Porzingis,Boston Celtics,28.0
+1630695,1610612762,C,Wisconsin,USA,2021,0.0,Micah Potter,Utah Jazz,25.0
+203939,1610612742,F-C,Stanford,Canada,2014,45.0,Dwight Powell,Dallas Mavericks,32.0
+1626181,1610612746,G,UCLA,USA,2015,46.0,Norman Powell,LA Clippers,30.0
+1630563,1610612746,G,Alabama,Canada,2021,12.0,Joshua Primo,LA Clippers,20.0
+1627752,1610612747,F,Baylor,USA,2016,12.0,Taurean Prince,Los Angeles Lakers,29.0
+1630202,1610612738,G,Oregon,USA,2020,26.0,Payton Pritchard,Boston Celtics,25.0
+1641765,1610612742,F,Marquette,Canada,2023,24.0,Olivier-Maxence Prosper,Dallas Mavericks,21.0
+1630243,1610612753,G,New Mexico State,USA,2021,0.0,Trevelin Queen,Orlando Magic,26.0
+1629674,1610612738,C,Utah State,Portugal,2021,39.0,Neemias Queta,Boston Celtics,24.0
+1630193,1610612752,G,Kentucky,USA,2020,25.0,Immanuel Quickley,New York Knicks,24.0
+1631311,1610612744,G,Memphis,USA,2022,0.0,Lester Quinones,Golden State Warriors,23.0
+203944,1610612752,F-C,Kentucky,USA,2014,7.0,Julius Randle,New York Knicks,28.0
+1641871,1610612757,C,Louisiana State,South Sudan,2023,0.0,Duop Reath,Portland Trail Blazers,27.0
+1630559,1610612747,G,Oklahoma,USA,2021,0.0,Austin Reaves,Los Angeles Lakers,25.0
+1629629,1610612747,F-G,Duke,USA,2019,10.0,Cam Reddish,Los Angeles Lakers,24.0
+1630194,1610612755,F,DePaul,USA,2020,58.0,Paul Reed,Philadelphia 76ers,24.0
+1629675,1610612750,C-F,Louisiana State,USA,2019,0.0,Naz Reid,Minnesota Timberwolves,24.0
+1631197,1610612765,G,Seton Hall,USA,2022,0.0,Jared Rhoden,Detroit Pistons,24.0
+1641811,1610612759,G,Texas,USA,2023,0.0,Sir'Jabari Rice,San Antonio Spurs,
+1630208,1610612766,C,Kentucky,Jamaica,2020,42.0,Nick Richards,Charlotte Hornets,25.0
+1626196,1610612748,G,Tennessee,USA,2015,40.0,Josh Richardson,Miami Heat,30.0
+1629130,1610612748,F,Michigan,USA,2018,0.0,Duncan Robinson,Miami Heat,29.0
+1629010,1610612744,G,Boston College,USA,2018,13.0,Jerome Robinson,Golden State Warriors,26.0
+1629011,1610612752,C-F,Western Kentucky,USA,2018,36.0,Mitchell Robinson,New York Knicks,25.0
+1631115,1610612748,C,Fresno State,USA,2022,0.0,Orlando Robinson,Miami Heat,23.0
+1630526,1610612740,F,Villanova,USA,2021,32.0,Jeremiah Robinson-Earl,New Orleans Pelicans,23.0
+1631223,1610612763,F,Colorado State,USA,2022,23.0,David Roddy,Memphis Grizzlies,22.0
+1631157,1610612764,G,Toledo,USA,2022,44.0,Ryan Rollins,Washington Wizards,21.0
+201565,1610612763,G,Memphis,USA,2008,1.0,Derrick Rose,Memphis Grizzlies,35.0
+1626179,1610612766,G,Louisville,USA,2015,16.0,Terry Rozier,Charlotte Hornets,29.0
+201937,1610612739,G,FC Barcelona,Spain,2011,5.0,Ricky Rubio,Cleveland Cavaliers,32.0
+1641712,1610612757,G-F,New Zealand Breakers,France,2023,43.0,Rayan Rupert,Portland Trail Blazers,19.0
+1626156,1610612747,G,Ohio State,USA,2015,2.0,D'Angelo Russell,Los Angeles Lakers,27.0
+1630346,1610612740,F,Tennessee-Chattanooga,USA,2021,0.0,Matt Ryan,New Orleans Pelicans,26.0
+1627734,1610612758,F-C,Gonzaga,Lithuania,2016,11.0,Domantas Sabonis,Sacramento Kings,27.0
+1629677,1610612762,F,Union Olimpija,Croatia,2019,19.0,Luka Samanic,Utah Jazz,23.0
+1631257,1610612745,F,Villanova,USA,2023,0.0,Jermaine Samuels Jr.,Houston Rockets,25.0
+1641766,1610612741,F,Connecticut,Mali,2023,0.0,Adama Sanogo,Chicago Bulls,
+1630611,1610612744,F,                                   ,Brazil,2023,55.0,Gui Santos,Golden State Warriors,21.0
+203967,1610612744,F-C,Anadolu Efes,Croatia,2016,12.0,Dario Saric,Golden State Warriors,29.0
+1630846,1610612760,C,Kentucky,France,2021,0.0,Olivier Sarr,Oklahoma City Thunder,24.0
+1631204,1610612765,G,Houston,USA,2023,25.0,Marcus Sasser,Detroit Pistons,23.0
+1629678,1610612753,F,Tennessee,United Kingdom,2019,42.0,Admiral Schofield,Orlando Magic,26.0
+203471,1610612761,G,Braunschweig,Germany,2013,17.0,Dennis Schroder,Toronto Raptors,30.0
+1631220,1610612740,G,North Carolina State,USA,2022,0.0,Dereon Seabron,New Orleans Pelicans,23.0
+1630578,1610612745,C,Besiktas,Turkey,2021,16.0,Alperen Sengun,Houston Rockets,21.0
+1641729,1610612762,F,Ohio State,USA,2023,28.0,Brice Sensabaugh,Utah Jazz,20.0
+1629012,1610612762,G,Alabama,USA,2018,8.0,Collin Sexton,Utah Jazz,24.0
+1629013,1610612764,G,Wichita State,USA,2018,26.0,Landry Shamet,Washington Wizards,26.0
+1630549,1610612751,C,North Carolina,USA,2021,29.0,Day'Ron Sharpe,Brooklyn Nets,22.0
+1631101,1610612757,G,Kentucky,Canada,2022,7.0,Shaedon Sharpe,Portland Trail Blazers,20.0
+1641767,1610612754,G,Belmont,USA,2023,26.0,Ben Sheppard,Indiana Pacers,22.0
+1627783,1610612761,F,New Mexico State,Cameroon,2016,27.0,Pascal Siakam,Toronto Raptors,29.0
+1627732,1610612751,G-F,Louisiana State,Australia,2016,1.0,Ben Simmons,Brooklyn Nets,27.0
+1629014,1610612757,G,Edgewater HS (FL),USA,2018,24.0,Anfernee Simons,Portland Trail Blazers,24.0
+1630579,1610612752,C,Texas,USA,2021,58.0,Jericho Sims,New York Knicks,25.0
+1641771,1610612758,F,Furman,USA,2023,54.0,Jalen Slawson,Sacramento Kings,24.0
+1630606,1610612755,G,Louisiana State,USA,2021,0.0,Javonte Smart,Philadelphia 76ers,23.0
+203935,1610612763,G,Oklahoma State,USA,2014,6.0,Marcus Smart,Memphis Grizzlies,29.0
+1630696,1610612748,G,Missouri,USA,2022,0.0,Dru Smith,Miami Heat,25.0
+202397,1610612766,G,Wake Forest,USA,2010,0.0,Ish Smith,Charlotte Hornets,35.0
+1630188,1610612754,F-C,Maryland,USA,2020,10.0,Jalen Smith,Indiana Pacers,23.0
+1631173,1610612755,G,North Carolina State,USA,2023,0.0,Terquavion Smith,Philadelphia 76ers,
+1628372,1610612751,G,North Carolina State,USA,2017,9.0,Dennis Smith Jr.,Brooklyn Nets,25.0
+1631095,1610612745,F,Auburn,USA,2022,3.0,Jabari Smith Jr.,Houston Rockets,20.0
+1641733,1610612766,G,Arkansas,USA,2023,27.0,Nick Smith Jr.,Charlotte Hornets,19.0
+1631110,1610612759,F,Baylor,Poland,2022,9.0,Jeremy Sochan,San Antonio Spurs,20.0
+1630531,1610612755,G,Tennessee,USA,2021,28.0,Jaden Springer,Philadelphia 76ers,21.0
+1630205,1610612738,F,Penn State,USA,2020,0.0,Lamar Stevens,Boston Celtics,26.0
+1630191,1610612765,F-C,Washington,USA,2020,16.0,Isaiah Stewart,Detroit Pistons,22.0
+1631124,1610612743,G,Gonzaga,USA,2023,29.0,Julian Strawther,Denver Nuggets,21.0
+1629622,1610612739,G-F,DePaul,USA,2019,0.0,Max Strus,Cleveland Cavaliers,27.0
+1630591,1610612753,G,Gonzaga,USA,2021,5.0,Jalen Suggs,Orlando Magic,22.0
+1631306,1610612748,F,Syracuse,USA,2022,0.0,Cole Swider,Miami Heat,24.0
+1630256,1610612745,F,Ohio State,USA,2020,0.0,Jae'Sean Tate,Houston Rockets,28.0
+1628369,1610612738,F-G,Duke,USA,2017,3.0,Jayson Tatum,Boston Celtics,25.0
+1630678,1610612741,F,Austin Peay,USA,2021,0.0,Terry Taylor,Chicago Bulls,24.0
+202066,1610612761,G-F,Louisiana State,USA,2009,0.0,Garrett Temple,Toronto Raptors,37.0
+1631207,1610612741,F,Arizona,USA,2022,18.0,Dalen Terry,Chicago Bulls,21.0
+1628464,1610612746,F-C,Brose Bamberg,Germany,2017,0.0,Daniel Theis,LA Clippers,31.0
+1630560,1610612751,G,Louisiana State,Japan,2021,27.0,Cam Thomas,Brooklyn Nets,22.0
+1641708,1610612745,G-F,Overtime Elite,USA,2023,4.0,Amen Thompson,Houston Rockets,20.0
+1641709,1610612765,G-F,Overtime Elite,USA,2023,5.0,Ausar Thompson,Detroit Pistons,20.0
+202691,1610612744,G,Washington State,USA,2011,11.0,Klay Thompson,Golden State Warriors,33.0
+202684,1610612739,C-F,Texas-Austin,Canada,2011,4.0,Tristan Thompson,Cleveland Cavaliers,32.0
+1630550,1610612766,F,Auburn,USA,2021,37.0,JT Thor,Charlotte Hornets,21.0
+1629680,1610612757,G-F,Washington,USA,2019,20.0,Matisse Thybulle,Portland Trail Blazers,26.0
+1630214,1610612763,F,Michigan State,USA,2020,35.0,Xavier Tillman,Memphis Grizzlies,24.0
+1631210,1610612752,F,Kentucky,USA,2023,0.0,Jacob Toppin,New York Knicks,
+1630167,1610612754,F,Dayton,USA,2020,8.0,Obi Toppin,Indiana Pacers,25.0
+1626157,1610612750,C-F,Kentucky,USA,2015,1.0,Karl-Anthony Towns,Minnesota Timberwolves,28.0
+1629018,1610612761,G,Duke,USA,2018,37.0,Gary Trent Jr.,Toronto Raptors,24.0
+1631131,1610612754,F-C,Kentucky,DRC,2023,0.0,Oscar Tshiebwe,Indiana Pacers,
+200782,1610612746,F,Texas,USA,2006,35.0,P.J. Tucker,LA Clippers,38.0
+1626167,1610612754,C-F,Texas,USA,2015,11.0,Myles Turner,Indiana Pacers,27.0
+1641816,1610612743,F,Clemson,USA,2023,37.0,Hunter Tyson,Denver Nuggets,23.0
+1630649,1610612765,G,Arkansas,USA,2022,0.0,Stanley Umude,Detroit Pistons,24.0
+202685,1610612740,C,Lietuvos rytas Vilnius,Lithuania,2012,5.0,Jonas Valanciunas,New Orleans Pelicans,31.0
+1627832,1610612745,G,Wichita State,USA,2016,0.0,Fred VanVleet,Houston Rockets,29.0
+1629020,1610612747,F,Kentucky,USA,2018,41.0,Jarred Vanderbilt,Los Angeles Lakers,24.0
+1630170,1610612759,G-F,Florida State,USA,2020,11.0,Devin Vassell,San Antonio Spurs,23.0
+1628426,1610612758,F,"Barcelona, Spain",Bulgaria,2023,57.0,Sasha Vezenkov,Sacramento Kings,28.0
+1629216,1610612747,G,California-Santa Barbara,USA,2019,0.0,Gabe Vincent,Los Angeles Lakers,27.0
+202696,1610612741,C,Southern California,Montenegro,2011,16.0,Nikola Vucevic,Chicago Bulls,33.0
+1629731,1610612739,F-C,Kansas State,USA,2019,0.0,Dean Wade,Cleveland Cavaliers,27.0
+1630532,1610612753,F,Michigan,Germany,2021,8.0,Franz Wagner,Orlando Magic,22.0
+1629021,1610612753,F-C,Michigan,Germany,2018,25.0,Moritz Wagner,Orlando Magic,26.0
+1630688,1610612757,F,Baylor,USA,2021,0.0,Ish Wainright,Portland Trail Blazers,29.0
+1631133,1610612757,F,Colorado,USA,2022,57.0,Jabari Walker,Portland Trail Blazers,21.0
+1641716,1610612754,F,Houston,USA,2023,8.0,Jarace Walker,Indiana Pacers,20.0
+1629022,1610612751,G-F,Miami,USA,2018,18.0,Lonnie Walker IV,Brooklyn Nets,24.0
+1641717,1610612760,G,Kentucky,USA,2023,10.0,Cason Wallace,Oklahoma City Thunder,20.0
+1641775,1610612738,G,Arkansas,USA,2023,38.0,Jordan Walsh,Boston Celtics,
+1629023,1610612766,F,Kentucky,USA,2019,12.0,P.J. Washington,Charlotte Hornets,25.0
+1630613,1610612752,G,Ohio State,Germany,2021,0.0,Duane Washington Jr.,New York Knicks,23.0
+1631102,1610612749,G,Kentucky,USA,2022,29.0,TyTy Washington Jr.,Milwaukee Bucks,22.0
+1629139,1610612756,G-F,George Washington,Japan,2018,0.0,Yuta Watanabe,Phoenix Suns,29.0
+1630322,1610612760,F,Oklahoma State,USA,2021,0.0,Lindy Waters III,Oklahoma City Thunder,26.0
+1630570,1610612751,F,Louisiana State,USA,2021,0.0,Trendon Watford,Brooklyn Nets,23.0
+1631212,1610612743,G,UCLA,USA,2022,30.0,Peyton Watson,Denver Nuggets,21.0
+1641705,1610612759,F-C,Metropolitans 92,France,2023,1.0,Victor Wembanyama,San Antonio Spurs,19.0
+1631104,1610612759,G,Notre Dame,USA,2022,25.0,Blake Wesley,San Antonio Spurs,20.0
+201566,1610612746,G,UCLA,USA,2008,4.0,Russell Westbrook,LA Clippers,35.0
+1629632,1610612741,G,North Carolina,USA,2019,7.0,Coby White,Chicago Bulls,23.0
+1628401,1610612738,G,Colorado,USA,2017,29.0,Derrick White,Boston Celtics,29.0
+1641727,1610612751,F,Duke,USA,2023,22.0,Dariq Whitehead,Brooklyn Nets,
+1641715,1610612745,F,Villanova,USA,2023,20.0,Cam Whitmore,Houston Rockets,19.0
+1630598,1610612760,G,Maryland,USA,2021,55.0,Aaron Wiggins,Oklahoma City Thunder,24.0
+203952,1610612744,F,Kansas,Canada,2014,1.0,Andrew Wiggins,Golden State Warriors,28.0
+1629623,1610612749,G,Iowa State,Canada,2021,0.0,Lindell Wigginton,Milwaukee Bucks,25.0
+1629684,1610612742,F,Tennessee,USA,2019,22.0,Grant Williams,Dallas Mavericks,24.0
+1631114,1610612760,G-F,Santa Clara,USA,2022,12.0,Jalen Williams,Oklahoma City Thunder,22.0
+1631119,1610612760,F,Arkansas,USA,2022,34.0,Jaylin Williams,Oklahoma City Thunder,21.0
+1629026,1610612760,G-F,TCU,USA,2018,0.0,Kenrich Williams,Oklahoma City Thunder,28.0
+1631109,1610612766,C,Duke,USA,2022,15.0,Mark Williams,Charlotte Hornets,21.0
+1631466,1610612745,G,Buffalo,USA,2022,0.0,Nate Williams,Houston Rockets,24.0
+1630172,1610612741,F,Florida State,USA,2020,4.0,Patrick Williams,Chicago Bulls,22.0
+1630533,1610612763,F,Stanford,USA,2021,10.0,Ziaire Williams,Memphis Grizzlies,22.0
+1629057,1610612757,C-F,Texas A&M,USA,2018,27.0,Robert Williams III,Portland Trail Blazers,26.0
+1631246,1610612763,G,Virginia Commonwealth,USA,2022,47.0,Vince Williams Jr.,Memphis Grizzlies,23.0
+1629627,1610612740,F,Duke,USA,2019,1.0,Zion Williamson,New Orleans Pelicans,23.0
+1630592,1610612751,F,Kansas,USA,2023,51.0,Jalen Wilson,Brooklyn Nets,23.0
+1629685,1610612752,G-F,Belmont,USA,2019,26.0,Dylan Windler,New York Knicks,27.0
+1630164,1610612765,C,Memphis,USA,2020,2.0,James Wiseman,Detroit Pistons,22.0
+1631209,1610612754,G,Miami,USA,2023,55.0,Isaiah Wong,Indiana Pacers,
+1626174,1610612747,F,UNLV,USA,2015,0.0,Christian Wood,Los Angeles Lakers,28.0
+1626153,1610612764,G,Utah,USA,2015,20.0,Delon Wright,Washington Wizards,31.0
+201152,1610612761,F,Georgia Tech,USA,2007,12.0,Thaddeus Young,Toronto Raptors,35.0
+1629027,1610612737,G,Oklahoma,USA,2018,5.0,Trae Young,Atlanta Hawks,25.0
+1630209,1610612762,C,Georgetown,Turkey,2020,0.0,Omer Yurtseven,Utah Jazz,25.0
+203469,1610612740,F-C,Indiana,USA,2013,4.0,Cody Zeller,New Orleans Pelicans,31.0
+1627826,1610612746,C,Mega Basket,Croatia,2016,32.0,Ivica Zubac,LA Clippers,26.0

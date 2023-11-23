@@ -2,8 +2,8 @@ import dash_mantine_components as dmc
 import dash_core_components as dcc
 from dash import html
 from dash_iconify import DashIconify
-from src.data_tools import get_markdown, get_season_data
-from datetime import date
+from data_tools import get_markdown, get_season_data, get_player_list
+from datetime import date  
 
 
 ################### Header ########################
@@ -185,7 +185,7 @@ right_stat_card = dmc.Card(
                 )
 
 
-#Radioesk Component (Select type of aggregate fnc: Total or Average)
+#Radioesque Component (Select type of aggregate fnc: Total or Average)
 aggregate_type = dmc.SegmentedControl(
                     id="agg_type",
                     value= 'Total',
@@ -272,9 +272,9 @@ center_column_section = dmc.Col(
                                 html.Div(className = "Radio_Button",
                                     children =[
                                         dmc.RadioGroup(
-                                            [dmc.Radio(label=l, value=v, color='violet') for l, v in [["Season 2021-22", "2021-22"], ["Season 2022-23", "2022-23"]]],
+                                            [dmc.Radio(label=l, value=v, color='violet') for l, v in [["Season 2022-23", "2022-23"], ["Season 2023-24", "2023-24"]]],
                                                 id="radio-select-season",
-                                                value="2021-22",
+                                                value="2022-23",
                                                 size="sm", 
                                             ),
                                         
@@ -343,14 +343,13 @@ tab1_layout = dmc.Grid(className="Middle",
 ### COMPONENTS ###
 ##################
 
-still_active_2023_players = get_season_data('2022-23', 'Total', still_active_players = True)
 
 #################### Player Info Card ##############
-
+player_list = get_player_list()
 PlayerSelect_dropdown = [dmc.Select(
                             placeholder="Select Player",
                             id="player-select",
-                            data=[{"label": val, "value": val} for val in still_active_2023_players.index.tolist()],
+                            data=[{"label": val, "value": val} for val in player_list],
                             value= 'LeBron James',
                             style={"width": '100%', 'display': 'inline-block', "text-align":'left', 'justify': 'center'}, 
                             searchable=True,
@@ -393,7 +392,7 @@ def player_card(asset_src: callable) -> dmc.Grid:
                                             [
                                                 dmc.Group([
                                                 DashIconify(icon="cil:birthday-cake", width=20, height=20),
-                                                dmc.Text("1984-12-30", id='birthday_text',size="md"),
+                                                dmc.Text("38", id='birthday_text',size="md"),
                                                 ]),
                                                 dmc.Group([
                                                 DashIconify(icon="gis:earth", width=20, height=20),
@@ -435,20 +434,19 @@ def player_card(asset_src: callable) -> dmc.Grid:
 
 #################### Team Logos Bar ##############
 
-
 def team_logos(team_id: str, team_img_src: callable) -> html.Img:
     
     return html.Img(
             className='Litem',
             id={'index': f"{team_id}", 'type': 'teams_logo_image'}, 
             src=team_img_src,
-            height=60,
+            height = '100%',
             width=60,
             style= {"background": 'transparent',
                     "padding": 5,
                     "opacity":0.85,
                     'border-radius':0,
-},
+                },
             )
     
 def set_team_logos_container(teams: dmc.Group) -> dmc.Container:
@@ -463,12 +461,10 @@ def set_team_logos_container(teams: dmc.Group) -> dmc.Container:
                                 'textAlign':'center',
                                 'marginLeft':'2rem',
                                 'marginRight':'2rem',
-                                'marginBottom': '0.5rem',
+                                'marginBottom':'1rem',
                                 'marginTop': '1rem',
                             },
                 )
-           
-          
     
 #################### Career Stat Plot Card ##############
     
@@ -653,9 +649,9 @@ interval_stats = dmc.Card(className='Grid_Card',
                         html.Div([
                             dmc.DateRangePicker(
                             id="date-range-picker",
-                            minDate=date(2022, 10, 18),
-                            value=[date(2022, 10, 18), date(2022, 11, 22)],
-                            maxDate=date(2023, 4, 9),
+                            minDate=date(2023, 10, 18),
+                            value=[date(2023, 10, 18), date(2023, 11, 22)],
+                            maxDate=date.today(),
                             inputFormat="YYYY-DD-MM",
                             dropdownPosition="top-start",
                             my="xs"),
