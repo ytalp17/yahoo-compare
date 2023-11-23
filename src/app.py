@@ -10,9 +10,15 @@ from data_tools import (get_similar_players, get_season_data, get_Zscores,
                         calculate_percentage_stats, aggregate_fantasy_stats, 
                         get_player_info, get_career_stats, fantasy_stats,
                         rank_stats, datemask_season_data)
-                        
-                        
-app = Dash(__name__,
+
+
+
+############################ Get Paths ###################################
+project_path = os.getcwd()
+team_logos_path = os.path.join(project_path, "src/assets/team_logos")
+assets_path = os.path.join(project_path, "src/assets")
+
+app = Dash(__name__, assets_folder=assets_path,
         external_stylesheets=[
             # include google fonts
             "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;900&display=swap"
@@ -20,10 +26,6 @@ app = Dash(__name__,
         )
 
 server = app.server  # Needed for gunicorn
-
-############################ Get Paths ###################################
-project_path = os.getcwd()
-team_logos_path = os.path.join(project_path, "assets/team_logos")
 
 ########################### Data Part ######################################
 CareerStats = get_career_stats()

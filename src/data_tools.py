@@ -81,12 +81,11 @@ def get_Zscores(df: pd.DataFrame, Season: str, Aggregate : str = "Total", still_
     #df = get_season_data(Season, Aggregate)
 
     if Aggregate == 'Total':
-         with open(f'/Users/yberber/Documents/Projects/yahoo_mantine/data/pop_par{Previous_Season}T.pkl', 'rb') as f:
+         with open(DATA_PATH.joinpath(f"pop_par{Previous_Season}T.pkl"), 'rb') as f:
             ps_df = pickle.load(f) # deserialize using load()
             
-
     else:
-         with open(f'/Users/yberber/Documents/Projects/yahoo_mantine/data/pop_par{Previous_Season}A.pkl', 'rb') as f:
+         with open(DATA_PATH.joinpath(f"pop_par{Previous_Season}A.pkl"), 'rb') as f:
             ps_df = pickle.load(f) # deserialize using load()
             
     
@@ -303,7 +302,7 @@ def get_player_list() -> list:
     '''
     Return list of active 2023-24 player names.
     '''
-    with open(f'/Users/yberber/Documents/Projects/yahoo_mantine/data/players_list.pkl', 'rb') as f:
+    with open(DATA_PATH.joinpath('players_list.pkl'), 'rb') as f:
         player_list = pickle.load(f) # deserialize using load()
 
     return player_list
