@@ -12,7 +12,6 @@ from data_tools import (get_similar_players, get_season_data, get_Zscores,
                         rank_stats, datemask_season_data)
 
 
-
 ############################ Get Paths ###################################
 project_path = os.getcwd()
 team_logos_path = os.path.join(project_path, "src/assets/team_logos")

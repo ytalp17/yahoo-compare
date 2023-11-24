@@ -5,7 +5,36 @@ import pickle
 
 from sklearn.preprocessing import StandardScaler
 from scipy.spatial import distance
-from nba_api.stats.endpoints import PlayerGameLogs
+import psycopg2
+from psycopg2 import sql
+
+
+#connect to db
+def update_data():
+    # Connect to the database
+    connection = psycopg2.connect(
+        dbname = 'yahoo_compare',
+        user = 'ytalp17',
+        password = '2YEa8kZmHkBwHlqlyU27RzRAvvJpLy6l',
+        host = 'dpg-clg9na58td7s73bfnn3g-a.frankfurt-postgres.render.com',  # Replace with your Render database host
+        port = '5432',
+    )
+    #table name
+    table_name = 'nba_stats'
+
+    # Query data from the database
+    with connection.cursor() as cursor:
+        cursor.execute(sql.SQL('SELECT * FROM {}').format(sql.Identifier(table_name)))
+        records = cursor.fetchall()
+        
+    columns = [desc[0] for desc in cursor.description]
+    
+    # Create a Pandas DataFrame
+    GameLog = pd.DataFrame(records, columns=columns)
+    
+    connection.close()
+    
+    return GameLog
 
 
 #############################################################################################
@@ -35,7 +64,7 @@ def get_season_data(Season: str, Aggregate: str = "Total", raw= False) -> pd.Dat
         file_name = 'GameLog' + Season + extension 
         Game_Log= pd.read_csv(DATA_PATH.joinpath(file_name))
     else:
-        Game_Log =  PlayerGameLogs(season_nullable='2023-24').get_data_frames()[0]
+        Game_Log =  update_data()
         
     Game_Log= Game_Log.rename(columns = {'PLAYER_NAME':'PLAYER'})
     
