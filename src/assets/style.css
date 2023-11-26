@@ -123,8 +123,6 @@ margin-right: 2rem;
 }	
 
 
-
-
 /*Both for all RadioGroups and SegmentedControl Components*/
 .mantine-SegmentedControl-root{
     border: 1px solid rgb(55, 58, 64);
@@ -150,6 +148,9 @@ margin-right: 2rem;
     font-size: 2vh;
 }
 
+.mantine-Tooltip-tooltip{
+    font-size: 0.8vw;
+}
 
 
 /* Media Queries

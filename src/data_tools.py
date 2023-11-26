@@ -9,7 +9,7 @@ import psycopg2
 from psycopg2 import sql
 
 
-#connect to db
+#################### Connect to DataBase #######################
 def update_data():
     # Connect to the database
     connection = psycopg2.connect(
@@ -19,7 +19,7 @@ def update_data():
         host = 'dpg-clg9na58td7s73bfnn3g-a.frankfurt-postgres.render.com',  # Replace with your Render database host
         port = '5432',
     )
-    #table name
+    #table namepso
     table_name = 'nba_stats'
 
     # Query data from the database
@@ -177,8 +177,9 @@ def calculate_percentage_stats(season_df: pd.DataFrame) -> pd.DataFrame:
     try:
         season_df['FG%'] = season_df['FGM']/season_df['FGA']
         season_df['FT%'] = season_df['FTM']/season_df['FTA']
-        return(season_df)
-
+        season_df = season_df.fillna(0) 
+        return(season_df.round(2))
+    
     except:
         zeros_df_cols = ['PLAYER','PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FG%', 'FT%']
         return pd.DataFrame(data=[np.zeros(10)],columns = zeros_df_cols)
@@ -307,7 +308,6 @@ def datemask_season_data(df: pd.DataFrame, Start_Date: str, End_Date: str, Playe
         stats = player_specific[stats_col].mean()
         G = pd.DataFrame([game],columns = ['G'])
         stats = pd.concat([stats,G.T], axis=0).round(2)
-
     return stats
 
 def get_markdown() -> str:

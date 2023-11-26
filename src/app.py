@@ -1,21 +1,23 @@
 import dash_mantine_components as dmc
 from dash import Dash, html, Input, Output, ALL, callback_context
 import plotly.graph_objects as go
-#import dash_table
+import pandas as pd 
 from dash import dash_table
 import os
 import re
 import viz_tools as viz_tools 
 from data_tools import (get_similar_players, get_season_data, get_Zscores, 
                         calculate_percentage_stats, aggregate_fantasy_stats, 
-                        get_player_info, get_career_stats, fantasy_stats,
+                        get_player_info, get_career_stats,
                         rank_stats, datemask_season_data)
 
 
 ############################ Get Paths ###################################
 project_path = os.getcwd()
-team_logos_path = os.path.join(project_path, "assets/team_logos")
-assets_path = os.path.join(project_path, "assets")
+team_logos_path = os.path.join(project_path, "src/assets/team_logos")
+assets_path = os.path.join(project_path, "src/assets")
+
+
 
 app = Dash(__name__, assets_folder=assets_path,
         external_stylesheets=[
@@ -27,6 +29,8 @@ app = Dash(__name__, assets_folder=assets_path,
 server = app.server  # Needed for gunicorn
 
 ########################### Data Part ######################################
+fantasy_stats = ['PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FG%', 'FT%']
+
 CareerStats = get_career_stats()
 PlayerInfo = get_player_info()
 
@@ -60,6 +64,7 @@ fantasy_stats_dict = {'PLAYER': 'Player Name',
                       'GP': 'Game Plays',
                       }
 
+
 #Complementary App Layout
 team_logos = dmc.Grid([viz_tools.team_logos(teams, app.get_asset_url(f"team_logos/{teams}")) for teams in os.listdir(team_logos_path)],
                       style={'width':1800, 'height': 60,'max-height':60, "border": 'rgb(0,0,0)',
@@ -81,6 +86,7 @@ app.layout = dmc.MantineProvider(
                     [
                         dmc.Tab("Team-wise", value="Team"),
                         dmc.Tab("Player-wise", value="Player"),
+                        
                     ]
                 ),
                 #Tab1
@@ -127,7 +133,6 @@ def pop_up_modal(n_clicks:int) -> bool:
     return True
 
 '''----------------Tab 2 Callback functions--------------------'''
-
 @app.callback(
     [
     Output("interval_stats_graph", "figure"), 
@@ -139,20 +144,56 @@ def pop_up_modal(n_clicks:int) -> bool:
     Input("date-range-picker", "value")
     ]
 )
+
 def update_interval_stats(player, aggregate, interval):   
+    fantasy_stats = ['PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'FGM', 'FGA', 'FTM', 'FTA', 'MIN']
+
     interval_stats = datemask_season_data(GameLog2023_24, interval[0], interval[1], player, aggregate)
+    interval_stats_modified = interval_stats.drop(['G'])
+    interval_stats_modified.loc['FG%'] = (interval_stats_modified.loc['FGM']/interval_stats_modified.loc['FGA']).round(2)
+    interval_stats_modified.loc['FT%'] = (interval_stats_modified.loc['FTM']/interval_stats_modified.loc['FTA']).round(2)
+    interval_stats_modified = interval_stats_modified.drop(['FGM','FGA','FTM','FTA'])
+    interval_stats_modified = pd.concat([interval_stats_modified, interval_stats_modified.iloc[[0]]], axis=0)
+
+    if aggregate != 'Total':
+        s_stats = Season_avg_2324[Season_avg_2324.index.isin([player])][fantasy_stats].T
+        s_stats.loc['FG%'] = (s_stats.loc['FGM']/s_stats.loc['FGA']).round(2)
+        s_stats.loc['FT%'] = (s_stats.loc['FTM']/s_stats.loc['FTA']).round(2)
+        s_stats = s_stats.drop(['FGM','FGA','FTM','FTA'])
+        s_stats_modified = pd.concat([s_stats, s_stats.iloc[[0]]], axis=0)
+    else:
+        s_stats = Season_total_2324[Season_total_2324.index.isin([player])][fantasy_stats].T
+        s_stats.loc['FG%'] = (s_stats.loc['FGM']/s_stats.loc['FGA']).round(2)
+        s_stats.loc['FT%'] = (s_stats.loc['FTM']/s_stats.loc['FTA']).round(2)
+        s_stats = s_stats.drop(['FGM','FGA','FTM','FTA'])
+        s_stats_modified = pd.concat([s_stats, s_stats.iloc[[0]]], axis=0)
+        
+        
+    fig = go.Figure(
+        go.Scatterpolar(
+            name = 'Season',
+            r= interval_stats_modified.iloc[:,0].values,
+            theta=interval_stats_modified.index,
+            marker_line_color="black",
+            marker_line_width=2,
+            #opacity=0.55,
+            text=[interval_stats_modified.index[i] + ' = ' + str(interval_stats_modified.iloc[i,0]) for i in range(len(interval_stats_modified))],
+            hoverinfo="text",
+            )
+        )
     
-    fig = go.Figure(go.Barpolar(
-        r= interval_stats.iloc[:,0].values,
-        theta=interval_stats.index[:-1],
-        marker_color=["#E4FF87", '#709BFF', '#0451CB', '#FFAA70', '#00AEEF', '#FFDF70', '#B6FFB4','#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf'],
-        marker_line_color="black",
-        marker_line_width=2,
-        opacity=0.55,
-        text=[interval_stats.index[i] + ' = ' + str(interval_stats.iloc[i,0]) for i in range(len(interval_stats))],
-        hoverinfo="text",
-    )
-    )
+    #add general stats
+    fig.add_trace(
+        go.Scatterpolar(
+            name = 'Interval',
+            r=s_stats_modified.iloc[:,0].values,
+            theta=s_stats_modified.index,
+            marker_line_color="black",
+            marker_line_width=2,
+            text=[s_stats_modified.index[i] + ' = ' + str(s_stats_modified.iloc[i,0]) for i in range(len(s_stats_modified))],
+            hoverinfo="text",
+            )
+        )
 
     fig.update_layout(
             polar=dict(
@@ -161,12 +202,11 @@ def update_interval_stats(player, aggregate, interval):
                     visible=True,
                     type='linear',
                     autotypenumbers='strict',
-                    range=[0, 50],
                     showline=False,
                     showticklabels=False,
                     ticks='',),
             ),
-            showlegend=False,
+            showlegend=True,
             template="plotly_dark",
             paper_bgcolor= 'rgba(0,0,0,0)',
             plot_bgcolor = 'rgba(0,0,0,0)',
@@ -176,29 +216,11 @@ def update_interval_stats(player, aggregate, interval):
     
     fig.update_layout(
         margin=dict(t=10,b=10,pad=10),
-        transition_duration=500
         )
     
     #text under the polar plot
     text = f"The player played total of {int(interval_stats.iloc[-1].values[0])} games in the given date range."
 
-    
-    if not aggregate == 'Total':
-        fig.update_layout(
-            polar=dict(
-                hole=0.1,
-                radialaxis=dict(
-                    visible=True,
-                    type='linear',
-                    autotypenumbers='strict',
-                    range=[0, 4],
-                    showline=False,
-                    showticklabels=False,
-                    ticks='',),
-            ),)
-        
-        return fig, text
-        
     return fig, text
     
 
@@ -702,13 +724,14 @@ def update_tab1graphs(P1, P2, season, agg_type):
                 ticks='',),
                 #gridcolor='rgb(40,132,117)'),
         ),
+        margin=dict(b=65,t=65),
         transition_duration=500,
         showlegend=False,
         template="plotly_dark",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         font_color='white',
-        font_size=14
+        font_size=14,
     )
         
     return fig, fig_upper_left, fig_bottom_left, fig_upper_right, fig_bottom_right
@@ -880,4 +903,4 @@ def update_tables(active, P1, P2, season, agg_type):
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

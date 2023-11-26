@@ -14,7 +14,9 @@ modal = html.Div([
                     get_markdown()), 
                     id="pop-up-modal", 
                     size="55%", 
-                    zIndex=10000),
+                    zIndex=10000,
+                    style={ "overflow-y":"scroll", "height": "750px"},
+),
                 dmc.Group([
                     dmc.Button(
                         "About", 
@@ -115,7 +117,7 @@ right_accordion = html.Div(dmc.Accordion(className='right_accordion',
                                 dmc.AccordionPanel(
                                     dcc.Graph(
                                         id='upper_right_hbar', 
-                                        style={'width':'%100' }
+                                        style={'width':'%100'}
                                         )
                                 ),
                             ],
@@ -214,7 +216,7 @@ Tables_with_tabs = html.Div(
                                             dmc.Tooltip(
                                                 multiline=True,
                                                 position = 'top-end',
-                                                width=250,
+                                                width='16vw',
                                                 withArrow=True,
                                                 transition="fade",
                                                 transitionDuration=200,
@@ -275,10 +277,10 @@ center_column_section = dmc.Col(
                                             [dmc.Radio(label=l, value=v, color='violet') for l, v in [["Season 2022-23", "2022-23"], ["Season 2023-24", "2023-24"]]],
                                                 id="radio-select-season",
                                                 value="2022-23",
-                                                size="sm", 
+                                                style = {'size':'15vw'}
                                             ),
                                         
-                                            html.Div([aggregate_type], style={'padding-top':'15px'}),
+                                            html.Div([aggregate_type], style={'padding-top':'2vh'}),
                                     ], 
                                     style={"textAlign":"center"}
                                 ),
@@ -572,7 +574,7 @@ ranking_card = dmc.Card(className='Grid_Card',
                                           {"value": "Average", "label": "Average"}],
                                     color="violet",
                                     radius="lg",
-                                    size='xs',
+                                    size= "xs"
                                 ),
                                 dmc.Tooltip(
                                     multiline=True,
@@ -650,7 +652,7 @@ interval_stats = dmc.Card(className='Grid_Card',
                             dmc.DateRangePicker(
                             id="date-range-picker",
                             minDate=date(2023, 10, 18),
-                            value=[date(2023, 10, 18), date(2023, 11, 22)],
+                            value=[date(2023, 11, 11), date(2023, 11, 22)],
                             maxDate=date.today(),
                             inputFormat="YYYY-DD-MM",
                             dropdownPosition="top-start",
