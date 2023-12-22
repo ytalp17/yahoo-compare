@@ -266,11 +266,12 @@ left_column_section = dmc.Col(
 
 center_column_section = dmc.Col(
                             html.Div([
-                                dcc.Graph(
-                                    id='polar_graph', 
-                                    style={'autosize': True},
-                                    ),
-                                
+                                html.Div(
+                                    [dcc.Graph(
+                                        id='polar_graph', 
+                                       )
+                                    ],  
+                                    style={'margin-top' : '5%', 'margin-bottom' : '5%'}),
                                 html.Div(className = "Radio_Button",
                                     children =[
                                         dmc.RadioGroup(
@@ -294,7 +295,7 @@ center_column_section = dmc.Col(
                                     ],
                                     position='center', 
                                     spacing = 'xs', 
-                                    style={'marginTop': 50}),
+                                    style={'marginTop': '3em'}),
                             ], 
                             style={"textAlign":"center"}
                             ), 
