@@ -34,5 +34,8 @@ The rationale behind taking 'shooting attempt' weighted Z-scores of FG% and FT% 
 - All the player images and team logos are scraped from [the official nba website](nba.com). 
 
 
+Using this application is only allowed for personal use.
+Any commercial use of this dashboard/application is prohibited. The author holds no liability for any misuse of the applicatiion.
+
 
 &copy Yigitalp Berber       
