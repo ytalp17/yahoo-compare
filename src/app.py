@@ -469,8 +469,8 @@ def update_tab1graphs(P1, P2, season, agg_type):
         else:
             df = calculate_percentage_stats(Season_avg_2324)
             
-    game_stat = df['G'].median().round(2)
-    min_stat =df['MIN'].median().round(2)
+    game_stat = round(df['G'].median(), 2)
+    min_stat = round(df['MIN'].median(), 2)
         
     #Horizontal plots################
     #upper_left

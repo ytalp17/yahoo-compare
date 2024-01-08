@@ -3,7 +3,7 @@
 This is a basketball (NBA) roster (team)/player comparison tool which is built merely for fun. However, one can 
 freely utilize it to improve their "Fantasy Basketball" game.
 
-### What does this dashboard shows?
+### What does this dashboard show?
 The dashboard consists of two tabs: team-wise and player-wise tabs, consequently. While one can use the former to compare aggregate key statistics of multiple players, the latter is for player-focused analysis.
 
 The team-wise tab consists of three columns and is designed in a way that the side columns contain a dropdown menu that helps you to determine your roster, two horizontal bar plots that show total/per game minutes and total number of games per season, and a table that presents aggregated fantasy stats of your roster;  the center column holds a polar graph and two stat sheets (tables) for the corresponding home (the top one) and away teams.
@@ -32,6 +32,12 @@ The rationale behind taking 'shooting attempt' weighted Z-scores of FG% and FT% 
 - All data regarding to the previous seasons were downloaded from [Basketball Monster](https://basketballmonster.com/default.aspx) website.
 - For the current season data, [nba_api](https://pypi.org/project/nba_api/) python package is being utilized.
 - All the player images and team logos are scraped from [the official nba website](nba.com). 
+
+
+Using this application is only allowed for personal use.
+Any commercial use of this dashboard/application is prohibited. The author holds no liability for any misuse of the applicatiion.
+
+
 
 
 

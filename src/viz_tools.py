@@ -1,6 +1,5 @@
 import dash_mantine_components as dmc
-import dash_core_components as dcc
-from dash import html
+from dash import html,dcc
 from dash_iconify import DashIconify
 from data_tools import get_markdown, get_player_list
 from datetime import date  
