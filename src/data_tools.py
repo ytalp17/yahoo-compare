@@ -13,10 +13,11 @@ from psycopg2 import sql
 def update_data():
     # Connect to the database
     connection = psycopg2.connect(
-        dbname = 'yahoo_compare',
-        user = 'ytalp17',
-        password = '2YEa8kZmHkBwHlqlyU27RzRAvvJpLy6l',
-        host = 'dpg-clg9na58td7s73bfnn3g-a.frankfurt-postgres.render.com',  # Replace with your Render database host
+        # Replace these values with your actual database credentials
+        dbname = 'yahoo_compare_postgresql', #'yahoo_compare'
+        user = 'yahoo_compare_postgresql_user', #'ytalp17'
+        password = '36tfzlk21NX9mRgVzWy5be0aq9TZi25W', #'2YEa8kZmHkBwHlqlyU27RzRAvvJpLy6l'
+        host = 'dpg-cou890ol5elc73c78m6g-a.frankfurt-postgres.render.com', #'dpg-clg9na58td7s73bfnn3g-a.frankfurt-postgres.render.com'  # Replace with your Render database host
         port = '5432',
     )
     #table namepso
