@@ -4,7 +4,7 @@ dash==2.13.0
 docopt
 dash_core_components
 dash_iconify
-dash_mantine_components
+dash_mantine_components==0.12
 numpy
 pandas
 plotly
